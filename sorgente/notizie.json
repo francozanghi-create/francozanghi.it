@@ -6,27 +6,320 @@
     "titolo": "A Marsala la polemica sul clima è arrivata prima dei dati",
     "sommario": "Due trombe marine hanno colpito Marsala e Petrosino il 9 ottobre. Nessun morto, una scuola elementare distrutta con 273 bambini dentro. Sull'attribuzione al riscaldamento globale le fonti scientifiche dicono qualcosa di più preciso di quanto si è letto in quelle ore.",
     "corpo": [
-      ["p", "Venerdì 9 ottobre, davanti al porto di Marsala, almeno due trombe marine si sono formate sotto la stessa cella temporalesca, hanno raggiunto la costa e sono entrate nell'entroterra. Hanno colpito le contrade a sud della città, Terrenove Bambina, Strasatti, Santo Padre delle Perriere, e il territorio di Petrosino. Alcune fonti riferiscono fino a quattro avvistamenti di vortici nello stesso settore costiero, ma il conteggio definitivo e la ricostruzione delle traiettorie non erano stabiliti."],
-      ["p", "Il danno più grave è la distruzione della sede di contrada Terrenove della scuola Alcide De Gasperi, con 273 alunni all'interno al momento dell'impatto e nessun ferito grave fra bambini e personale. A Petrosino una stima preliminare indica circa 50 abitazioni danneggiate, comprese case in cemento armato. La Prefettura di Trapani ha escluso morti e dispersi. I feriti sono fra 9 e una ventina a seconda della fonte e dell'orario di aggiornamento, con tre o quattro casi seri ma nessuno in pericolo di vita: la testata locale avverte che le cifre dei diversi pronto soccorso possono sovrapporsi e non vanno sommate."],
-      ["h3", "Quello che non è stato misurato"],
-      ["p", "Sull'intensità non esiste, a oggi, nessuna classificazione ufficiale, e il disaccordo è istruttivo. Il presidente del centro meteorologico siciliano ha parlato di secondo grado della scala Fujita. L'analisi tecnica dello stesso centro indica secondo o terzo grado, precisando che una classificazione definitiva è prematura e che la stima si basa sui danni riferiti, da confermare con rilievi sul campo. Una testata meteorologica, senza attribuzione a un esperto nominato, ha parlato di probabile quarto grado. Il Consiglio nazionale delle ricerche non ha attribuito alcuna classificazione."],
-      ["p", "Soprattutto non esiste alcuna misura strumentale della velocità del vento. Il valore di oltre 250 chilometri orari che ha circolato nei titoli è, nell'articolo originale, una stima generica associata a quella classe di danni, non una lettura anemometrica. È un caso esemplare di inferenza che si irrigidisce in dato apparentemente strumentale."],
-      ["h3", "Cosa dicono davvero le fonti sul clima"],
-      ["p", "Poche ore dopo l'evento era già partita l'attribuzione al riscaldamento globale, sostenuta da esponenti politici. Il quadro scientifico è più articolato, e conviene riportarlo per intero."],
-      ["p", "Il Mediterraneo si sta scaldando: è misurato. L'origine umana di quel riscaldamento è definita inequivocabile dal massimo organismo scientifico internazionale. Ma sul legame fra quel riscaldamento e le trombe d'aria lo stesso organismo scrive confidenza bassa, perché le serie di dati affidabili sono troppo corte, e il Mediterraneo nella sua valutazione sulla convezione severa non compare. Gli studi mostrano inoltre che l'energia che alimenta i temporali sul Mediterraneo cresce, mentre lo scorrimento dei venti in quota, l'ingrediente che fa girare il vortice, sull'Europa diminuisce: due fattori che si muovono in direzioni opposte."],
-      ["p", "Anche la crescita dei conteggi va letta con cautela. Nei registri italiani quasi sette eventi su dieci cadono nell'ultimo decennio, e i ricercatori che quei registri curano attribuiscono il salto alla diffusione dei telefoni e delle reti sociali prima che a un mutamento del cielo. Nella stessa direzione va la storia: il tornado di Catania del 1884 è stato riclassificato al grado massimo della scala, ed è uno di soli tre eventi europei a quel livello, tutti italiani. Due di quelle tre riclassificazioni sono avvenute negli ultimi due anni. Non è il clima ad aver prodotto trombe d'aria violente in Italia: è la ricerca ad aver imparato a riconoscere quelle di ieri."],
-      ["p", "Va aggiunto che ottobre è il mese di massima attività delle trombe d'aria in Sicilia, e che il quadro meteorologico di quel giorno era del tutto tipico: una goccia fredda isolata in quota nei pressi della Sardegna, una debole depressione al suolo sul Canale di Sicilia, scirocco sulla Sicilia occidentale e una linea di convergenza nei bassi strati. Non era un ciclone tropicale mediterraneo, e nessuna delle fonti consultate lo definisce tale."],
-      ["h3", "La responsabilità che c'era davvero"],
-      ["p", "Nelle stesse ore è circolata anche una cifra storica da non usare: i 500 morti attribuiti a un tornado a Marsala nel dicembre 1851. Una ricerca d'archivio locale ha esaminato l'archivio comunale e i registri delle deliberazioni consiliari di quell'anno senza trovare alcuna menzione dell'evento. Quello che l'archivio contiene è una delibera del 7 dicembre 1851 che registra una donazione a Castellammare del Golfo per la violenza di una bufera che aveva colpito quella città: una data anteriore a quella attribuita al presunto tornado, e un luogo diverso."],
-      ["p", "Resta, in questa vicenda, una responsabilità umana concreta e dimostrabile, e l'ha nominata il presidente del Libero Consorzio di Trapani: l'urbanistica locale non sempre ha rispettato le norme. Il vento ha fatto quello che fa su questa costa da duemila anni. Quello che è cambiato è cosa ci abbiamo costruito sotto, e con quali carte."]
+      [
+        "p",
+        "Venerdì 9 ottobre, davanti al porto di Marsala, almeno due trombe marine si sono formate sotto la stessa cella temporalesca, hanno raggiunto la costa e sono entrate nell'entroterra. Hanno colpito le contrade a sud della città, Terrenove Bambina, Strasatti, Santo Padre delle Perriere, e il territorio di Petrosino. Alcune fonti riferiscono fino a quattro avvistamenti di vortici nello stesso settore costiero, ma il conteggio definitivo e la ricostruzione delle traiettorie non erano stabiliti."
+      ],
+      [
+        "p",
+        "Il danno più grave è la distruzione della sede di contrada Terrenove della scuola Alcide De Gasperi, con 273 alunni all'interno al momento dell'impatto e nessun ferito grave fra bambini e personale. A Petrosino una stima preliminare indica circa 50 abitazioni danneggiate, comprese case in cemento armato. La Prefettura di Trapani ha escluso morti e dispersi. I feriti sono fra 9 e una ventina a seconda della fonte e dell'orario di aggiornamento, con tre o quattro casi seri ma nessuno in pericolo di vita: la testata locale avverte che le cifre dei diversi pronto soccorso possono sovrapporsi e non vanno sommate."
+      ],
+      [
+        "h3",
+        "Quello che non è stato misurato"
+      ],
+      [
+        "p",
+        "Sull'intensità non esiste, a oggi, nessuna classificazione ufficiale, e il disaccordo è istruttivo. Il presidente del centro meteorologico siciliano ha parlato di secondo grado della scala Fujita. L'analisi tecnica dello stesso centro indica secondo o terzo grado, precisando che una classificazione definitiva è prematura e che la stima si basa sui danni riferiti, da confermare con rilievi sul campo. Una testata meteorologica, senza attribuzione a un esperto nominato, ha parlato di probabile quarto grado. Il Consiglio nazionale delle ricerche non ha attribuito alcuna classificazione."
+      ],
+      [
+        "p",
+        "Soprattutto non esiste alcuna misura strumentale della velocità del vento. Il valore di oltre 250 chilometri orari che ha circolato nei titoli è, nell'articolo originale, una stima generica associata a quella classe di danni, non una lettura anemometrica. È un caso esemplare di inferenza che si irrigidisce in dato apparentemente strumentale."
+      ],
+      [
+        "h3",
+        "Cosa dicono davvero le fonti sul clima"
+      ],
+      [
+        "p",
+        "Poche ore dopo l'evento era già partita l'attribuzione al riscaldamento globale, sostenuta da esponenti politici. Il quadro scientifico è più articolato, e conviene riportarlo per intero."
+      ],
+      [
+        "p",
+        "Il Mediterraneo si sta scaldando: è misurato. L'origine umana di quel riscaldamento è definita inequivocabile dal massimo organismo scientifico internazionale. Ma sul legame fra quel riscaldamento e le trombe d'aria lo stesso organismo scrive confidenza bassa, perché le serie di dati affidabili sono troppo corte, e il Mediterraneo nella sua valutazione sulla convezione severa non compare. Gli studi mostrano inoltre che l'energia che alimenta i temporali sul Mediterraneo cresce, mentre lo scorrimento dei venti in quota, l'ingrediente che fa girare il vortice, sull'Europa diminuisce: due fattori che si muovono in direzioni opposte."
+      ],
+      [
+        "p",
+        "Anche la crescita dei conteggi va letta con cautela. Nei registri italiani quasi sette eventi su dieci cadono nell'ultimo decennio, e i ricercatori che quei registri curano attribuiscono il salto alla diffusione dei telefoni e delle reti sociali prima che a un mutamento del cielo. Nella stessa direzione va la storia: il tornado di Catania del 1884 è stato riclassificato al grado massimo della scala, ed è uno di soli tre eventi europei a quel livello, tutti italiani. Due di quelle tre riclassificazioni sono avvenute negli ultimi due anni. Non è il clima ad aver prodotto trombe d'aria violente in Italia: è la ricerca ad aver imparato a riconoscere quelle di ieri."
+      ],
+      [
+        "p",
+        "Va aggiunto che ottobre è il mese di massima attività delle trombe d'aria in Sicilia, e che il quadro meteorologico di quel giorno era del tutto tipico: una goccia fredda isolata in quota nei pressi della Sardegna, una debole depressione al suolo sul Canale di Sicilia, scirocco sulla Sicilia occidentale e una linea di convergenza nei bassi strati. Non era un ciclone tropicale mediterraneo, e nessuna delle fonti consultate lo definisce tale."
+      ],
+      [
+        "h3",
+        "La responsabilità che c'era davvero"
+      ],
+      [
+        "p",
+        "Nelle stesse ore è circolata anche una cifra storica da non usare: i 500 morti attribuiti a un tornado a Marsala nel dicembre 1851. Una ricerca d'archivio locale ha esaminato l'archivio comunale e i registri delle deliberazioni consiliari di quell'anno senza trovare alcuna menzione dell'evento. Quello che l'archivio contiene è una delibera del 7 dicembre 1851 che registra una donazione a Castellammare del Golfo per la violenza di una bufera che aveva colpito quella città: una data anteriore a quella attribuita al presunto tornado, e un luogo diverso."
+      ],
+      [
+        "p",
+        "Resta, in questa vicenda, una responsabilità umana concreta e dimostrabile, e l'ha nominata il presidente del Libero Consorzio di Trapani: l'urbanistica locale non sempre ha rispettato le norme. Il vento ha fatto quello che fa su questa costa da duemila anni. Quello che è cambiato è cosa ci abbiamo costruito sotto, e con quali carte."
+      ]
     ],
     "fonti": [
-      ["ANSA, «Maltempo, doppia tromba marina nel Trapanese», 9 ottobre 2026", "https://www.ansa.it/sito/notizie/cronaca/2026/10/09/maltempo-doppia-tromba-marina-nel-trapanese-danni-e-nove-feriti_8a1fb1c3-e77d-44de-ad4a-f0d636c72330.html"],
-      ["tp24, bilancio del 10 ottobre 2026 su Marsala e Petrosino", "https://www.tp24.it/2026/10/10/cronaca/marsala-e-petrosino-dopo-i-tornado-case-distrutte-scuola-devastata-tragedia-sfiorata/240531"],
-      ["Centro Meteorologico Siciliano, analisi sull'intensità e sulle cause", "https://www.centrometeosicilia.it/marsala-colpita-da-un-tornado-di-probabile-categoria-f2-f3-quali-le-cause-lanalisi-del-nostro-esperto/"],
-      ["La Sicilia, dichiarazioni sull'intensità stimata", "https://www.lasicilia.it/news/cronaca/3080213/tornado-nel-trapanese-l-esperto-probabilmente-di-livello-f2-il-maltempo-continuera-questo-e-stato-l-antipasto.html"],
-      ["tp24, Stefano Frungillo, ricerca d'archivio sui 500 morti del 1851", "https://www.tp24.it/2016/07/06/ieri-e-oggi/marsala-e-la-tromba-d-aria-da-500-morti-ecco-come-nasce-una-bufala/101558"]
+      [
+        "ANSA, «Maltempo, doppia tromba marina nel Trapanese», 9 ottobre 2026",
+        "https://www.ansa.it/sito/notizie/cronaca/2026/10/09/maltempo-doppia-tromba-marina-nel-trapanese-danni-e-nove-feriti_8a1fb1c3-e77d-44de-ad4a-f0d636c72330.html"
+      ],
+      [
+        "tp24, bilancio del 10 ottobre 2026 su Marsala e Petrosino",
+        "https://www.tp24.it/2026/10/10/cronaca/marsala-e-petrosino-dopo-i-tornado-case-distrutte-scuola-devastata-tragedia-sfiorata/240531"
+      ],
+      [
+        "Centro Meteorologico Siciliano, analisi sull'intensità e sulle cause",
+        "https://www.centrometeosicilia.it/marsala-colpita-da-un-tornado-di-probabile-categoria-f2-f3-quali-le-cause-lanalisi-del-nostro-esperto/"
+      ],
+      [
+        "La Sicilia, dichiarazioni sull'intensità stimata",
+        "https://www.lasicilia.it/news/cronaca/3080213/tornado-nel-trapanese-l-esperto-probabilmente-di-livello-f2-il-maltempo-continuera-questo-e-stato-l-antipasto.html"
+      ],
+      [
+        "tp24, Stefano Frungillo, ricerca d'archivio sui 500 morti del 1851",
+        "https://www.tp24.it/2016/07/06/ieri-e-oggi/marsala-e-la-tromba-d-aria-da-500-morti-ecco-come-nasce-una-bufala/101558"
+      ]
     ],
     "nota": "Le classificazioni di intensità e il bilancio dei feriti erano ancora provvisori alla data di pubblicazione."
+  },
+  {
+    "id": "giudice-milano-carte-ministero",
+    "sezione": "Cronaca",
+    "data": "2026-10-11",
+    "titolo": "Le carte di una giudice finite sui giornali",
+    "sommario": "Una consigliera della Corte d'Appello di Milano scopre dalla stampa di essere finita in un'ipotesi di reato. Le sue comunicazioni riservate con il ministero, che riguardano la morte della madre, escono su un quotidiano nazionale.",
+    "corpo": [
+      [
+        "p",
+        "Alla fine dell'estate, su una scrivania del palazzo di giustizia di Milano, arriva una carta che comunica a una consigliera della Corte d'Appello che dal suo ufficio non si muoverà fino a febbraio. È un atto amministrativo, di quelli che in un tribunale passano a decine. Da lì, in poche settimane, è nata una vicenda finita sui giornali nazionali: una magistrata che ha saputo dalla stampa di essere finita in un'ipotesi di reato, e i documenti sulla morte di sua madre pubblicati su un quotidiano."
+      ],
+      [
+        "h3",
+        "La cronologia"
+      ],
+      [
+        "p",
+        "La giudice è Anna Ferrari, consigliera della Corte d'Appello di Milano nelle sezioni civili, in magistratura dal 1997, con un passato da pubblico ministero. In primavera presenta una domanda di trasferimento, come tanti colleghi. A luglio il Consiglio superiore della magistratura la accoglie e la sposta alla sezione Lavoro del Tribunale: stesso palazzo, altro ufficio. Nella sua situazione c'è un elemento in più, e assiste la madre, gravemente malata, con i benefici della legge 104."
+      ],
+      [
+        "p",
+        "Il trasferimento però non si fa. Il presidente della Corte d'Appello chiede al ministero della Giustizia di rinviarlo di diversi mesi, e lo ottiene. I motivi di quella richiesta non sono mai stati resi noti. Nessuna norma impone di avvisare il magistrato interessato, e lei lo scopre quando le viene notificato il provvedimento."
+      ],
+      [
+        "p",
+        "All'inizio di settembre la madre muore. Dieci giorni dopo la giudice scrive al ministero per contestare il rinvio. La sua versione è che quella lettera non chiedesse permessi, ma facesse presente un'altra cosa: che il suo ruolo di familiare che prestava assistenza non era stato considerato quando si decideva del trasferimento, e non risultava segnalato nemmeno nella richiesta di rinvio partita da Milano. Il decesso, dice, lo aveva comunicato subito, e in ufficio aveva ricevuto le condoglianze dei colleghi."
+      ],
+      [
+        "h3",
+        "Le due versioni"
+      ],
+      [
+        "p",
+        "La lettura che arriva al pubblico, nei primi giorni di ottobre, è un'altra. Esce su Repubblica e viene ripresa ovunque in poche ore: una toga avrebbe tirato in ballo la legge 104 per farsi trasferire in fretta, con la madre già morta da giorni. Da Milano parte una segnalazione. Il trasferimento resta rinviato. E comincia a circolare una parola pesante, falso, insieme al nome della procura competente sui magistrati milanesi, quella di Brescia."
+      ],
+      [
+        "p",
+        "Su questo passaggio conviene andare piano, perché è il punto in cui il racconto corre più dei fatti. Non risulta alcun atto ufficiale che confermi un fascicolo aperto. Non si sa chi abbia presentato una denuncia. Non si sa se un procedimento esista davvero. Si sa che la diretta interessata dice di averne appreso dai giornali e si dichiara pronta a chiarire ogni dettaglio."
+      ],
+      [
+        "p",
+        "Il 9 ottobre la vicenda fa un altro salto. Il Corriere della Sera pubblica il contenuto delle comunicazioni fra la magistrata e il ministero: carte che stavano in due soli posti, il ministero e la Corte d'Appello, e che riguardano la morte di una persona. Lei dice di essere curiosa di sapere chi le abbia fatte uscire, e distingue: il giornalista che le pubblica fa il suo mestiere, il problema è chi gliele ha consegnate."
+      ],
+      [
+        "h3",
+        "Lo sfondo"
+      ],
+      [
+        "p",
+        "Resta lo sfondo, ed è la parte che riguarda tutti. A marzo gli italiani hanno respinto la riforma della giustizia, e dentro il palazzo di giustizia di Milano il fronte contrario era compatto. In quelle settimane una sola toga milanese ha detto pubblicamente che avrebbe votato a favore, ed è lei. Non era l'unica a pensarla così, lo ha detto lei stessa: i colleghi favorevoli ci sono, semplicemente non parlano. Dopo il voto, dentro la magistratura, sono circolati messaggi che invitavano chi si era speso per il sì a togliersi la toga. Oggi dice di non essere iscritta ad alcuna corrente né all'Associazione nazionale magistrati. Alla domanda se quello che le sta accadendo abbia a che fare con la sua posizione pubblica, risponde che si augura di no."
+      ],
+      [
+        "h3",
+        "Chi decide quando escono le carte"
+      ],
+      [
+        "p",
+        "In fila: un trasferimento deliberato, un rinvio mai spiegato e comunicato all'interessata solo a decisione presa, un lutto, una lettera che contesta quel rinvio. E subito dopo la parola falso, che entra nella circolazione pubblica senza che nessun atto la confermi, insieme a documenti privati usciti da uffici dello Stato."
+      ],
+      [
+        "p",
+        "Su una cosa sola prendo posizione, e riguarda le carte. Chi le ha fatte uscire ha scelto cosa far sapere, quando e di chi. È un potere che non sta scritto in nessuna norma e che non risponde a nessuno. In una vicenda in cui resta da accertare se un reato esista, l'unico fatto certo è che il fascicolo personale di una persona è stato letto da chi non doveva. La domanda, allora, non riguarda soltanto lei: se dentro un ufficio giudiziario le carte di una persona possono uscire così, chi decide quando esce la tua?"
+      ]
+    ],
+    "fonti": [
+      [
+        "la Repubblica, prima ricostruzione della vicenda, ottobre 2026",
+        ""
+      ],
+      [
+        "Corriere della Sera, pubblicazione delle comunicazioni fra la magistrata e il ministero, 9 ottobre 2026",
+        ""
+      ],
+      [
+        "il Giornale, «Magistrato chiede il trasferimento usando la 104: ma la madre era già morta»",
+        "https://www.ilgiornale.it/news/attualita/magistrato-chiede-il-trasferimento-usando-la-104-ma-la-madre-era-gia-morta/"
+      ],
+      [
+        "il Riformista, intervista ad Anna Ferrari",
+        "https://www.ilriformista.it/ferrari-io-caregiver-di-mia-mamma-ho-diritto-al-trasferimento-non-sono-iscritta-a-correnti-o-anm-dovevo-rivolgermi-a-palamara-533731/"
+      ]
+    ],
+    "nota": "Alla data di pubblicazione non risulta alcun atto ufficiale che confermi l'esistenza di un procedimento penale, né chi lo avrebbe sollecitato."
+  },
+  {
+    "id": "di-maio-campo-largo-ucraina",
+    "sezione": "Politica italiana",
+    "data": "2026-10-12",
+    "titolo": "Di Maio avverte il campo largo: sull'Ucraina cadono i governi",
+    "sommario": "Alla festa del Foglio, a Firenze, l'ex capo politico del Movimento 5 Stelle mette la coalizione davanti al primo voto europeo sugli aiuti militari a Kiev. Dal Movimento, finora, nessuna replica.",
+    "corpo": [
+      [
+        "p",
+        "Alla festa del Foglio, a Firenze, il 10 ottobre, Luigi Di Maio ha messo davanti al campo largo la domanda che dentro quella coalizione nessuno vuole sentire: se andate al governo, al primo Consiglio europeo, quando arriva sul tavolo il nuovo pacchetto di aiuti a Kiev, armi comprese, cosa votate? Ponete il veto? Su queste cose, ha detto, cadono i governi, e ci si condanna di nuovo all'instabilità."
+      ],
+      [
+        "p",
+        "A dirlo è l'ex capo politico del Movimento 5 Stelle, oggi rappresentante speciale dell'Unione europea per il Golfo. Un uomo che quel Movimento lo ha guidato e che ne è uscito nel giugno 2022 proprio sull'Ucraina, quando il Movimento ha scelto la linea di Giuseppe Conte e lui si è ritrovato minoranza in casa propria. Lo ha ricordato con parole sue: la vera questione, ha detto, è quello che il Movimento pensa sull'Ucraina e sulla politica estera dell'Italia, lui non lo condivide, e se n'è andato anche per questo, anzi soprattutto per questo."
+      ],
+      [
+        "h3",
+        "Lo scenario"
+      ],
+      [
+        "p",
+        "Lo scenario che ha costruito è preciso. Un governo di centrosinistra arriva al primo Consiglio europeo. Sul tavolo c'è il nuovo pacchetto di finanziamento all'Ucraina, che comprende anche lo stanziamento militare. Quel ministro, quel leader, chiunque sia, cosa vota? E se non vota, pone il veto? Di Maio si è risposto da solo: su queste cose cadono i governi. Se c'è un diritto da garantire agli italiani alle prossime elezioni, ha aggiunto, è quello di avere coalizioni che stiano in piedi."
+      ],
+      [
+        "p",
+        "Sulla leadership ha detto che, se un compromesso non si trova, è giusto andare alle primarie, e che sarà interessante vedere le regole, perché da quelle nascerà l'identità della coalizione. Alla stessa festa, lo stesso giorno, Matteo Renzi ha detto che alle primarie voterebbe Elly Schlein e non Conte, e che senza i centristi il campo largo non vince."
+      ],
+      [
+        "h3",
+        "Il voto che arriverà davvero"
+      ],
+      [
+        "p",
+        "La domanda di Di Maio non è un'ipotesi di scuola. L'Unione europea ha già stanziato un prestito da 90 miliardi di euro per sostenere l'Ucraina nel biennio in corso e in quello che viene, di cui circa 60 destinati alla difesa, e il 7 ottobre la Commissione ha erogato oltre 1,2 miliardi per droni, sistemi antidrone e missili. Restano aperti il fabbisogno degli anni successivi e il nodo del prestito fondato sui beni russi immobilizzati. Quel voto, il prossimo governo italiano, se lo troverà davanti sul serio."
+      ],
+      [
+        "p",
+        "E su quel voto la coalizione, oggi, non ha una linea. A settembre Conte ha detto che il Movimento non sottoscriverà mai un programma che preveda di continuare a mandare armi, e il 10 ottobre, dal palco della festa del Manifesto, ha ripetuto che sull'Ucraina non è tutto bianco o nero e che bisogna capire anche le ragioni della controparte. Dallo stesso palco Schlein ha confermato il sostegno a Kiev. L'8 ottobre la Camera ha approvato in via definitiva la nuova legge elettorale, con 227 voti a favore e 164 contrari, e il premio di maggioranza scatta solo per chi supera il 42 per cento. Senza coalizione non si vince, e dentro la coalizione c'è una guerra su cui due alleati la pensano in modo opposto. Dal Movimento, a Di Maio, finora nessuna replica."
+      ],
+      [
+        "h3",
+        "La mia posizione"
+      ],
+      [
+        "p",
+        "Questo campo largo sta andando allo sbaraglio come l'Armata Brancaleone: si discute di primarie, di regole, di chi tiene il bastone del comando, e il nodo vero non è stato nemmeno affrontato. Se n'è accorto perfino Di Maio, che da quel Movimento è uscito quattro anni fa sullo stesso punto, e non è poco. Se per disgrazia dovessero vincere le elezioni, quel governo durerebbe quanto un gatto in tangenziale."
+      ]
+    ],
+    "fonti": [
+      [
+        "Il Foglio, la festa dell'Ottimismo a Firenze, 10 ottobre 2026",
+        "https://www.ilfoglio.it/gli-speciali-del-foglio/2026/10/10/video/luigi-di-maio-con-meloni-litalia-puo-giocare-un-ruolo-nel-golfo-conte-sbaglia-su-kyiv--410250"
+      ],
+      [
+        "Libero Quotidiano, «Su queste cose cadono i governi»",
+        "https://www.liberoquotidiano.it/news/politica/49341934/conte-di-maio-bombarda-m5s-queste-cose-cadono-governi/"
+      ],
+      [
+        "Adnkronos, primarie e nodo Ucraina fra Movimento 5 Stelle e Partito Democratico",
+        "https://www.adnkronos.com/politica/conte-schlein-primarie-m5s-pd_6tW8dbRgDuwYI9yRC1cXJl"
+      ],
+      [
+        "Commissione europea, erogazione di 1,24 miliardi all'Ucraina per droni e missili, 7 ottobre 2026",
+        "https://italy.representation.ec.europa.eu/notizie-ed-eventi/notizie/la-commissione-eroga-124-miliardi-di-eur-allucraina-droni-e-missili-2026-10-07_it"
+      ],
+      [
+        "il Fatto Quotidiano, resoconto della festa del Foglio, 12 ottobre 2026",
+        "https://www.ilfattoquotidiano.it/2026/10/12/di-maio-festa-del-foglio-renzi-m5s-meloni-news/8535211/"
+      ]
+    ]
+  },
+  {
+    "id": "bellinvia-ofria-confisca",
+    "sezione": "Cronaca",
+    "data": "2026-10-12",
+    "titolo": "L'impresa confiscata agli Ofria e quello che dicono le motivazioni",
+    "sommario": "Depositate le motivazioni della sentenza di primo grado sulla Bellinvia, autodemolizioni di Barcellona Pozzo di Gotto sotto confisca dal 2011. Per la giudice l'azienda sarebbe rimasta condizionata dalla famiglia anche dopo i provvedimenti dello Stato.",
+    "corpo": [
+      [
+        "p",
+        "In via Eolie, a Barcellona Pozzo di Gotto, c'è un piazzale di auto da demolire. L'insegna porta ancora il nome di Carmela Bellinvia, la donna a cui l'impresa è intestata dal 1980: rottamazione, ricambi usati, smaltimento di rifiuti anche speciali. Da quindici anni, sulla carta, quell'azienda non appartiene più alla famiglia che l'ha fondata. È stata sequestrata, poi confiscata, poi affidata a un amministratore giudiziario nominato dal tribunale."
+      ],
+      [
+        "p",
+        "Le motivazioni della sentenza di primo grado, depositate in questi giorni, raccontano un'altra cosa. Per la giudice quell'azienda, nonostante i sigilli, non sarebbe mai uscita davvero dall'orbita della famiglia Ofria."
+      ],
+      [
+        "h3",
+        "La sentenza"
+      ],
+      [
+        "p",
+        "La decisione è del 2 aprile 2026 ed è della giudice per l'udienza preliminare di Messina Alessandra Di Fresco, al termine di un processo celebrato con rito abbreviato: 15 condanne e un'assoluzione. Oltre 16 anni a Salvatore Ofria, detenuto al 41 bis e già condannato in via definitiva per associazione mafiosa; 15 anni e 2 mesi al fratello Domenico; oltre 14 anni a Giuseppe; 9 anni a Luisella Alesci. Chiara Ofria è stata assolta dall'accusa di peculato perché il fatto non sussiste. Le pene dei due fratelli variano di qualche mese da una fonte all'altra, e per questo sono indicate qui in forma prudenziale."
+      ],
+      [
+        "p",
+        "L'inchiesta nasce dall'operazione del 14 gennaio 2025, condotta dal Servizio centrale operativo, dalla Squadra mobile di Messina e dal commissariato di Barcellona sotto il coordinamento della Direzione distrettuale antimafia: 15 misure cautelari, 14 in carcere e una ai domiciliari. Fra le parti civili è stata riconosciuta l'Associazione antimafie Rita Atria."
+      ],
+      [
+        "h3",
+        "Che cosa aggiungono le motivazioni"
+      ],
+      [
+        "p",
+        "Nelle motivazioni la giudice descrive un'azienda nella quale Domenico Ofria, Giuseppe Ofria e Luisella Alesci sarebbero stati presenti con regolarità, anche in spazi dai quali avrebbero dovuto restare fuori. Non visite isolate: una presenza continua. Accanto alle presenze, la ricostruzione elenca le disponibilità verso i familiari di persone detenute per reati di mafia. Non minacce, favori: il potere consolidato non ha bisogno di alzare la voce, ha bisogno che si sappia a chi rivolgersi."
+      ],
+      [
+        "p",
+        "C'è poi il capitolo del denaro. Nelle motivazioni compare l'immagine di un borsello nero, che è il modo più diretto per dire che cosa sarebbe stata quella contabilità: una parte degli incassi nei registri ufficiali, una parte fuori, con ricambi venduti senza scritture. Un collaboratore di giustizia ha riferito di una conversazione nella quale si sarebbe parlato di un giro d'affari di 4 o 5 milioni di euro l'anno, accompagnato da una cifra analoga sottratta alla contabilità. È una dichiarazione, riportata da una sola fonte, non un dato accertato."
+      ],
+      [
+        "h3",
+        "Il punto più delicato"
+      ],
+      [
+        "p",
+        "L'amministratore giudiziario dell'impresa, nominato quindici anni fa, è il commercialista catanese Salvatore Virgillito. Nelle motivazioni la giudice ne descrive la condotta in termini molto critici. Ma in questa sentenza Virgillito non è stato giudicato: la sua posizione viaggia in un procedimento separato, è ancora aperta, e lui ha sempre respinto ogni accusa. Allo stesso modo un'altra imputata è stata rinviata a giudizio con rito ordinario e deve ancora essere giudicata."
+      ],
+      [
+        "p",
+        "Tutte le condanne qui richiamate sono di primo grado e non sono definitive. Restano due gradi di giudizio, e i difensori avevano annunciato che avrebbero valutato l'appello proprio dopo la lettura di queste motivazioni. Per chi è imputato in un processo ancora aperto vale la presunzione d'innocenza fino alla sentenza definitiva."
+      ],
+      [
+        "h3",
+        "Di chi è, oggi, quella ditta"
+      ],
+      [
+        "p",
+        "Mettendo in fila quello che risulta: un'impresa confiscata, un amministratore nominato dal tribunale, quindici anni di gestione pubblica e una sentenza di primo grado che, in quegli stessi quindici anni, ricostruisce un'azienda rimasta condizionata da chi avrebbe dovuto starne fuori. Su questo una posizione ce l'ho: una confisca senza un controllo vero non toglie niente a nessuno. Toglie un nome dai documenti e lascia tutto il resto dov'era. E se la ricostruzione della giudice reggerà nei gradi successivi, qui lo Stato è stato proprietario di un'azienda soltanto negli atti."
+      ],
+      [
+        "p",
+        "C'è un ultimo elemento, ed è quello che rende la storia davvero aperta. Nell'ottobre 2024 la Corte di cassazione ha annullato quella confisca, accogliendo la richiesta dei familiari, e ha chiesto che se ne rivalutassero i presupposti. Come sia finita quella rivalutazione, oggi, non risulta pubblicamente. Da una parte una sentenza che racconta un'azienda mai uscita dalle mani di una famiglia, dall'altra una confisca annullata e tutta da riesaminare. La domanda, e non la faccio per insinuare niente, è una sola: di chi è, oggi, quella ditta?"
+      ]
+    ],
+    "fonti": [
+      [
+        "MessinaToday, il contenuto delle motivazioni della sentenza",
+        "https://www.messinatoday.it/cronaca/mafia-barcellona-confisca-ofria-bellinvia-motivazioni.html"
+      ],
+      [
+        "Gazzetta del Sud, le condanne del 2 aprile 2026 e i nomi",
+        "https://messina.gazzettadelsud.it/articoli/cronaca/2026/04/03/limpresa-mafiosa-degli-ofria-decise-pesanti-condanne-tutti-i-nomi-516e5290-88b2-4065-a64e-61a69bf7b390/"
+      ],
+      [
+        "TempoStretto, la sentenza sulla gestione dell'impresa confiscata",
+        "https://www.tempostretto.it/news/gestione-mafiosa-dellimpresa-confiscata-sentenza-per-gli-ofria-di-barcellona.html"
+      ],
+      [
+        "Giornale di Sicilia, gli arresti del 14 gennaio 2025 a Barcellona Pozzo di Gotto e Milazzo",
+        "https://messina.gds.it/articoli/cronaca/2025/01/14/mafia-gli-arrestati-a-barcellona-pozzo-di-gotto-e-milazzo-i-nomi-757f6e4f-61c0-4f56-bc0c-3604fab37e4f/"
+      ]
+    ],
+    "nota": "Il contenuto delle motivazioni è riportato finora da una sola testata, le pene indicate dalle fonti non coincidono per alcuni imputati e la rivalutazione della confisca disposta dalla Cassazione non ha, alla data di pubblicazione, un esito pubblicamente noto."
   }
 ]
