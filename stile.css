@@ -1,0 +1,166 @@
+:root{
+  --carta:#faf8f4;
+  --inchiostro:#1c1a17;
+  --grigio:#6b6559;
+  --filo:#ddd7cb;
+  --rosso:#8a2b1f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --carta:#15140f;
+    --inchiostro:#ece7dd;
+    --grigio:#9a9387;
+    --filo:#332f28;
+    --rosso:#c76a58;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--carta);
+  color:var(--inchiostro);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:18px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.foglio{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* ---- testata ---- */
+header.testata{padding:56px 0 0;text-align:center}
+header.testata h1{
+  margin:0;
+  font-size:clamp(34px,8vw,52px);
+  font-weight:400;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+header.testata h1 a{color:inherit;text-decoration:none}
+header.testata p.occhiello{
+  margin:10px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--grigio);
+}
+header.testata.interna{padding:34px 0 0}
+header.testata.interna h1{font-size:clamp(24px,5vw,30px)}
+
+/* ---- menu ---- */
+nav{
+  margin-top:32px;
+  border-top:1px solid var(--filo);
+  border-bottom:1px solid var(--filo);
+  padding:12px 0;
+  text-align:center;
+}
+nav a{
+  display:inline-block;
+  margin:4px 12px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--inchiostro);
+  border-bottom:1px solid transparent;
+  padding-bottom:2px;
+}
+nav a:hover{border-bottom-color:var(--rosso);color:var(--rosso)}
+nav a.attiva{color:var(--rosso);border-bottom-color:var(--rosso)}
+
+/* ---- righe di servizio ---- */
+.riga{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--grigio);
+}
+.riga .sezione{color:var(--rosso)}
+
+/* ---- apertura ---- */
+.apertura{padding:44px 0 36px;border-bottom:1px solid var(--filo)}
+.apertura h2{
+  margin:12px 0 10px;
+  font-size:clamp(28px,5.5vw,38px);
+  font-weight:400;
+  line-height:1.2;
+}
+.apertura h2 a{color:inherit;text-decoration:none}
+.apertura h2 a:hover{color:var(--rosso)}
+.apertura p{margin:0;color:var(--grigio);font-size:19px}
+
+/* ---- elenco ---- */
+.elenco{padding:8px 0 0}
+article.voce{padding:30px 0;border-bottom:1px solid var(--filo)}
+article.voce h3{margin:10px 0 8px;font-size:24px;font-weight:400;line-height:1.25}
+article.voce h3 a{color:inherit;text-decoration:none}
+article.voce h3 a:hover{color:var(--rosso)}
+article.voce p{margin:0;color:var(--grigio);font-size:17px}
+
+/* ---- pagina di testo e articolo ---- */
+.testo{padding:46px 0 10px}
+.testo h2{
+  margin:14px 0 14px;
+  font-size:clamp(28px,5.5vw,36px);
+  font-weight:400;
+  line-height:1.22;
+}
+.testo h3{
+  margin:38px 0 12px;
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:.02em;
+  color:var(--rosso);
+}
+.testo p{margin:0 0 20px}
+.testo p.sommario{
+  font-size:20px;
+  color:var(--grigio);
+  line-height:1.5;
+  margin-bottom:28px;
+}
+.testo a{color:var(--inchiostro);text-decoration:none;border-bottom:1px solid var(--filo)}
+.testo a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
+
+.fonti{
+  margin:44px 0 0;
+  padding:22px 0 0;
+  border-top:1px solid var(--filo);
+}
+.fonti h4{
+  margin:0 0 10px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:var(--grigio);
+}
+.fonti ol{margin:0;padding-left:20px}
+.fonti li{font-size:15.5px;color:var(--grigio);margin-bottom:7px;line-height:1.5}
+.fonti a{color:var(--grigio)}
+
+.correzione{
+  margin:30px 0 0;
+  padding:16px 18px;
+  border-left:3px solid var(--rosso);
+  background:rgba(138,43,31,.05);
+  font-size:16px;
+  color:var(--grigio);
+}
+
+/* ---- piede ---- */
+footer{padding:44px 0 60px;text-align:center}
+footer p{
+  margin:0 0 10px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12.5px;
+  line-height:1.8;
+  color:var(--grigio);
+}
+footer a{color:var(--grigio);text-decoration:none;border-bottom:1px solid var(--filo)}
+footer a:hover{color:var(--rosso)}
+.gerenza{font-size:11.5px !important;letter-spacing:.04em}
