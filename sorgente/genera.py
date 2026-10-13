@@ -5,7 +5,7 @@ Legge le notizie da sito-sorgente/notizie.json e ricostruisce
 l'intero sito: prima pagina, sezioni, pagine degli articoli e
 pagine fisse. Si lancia con:  python3 genera.py
 """
-import os, html, json, unicodedata
+import os, html, json, unicodedata, hashlib
 
 SORGENTE = "sorgente/notizie.json"
 USCITA   = "."
@@ -27,6 +27,17 @@ DESCRIZIONI = {
     "attualita":         "Quello che succede adesso e merita di essere spiegato.",
     "sicilia":           "L'isola raccontata da dentro, oltre la cronaca di giornata.",
 }
+
+def versione_stile():
+    """Impronta del foglio di stile, così il browser non mostra la versione vecchia."""
+    try:
+        with open("stile.css", "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()[:8]
+    except FileNotFoundError:
+        return "1"
+
+
+VSTILE = versione_stile()
 
 MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno",
         "luglio","agosto","settembre","ottobre","novembre","dicembre"]
@@ -133,7 +144,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{titolo}</title>
-<link rel="stylesheet" href="stile.css">
+<link rel="stylesheet" href="stile.css?v={VSTILE}">
 </head>
 <body>
 <div class="foglio">
