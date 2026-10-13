@@ -27,11 +27,15 @@ body{
 img{max-width:100%;height:auto;display:block}
 .foglio{max-width:720px;margin:0 auto;padding:0 20px}
 
+/* ---- banner ---- */
+.banner{display:block;margin:14px 0 0;line-height:0}
+.banner img{width:100%;border-radius:2px}
+
 /* ---- testata ---- */
-header.testata{padding:44px 0 0;text-align:center}
+header.testata{padding:22px 0 0;text-align:center}
 header.testata h1{
   margin:0;
-  font-size:clamp(32px,7.5vw,46px);
+  font-size:clamp(26px,6vw,36px);
   font-weight:700;
   letter-spacing:.02em;
   text-transform:uppercase;

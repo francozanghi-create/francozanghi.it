@@ -84,6 +84,8 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
 <body>
 <div class="foglio">
 
+  <a class="banner" href="index.html"><img src="immagini/banner.jpg" alt="Scenari Globali — un format audiovisivo di Franco Zanghì" width="1400" height="786"></a>
+
   <header class="{classe}">
     <h1>{nome}</h1>
     {occhiello}
