@@ -37,6 +37,25 @@ def data_estesa(iso):
     return f"{int(g)} {MESI[int(m)-1]} {a}"
 
 
+FIRMA = "di Franco Zanghì"
+DIDASCALIA = ("Immagine generata con l'intelligenza artificiale: "
+              "è una rappresentazione della vicenda, non una fotografia del fatto.")
+
+
+def immagine(n, piccola=False):
+    """Blocco dell'immagine, se la notizia ne ha una."""
+    if not n.get("immagine"):
+        return ""
+    base = n["immagine"]
+    if piccola:
+        return (f'      <a class="figura" href="{n["file"]}">'
+                f'<img src="immagini/{base}-p.jpg" alt="" loading="lazy" width="480" height="320"></a>\n')
+    return (f'    <figure class="figura grande">\n'
+            f'      <img src="immagini/{base}.jpg" alt="" width="1200" height="800">\n'
+            f'      <figcaption>{DIDASCALIA}</figcaption>\n'
+            f'    </figure>\n')
+
+
 def menu(attiva=""):
     cl = ' class="attiva"' if attiva == "home" else ""
     voci = [f'    <a href="index.html"{cl}>Prima pagina</a>']
@@ -98,17 +117,20 @@ def voce(n, apertura=False):
     s = html.escape(n["sommario"])
     d = data_estesa(n["data"])
     f = n["file"]
+    img = immagine(n, piccola=True)
     if apertura:
         return f"""  <section class="apertura">
     <p class="riga"><span class="sezione">{n['sezione']}</span> &nbsp;·&nbsp; {d}</p>
     <h2><a href="{f}">{t}</a></h2>
-    <p>{s}</p>
+{img}    <p>{s}</p>
+    <p class="firma">{FIRMA}</p>
   </section>
 """
     return f"""    <article class="voce">
       <p class="riga"><span class="sezione">{n['sezione']}</span> &nbsp;·&nbsp; {d}</p>
       <h3><a href="{f}">{t}</a></h3>
-      <p>{s}</p>
+{img}      <p>{s}</p>
+      <p class="firma">{FIRMA}</p>
     </article>
 """
 
@@ -169,7 +191,8 @@ for n in notizie:
     corpo = f"""  <section class="testo">
     <p class="riga"><span class="sezione">{n['sezione']}</span> &nbsp;·&nbsp; {data_estesa(n['data'])}</p>
     <h2>{html.escape(n['titolo'])}</h2>
-    <p class="sommario">{html.escape(n['sommario'])}</p>
+{immagine(n)}    <p class="sommario">{html.escape(n['sommario'])}</p>
+    <p class="firma">{FIRMA}</p>
 
 {corpo_testo}
 

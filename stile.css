@@ -1,17 +1,17 @@
 :root{
-  --carta:#faf8f4;
-  --inchiostro:#1c1a17;
-  --grigio:#6b6559;
-  --filo:#ddd7cb;
-  --rosso:#8a2b1f;
+  --carta:#ffffff;
+  --inchiostro:#111418;
+  --grigio:#565c63;
+  --filo:#d9dde2;
+  --rosso:#14456f;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --carta:#15140f;
-    --inchiostro:#ece7dd;
-    --grigio:#9a9387;
-    --filo:#332f28;
-    --rosso:#c76a58;
+    --carta:#101316;
+    --inchiostro:#eceef1;
+    --grigio:#9aa2ab;
+    --filo:#2a2f35;
+    --rosso:#7fb0dc;
   }
 }
 *{box-sizing:border-box}
@@ -24,15 +24,16 @@ body{
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
+img{max-width:100%;height:auto;display:block}
 .foglio{max-width:720px;margin:0 auto;padding:0 20px}
 
 /* ---- testata ---- */
-header.testata{padding:56px 0 0;text-align:center}
+header.testata{padding:44px 0 0;text-align:center}
 header.testata h1{
   margin:0;
-  font-size:clamp(34px,8vw,52px);
-  font-weight:400;
-  letter-spacing:.06em;
+  font-size:clamp(32px,7.5vw,46px);
+  font-weight:700;
+  letter-spacing:.02em;
   text-transform:uppercase;
 }
 header.testata h1 a{color:inherit;text-decoration:none}
@@ -44,12 +45,12 @@ header.testata p.occhiello{
   text-transform:uppercase;
   color:var(--grigio);
 }
-header.testata.interna{padding:34px 0 0}
-header.testata.interna h1{font-size:clamp(24px,5vw,30px)}
+header.testata.interna{padding:28px 0 0}
+header.testata.interna h1{font-size:clamp(22px,5vw,28px)}
 
 /* ---- menu ---- */
 nav{
-  margin-top:32px;
+  margin-top:24px;
   border-top:1px solid var(--filo);
   border-bottom:1px solid var(--filo);
   padding:12px 0;
@@ -73,55 +74,86 @@ nav a.attiva{color:var(--rosso);border-bottom-color:var(--rosso)}
 /* ---- righe di servizio ---- */
 .riga{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size:11.5px;
-  letter-spacing:.14em;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.1em;
   text-transform:uppercase;
   color:var(--grigio);
+  margin:0 0 6px;
 }
 .riga .sezione{color:var(--rosso)}
 
+/* ---- firma ---- */
+.firma{
+  margin:10px 0 0 !important;
+  font-size:15px;
+  font-style:italic;
+  color:var(--grigio);
+}
+
+/* ---- immagini ---- */
+.figura{display:block;margin:14px 0 14px}
+.figura img{width:100%;border-radius:2px}
+figure.figura{margin:16px 0 16px}
+figure.figura figcaption{
+  margin-top:8px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12.5px;
+  line-height:1.45;
+  color:var(--grigio);
+}
+
 /* ---- apertura ---- */
-.apertura{padding:44px 0 36px;border-bottom:1px solid var(--filo)}
+.apertura{padding:34px 0 30px;border-bottom:1px solid var(--filo)}
 .apertura h2{
-  margin:12px 0 10px;
-  font-size:clamp(28px,5.5vw,38px);
-  font-weight:400;
-  line-height:1.2;
+  margin:0 0 4px;
+  font-size:clamp(30px,6.2vw,40px);
+  font-weight:700;
+  line-height:1.14;
+  letter-spacing:-.01em;
 }
 .apertura h2 a{color:inherit;text-decoration:none}
 .apertura h2 a:hover{color:var(--rosso)}
-.apertura p{margin:0;color:var(--grigio);font-size:19px}
+.apertura p{margin:0;color:var(--grigio);font-size:19px;line-height:1.45}
 
 /* ---- elenco ---- */
 .elenco{padding:8px 0 0}
-article.voce{padding:30px 0;border-bottom:1px solid var(--filo)}
-article.voce h3{margin:10px 0 8px;font-size:24px;font-weight:400;line-height:1.25}
+article.voce{padding:28px 0;border-bottom:1px solid var(--filo)}
+article.voce h3{
+  margin:0 0 4px;
+  font-size:26px;
+  font-weight:700;
+  line-height:1.18;
+  letter-spacing:-.01em;
+}
 article.voce h3 a{color:inherit;text-decoration:none}
 article.voce h3 a:hover{color:var(--rosso)}
-article.voce p{margin:0;color:var(--grigio);font-size:17px}
+article.voce p{margin:0;color:var(--grigio);font-size:17px;line-height:1.45}
 
 /* ---- pagina di testo e articolo ---- */
-.testo{padding:46px 0 10px}
+.testo{padding:36px 0 10px}
 .testo h2{
-  margin:14px 0 14px;
-  font-size:clamp(28px,5.5vw,36px);
-  font-weight:400;
-  line-height:1.22;
+  margin:0 0 6px;
+  font-size:clamp(30px,6vw,40px);
+  font-weight:700;
+  line-height:1.14;
+  letter-spacing:-.01em;
 }
 .testo h3{
-  margin:38px 0 12px;
-  font-size:20px;
-  font-weight:400;
-  letter-spacing:.02em;
-  color:var(--rosso);
+  margin:36px 0 12px;
+  font-size:21px;
+  font-weight:700;
+  letter-spacing:.01em;
+  color:var(--inchiostro);
 }
 .testo p{margin:0 0 20px}
 .testo p.sommario{
   font-size:20px;
   color:var(--grigio);
   line-height:1.5;
-  margin-bottom:28px;
+  margin:0 0 10px;
 }
+.testo p.firma{margin-bottom:28px !important}
 .testo a{color:var(--inchiostro);text-decoration:none;border-bottom:1px solid var(--filo)}
 .testo a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
 
@@ -136,7 +168,7 @@ article.voce p{margin:0;color:var(--grigio);font-size:17px}
   font-size:11.5px;
   letter-spacing:.14em;
   text-transform:uppercase;
-  font-weight:600;
+  font-weight:700;
   color:var(--grigio);
 }
 .fonti ol{margin:0;padding-left:20px}
@@ -147,7 +179,7 @@ article.voce p{margin:0;color:var(--grigio);font-size:17px}
   margin:30px 0 0;
   padding:16px 18px;
   border-left:3px solid var(--rosso);
-  background:rgba(138,43,31,.05);
+  background:rgba(20,69,111,.06);
   font-size:16px;
   color:var(--grigio);
 }
