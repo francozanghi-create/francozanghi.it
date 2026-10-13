@@ -92,9 +92,10 @@ def scheda_video(v, grande=False):
     classe = "video grande" if grande else "video"
     return f"""      <div class="{classe}">
         <button class="avvia" data-id="{v['id']}" aria-label="Avvia il video">
-          <span class="titolo">{t}</span>
+          <img src="immagini/video/{v['id']}.jpg" alt="" loading="lazy" width="320" height="180">
           <span class="triangolo" aria-hidden="true"></span>
         </button>
+        <p class="titolo">{t}</p>
         <p class="fuori"><a href="https://www.youtube.com/watch?v={v['id']}" rel="noopener">Guarda su YouTube</a></p>
       </div>
 """
@@ -110,9 +111,10 @@ def riquadro_notizia(n, video_per_id):
     return f"""    <aside class="videonotizia">
       <p class="riga">Guarda la video notizia</p>
       <button class="avvia" data-id="{v['id']}" aria-label="Avvia il video">
-        <span class="titolo">{t}</span>
+        <img src="immagini/video/{v['id']}.jpg" alt="" loading="lazy" width="320" height="180">
         <span class="triangolo" aria-hidden="true"></span>
       </button>
+      <p class="titolo">{t}</p>
       <p class="fuori"><a href="https://www.youtube.com/watch?v={v['id']}" rel="noopener">Guarda su YouTube</a></p>
     </aside>
 """
