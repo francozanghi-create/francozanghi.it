@@ -56,12 +56,66 @@ def immagine(n, piccola=False):
             f'    </figure>\n')
 
 
+SCRIPT = """<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest(".avvia");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var c = document.createElement("div");
+  c.className = "riquadro";
+  var f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+  f.title = "Video";
+  f.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+  f.referrerPolicy = "no-referrer";
+  f.setAttribute("allowfullscreen", "");
+  c.appendChild(f);
+  b.parentNode.replaceChild(c, b);
+});
+</script>
+"""
+
+
+def scheda_video(v, grande=False):
+    """Riquadro di un video: anteprima locale, il riquadro parte solo al clic."""
+    t = html.escape(v["titolo"])
+    classe = "video grande" if grande else "video"
+    return f"""      <div class="{classe}">
+        <button class="avvia" data-id="{v['id']}" aria-label="Avvia il video">
+          <span class="titolo">{t}</span>
+          <span class="triangolo" aria-hidden="true"></span>
+        </button>
+        <p class="fuori"><a href="https://www.youtube.com/watch?v={v['id']}" rel="noopener">Guarda su YouTube</a></p>
+      </div>
+"""
+
+
+def riquadro_notizia(n, video_per_id):
+    """Riquadro «Guarda la video notizia» dentro la pagina dell'articolo."""
+    vid = n.get("video")
+    if not vid or vid not in video_per_id:
+        return ""
+    v = video_per_id[vid]
+    t = html.escape(v["titolo"])
+    return f"""    <aside class="videonotizia">
+      <p class="riga">Guarda la video notizia</p>
+      <button class="avvia" data-id="{v['id']}" aria-label="Avvia il video">
+        <span class="titolo">{t}</span>
+        <span class="triangolo" aria-hidden="true"></span>
+      </button>
+      <p class="fuori"><a href="https://www.youtube.com/watch?v={v['id']}" rel="noopener">Guarda su YouTube</a></p>
+    </aside>
+"""
+
+
 def menu(attiva=""):
     cl = ' class="attiva"' if attiva == "home" else ""
     voci = [f'    <a href="index.html"{cl}>Prima pagina</a>']
     for slug, nome in SEZIONI:
         cl = ' class="attiva"' if slug == attiva else ""
         voci.append(f'    <a href="{slug}.html"{cl}>{nome}</a>')
+    cl = ' class="attiva"' if attiva == "video" else ""
+    voci.append(f'    <a href="video.html"{cl}>Video</a>')
     cl = ' class="attiva"' if attiva == "chi-sono" else ""
     voci.append(f'    <a href="chi-sono.html"{cl}>Chi sono</a>')
     return "\n".join(voci)
@@ -109,7 +163,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
   </footer>
 
 </div>
-</body>
+{SCRIPT}</body>
 </html>
 """
 
@@ -148,6 +202,13 @@ def scrivi(nome, contenuto):
 # ------------------------------------------------------------------
 with open(SORGENTE, encoding="utf-8") as f:
     notizie = json.load(f)
+
+try:
+    with open("sorgente/video.json", encoding="utf-8") as f:
+        elenco_video = json.load(f)
+except FileNotFoundError:
+    elenco_video = []
+VIDEO_PER_ID = {v["id"]: v for v in elenco_video}
 
 for n in notizie:
     n["file"] = n["id"] + ".html"
@@ -195,6 +256,7 @@ for n in notizie:
     <h2>{html.escape(n['titolo'])}</h2>
 {immagine(n)}    <p class="sommario">{html.escape(n['sommario'])}</p>
     <p class="firma">{FIRMA}</p>
+{riquadro_notizia(n, VIDEO_PER_ID)}
 
 {corpo_testo}
 
@@ -235,6 +297,36 @@ for slug, nome in SEZIONI:
         corpo += '    <article class="voce"><p>Nessun articolo in questa sezione.</p></article>\n'
     corpo += "  </div>\n"
     scrivi(f"{slug}.html", pagina(f"{nome} — Franco Zanghì", corpo, attiva=slug))
+
+# ------------------------------------------------------------------
+# pagina dei video
+# ------------------------------------------------------------------
+lunghi = [v for v in elenco_video if v.get("tipo") != "short"]
+corti  = [v for v in elenco_video if v.get("tipo") == "short"]
+corpo = """  <section class="testo">
+    <h2>Video</h2>
+    <p class="sommario">Le video notizie e le serie del canale. Il video parte dentro questa pagina solo quando lo avvii tu: finché non clicchi, verso YouTube non parte nulla.</p>
+  </section>
+
+  <div class="elencovideo">
+
+"""
+for v in lunghi:
+    corpo += scheda_video(v) + "\n"
+corpo += "  </div>\n"
+if corti:
+    corpo += """
+  <section class="testo">
+    <h3>Brevi</h3>
+  </section>
+
+  <div class="elencovideo">
+
+"""
+    for v in corti:
+        corpo += scheda_video(v) + "\n"
+    corpo += "  </div>\n"
+scrivi("video.html", pagina("Video — Franco Zanghì", corpo, attiva="video"))
 
 # ------------------------------------------------------------------
 # pagine fisse
@@ -304,6 +396,9 @@ dati = """  <section class="testo">
 
     <h3>Strumenti di tracciamento</h3>
     <p>Questo sito non utilizza strumenti di tracciamento della navigazione n&eacute; sistemi di misurazione del pubblico di terze parti, e non ospita pubblicit&agrave;.</p>
+
+    <h3>Video</h3>
+    <p>Nella pagina dei video, e in fondo ad alcuni articoli, i video sono ospitati su YouTube. Finch&eacute; non avvii un video, la pagina non contatta YouTube e non carica nulla da quel servizio: vedi soltanto un riquadro con il titolo, scritto in questa pagina. Quando clicchi per avviare, parte il lettore di YouTube in versione senza cookie di profilazione, e da quel momento YouTube pu&ograve; registrare dati sulla tua visione, secondo le proprie condizioni. Se preferisci, il collegamento accanto a ogni video ti porta a guardarlo direttamente sul suo canale.</p>
 
     <h3>I tuoi diritti</h3>
     <p>Puoi chiedere in qualsiasi momento di accedere ai dati che ti riguardano, di correggerli o di cancellarli, scrivendo all'indirizzo indicato sopra.</p>

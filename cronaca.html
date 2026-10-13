@@ -23,6 +23,7 @@
     <a href="cronaca.html" class="attiva">Cronaca</a>
     <a href="attualita.html">Attualità</a>
     <a href="sicilia.html">Sicilia</a>
+    <a href="video.html">Video</a>
     <a href="chi-sono.html">Chi sono</a>
   </nav>
 
@@ -64,5 +65,22 @@
   </footer>
 
 </div>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest(".avvia");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var c = document.createElement("div");
+  c.className = "riquadro";
+  var f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+  f.title = "Video";
+  f.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+  f.referrerPolicy = "no-referrer";
+  f.setAttribute("allowfullscreen", "");
+  c.appendChild(f);
+  b.parentNode.replaceChild(c, b);
+});
+</script>
 </body>
 </html>

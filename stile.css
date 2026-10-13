@@ -200,3 +200,72 @@ footer p{
 footer a{color:var(--grigio);text-decoration:none;border-bottom:1px solid var(--filo)}
 footer a:hover{color:var(--rosso)}
 .gerenza{font-size:11.5px !important;letter-spacing:.04em}
+
+/* ---- video ---- */
+.elencovideo{display:grid;grid-template-columns:1fr 1fr;gap:26px 22px;padding:10px 0 20px}
+@media (max-width:620px){ .elencovideo{grid-template-columns:1fr} }
+.video .avvia,
+.videonotizia .avvia{
+  position:relative;
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  border:1px solid var(--filo);
+  border-radius:2px;
+  background:linear-gradient(160deg,#11171d 0%,#1d2a36 55%,#121a22 100%);
+  color:#fff;
+  text-align:left;
+  padding:16px 18px 42px;
+  cursor:pointer;
+  font-family:Georgia,"Times New Roman",serif;
+  overflow:hidden;
+}
+.video .avvia:hover,
+.videonotizia .avvia:hover{border-color:var(--rosso)}
+.video .titolo,
+.videonotizia .titolo{
+  display:block;
+  font-size:17px;
+  line-height:1.25;
+  font-weight:700;
+  max-height:4.9em;
+  overflow:hidden;
+}
+.video .triangolo,
+.videonotizia .triangolo{
+  position:absolute;
+  left:18px;
+  bottom:14px;
+  width:0;height:0;
+  border-top:9px solid transparent;
+  border-bottom:9px solid transparent;
+  border-left:15px solid #fff;
+  opacity:.9;
+}
+.video p.fuori,
+.videonotizia p.fuori{
+  margin:8px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12.5px;
+}
+.video p.fuori a,
+.videonotizia p.fuori a{color:var(--grigio);text-decoration:none;border-bottom:1px solid var(--filo)}
+.riquadro{position:relative;width:100%;aspect-ratio:16/9;border-radius:2px;overflow:hidden;background:#000}
+.riquadro iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* riquadro della video notizia dentro l'articolo */
+.videonotizia{
+  margin:4px 0 26px;
+  padding:16px 0 0;
+  border-top:1px solid var(--filo);
+}
+.videonotizia .riga{margin:0 0 10px}
+@media (min-width:860px){
+  .videonotizia{
+    float:right;
+    width:300px;
+    margin:6px -220px 18px 26px;
+    padding-top:0;
+    border-top:0;
+  }
+}

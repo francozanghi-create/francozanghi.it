@@ -23,6 +23,7 @@
     <a href="cronaca.html">Cronaca</a>
     <a href="attualita.html">Attualità</a>
     <a href="sicilia.html">Sicilia</a>
+    <a href="video.html">Video</a>
     <a href="chi-sono.html">Chi sono</a>
   </nav>
 
@@ -40,6 +41,9 @@
 
     <h3>Strumenti di tracciamento</h3>
     <p>Questo sito non utilizza strumenti di tracciamento della navigazione n&eacute; sistemi di misurazione del pubblico di terze parti, e non ospita pubblicit&agrave;.</p>
+
+    <h3>Video</h3>
+    <p>Nella pagina dei video, e in fondo ad alcuni articoli, i video sono ospitati su YouTube. Finch&eacute; non avvii un video, la pagina non contatta YouTube e non carica nulla da quel servizio: vedi soltanto un riquadro con il titolo, scritto in questa pagina. Quando clicchi per avviare, parte il lettore di YouTube in versione senza cookie di profilazione, e da quel momento YouTube pu&ograve; registrare dati sulla tua visione, secondo le proprie condizioni. Se preferisci, il collegamento accanto a ogni video ti porta a guardarlo direttamente sul suo canale.</p>
 
     <h3>I tuoi diritti</h3>
     <p>Puoi chiedere in qualsiasi momento di accedere ai dati che ti riguardano, di correggerli o di cancellarli, scrivendo all'indirizzo indicato sopra.</p>
@@ -60,5 +64,22 @@
   </footer>
 
 </div>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest(".avvia");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var c = document.createElement("div");
+  c.className = "riquadro";
+  var f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+  f.title = "Video";
+  f.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+  f.referrerPolicy = "no-referrer";
+  f.setAttribute("allowfullscreen", "");
+  c.appendChild(f);
+  b.parentNode.replaceChild(c, b);
+});
+</script>
 </body>
 </html>

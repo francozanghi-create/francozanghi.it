@@ -23,6 +23,7 @@
     <a href="cronaca.html" class="attiva">Cronaca</a>
     <a href="attualita.html">Attualità</a>
     <a href="sicilia.html">Sicilia</a>
+    <a href="video.html">Video</a>
     <a href="chi-sono.html">Chi sono</a>
   </nav>
 
@@ -35,6 +36,7 @@
     </figure>
     <p class="sommario">Una consigliera della Corte d&#x27;Appello di Milano scopre dalla stampa di essere finita in un&#x27;ipotesi di reato. Le sue comunicazioni riservate con il ministero, che riguardano la morte della madre, escono su un quotidiano nazionale.</p>
     <p class="firma">di Franco Zanghì</p>
+
 
     <p>Alla fine dell&#x27;estate, su una scrivania del palazzo di giustizia di Milano, arriva una carta che comunica a una consigliera della Corte d&#x27;Appello che dal suo ufficio non si muoverà fino a febbraio. È un atto amministrativo, di quelli che in un tribunale passano a decine. Da lì, in poche settimane, è nata una vicenda finita sui giornali nazionali: una magistrata che ha saputo dalla stampa di essere finita in un&#x27;ipotesi di reato, e i documenti sulla morte di sua madre pubblicati su un quotidiano.</p>
 
@@ -89,5 +91,22 @@
   </footer>
 
 </div>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest(".avvia");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var c = document.createElement("div");
+  c.className = "riquadro";
+  var f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+  f.title = "Video";
+  f.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+  f.referrerPolicy = "no-referrer";
+  f.setAttribute("allowfullscreen", "");
+  c.appendChild(f);
+  b.parentNode.replaceChild(c, b);
+});
+</script>
 </body>
 </html>

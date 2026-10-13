@@ -23,6 +23,7 @@
     <a href="cronaca.html">Cronaca</a>
     <a href="attualita.html">Attualità</a>
     <a href="sicilia.html" class="attiva">Sicilia</a>
+    <a href="video.html">Video</a>
     <a href="chi-sono.html">Chi sono</a>
   </nav>
 
@@ -35,6 +36,7 @@
     </figure>
     <p class="sommario">Due trombe marine hanno colpito Marsala e Petrosino il 9 ottobre. Nessun morto, una scuola elementare distrutta con 273 bambini dentro. Sull&#x27;attribuzione al riscaldamento globale le fonti scientifiche dicono qualcosa di più preciso di quanto si è letto in quelle ore.</p>
     <p class="firma">di Franco Zanghì</p>
+
 
     <p>Venerdì 9 ottobre, davanti al porto di Marsala, almeno due trombe marine si sono formate sotto la stessa cella temporalesca, hanno raggiunto la costa e sono entrate nell&#x27;entroterra. Hanno colpito le contrade a sud della città, Terrenove Bambina, Strasatti, Santo Padre delle Perriere, e il territorio di Petrosino. Alcune fonti riferiscono fino a quattro avvistamenti di vortici nello stesso settore costiero, ma il conteggio definitivo e la ricostruzione delle traiettorie non erano stabiliti.</p>
 
@@ -88,5 +90,22 @@
   </footer>
 
 </div>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest(".avvia");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var c = document.createElement("div");
+  c.className = "riquadro";
+  var f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+  f.title = "Video";
+  f.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+  f.referrerPolicy = "no-referrer";
+  f.setAttribute("allowfullscreen", "");
+  c.appendChild(f);
+  b.parentNode.replaceChild(c, b);
+});
+</script>
 </body>
 </html>
