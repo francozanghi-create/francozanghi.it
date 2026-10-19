@@ -372,9 +372,28 @@ rettifiche = """  <section class="testo">
 
     <h3>Correzioni pubblicate</h3>
 
-    <p>Nessuna correzione finora.</p>
+__CORREZIONI__
   </section>
 """
+
+_corretti = [n for n in notizie if n.get("correzione")]
+_corretti.sort(key=lambda n: n["correzione"]["data"], reverse=True)
+if _corretti:
+    _righe = []
+    for n in _corretti:
+        _righe.append(
+            '    <p><strong>%s</strong> &mdash; '
+            '<a href="%s.html">%s</a>. %s</p>'
+            % (data_estesa(n["correzione"]["data"]),
+               n["id"],
+               html.escape(n["titolo"]),
+               html.escape(n["correzione"]["testo"]))
+        )
+    _blocco = "\n".join(_righe)
+else:
+    _blocco = "    <p>Nessuna correzione finora.</p>"
+
+rettifiche = rettifiche.replace("__CORREZIONI__", _blocco)
 scrivi("rettifiche.html", pagina("Rettifiche — Franco Zanghì", rettifiche))
 
 contatti = """  <section class="testo">
