@@ -279,10 +279,51 @@ footer a:hover{color:var(--rosso)}
 
 /* ---- colonna di richiamo (spalla) ---- */
 .foglio.larga{max-width:1060px}
-.foglio.larga > .banner,
-.foglio.larga > header.testata,
-.foglio.larga > nav,
 .foglio.larga > footer{max-width:720px;margin-left:auto;margin-right:auto}
+
+/* la cima: riquadro della data a sinistra, striscione a destra */
+.cima{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:start}
+.cima .banner{grid-column:2;margin-top:14px}
+.datario{
+  grid-column:1;
+  padding:22px 24px 0 0;
+  border-right:1px solid var(--filo);
+  text-align:center;
+}
+.datario p{margin:0}
+.datario .giorno{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--rosso);
+}
+.datario .numero{
+  font-size:64px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:-.02em;
+  margin:6px 0 2px;
+}
+.datario .mese{font-size:17px;color:var(--grigio)}
+.datario .ora{
+  margin:14px 0 0;
+  padding:12px 0 0;
+  border-top:1px solid var(--filo);
+  font-size:26px;
+  letter-spacing:.06em;
+  font-variant-numeric:tabular-nums;
+  min-height:38px;
+}
+.datario .luogo{
+  margin:10px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--grigio);
+}
 .doppia{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:start}
 .doppia > .principale{grid-column:2;grid-row:1;min-width:0}
 .spalla{
@@ -330,6 +371,30 @@ footer a:hover{color:var(--rosso)}
 
 @media (max-width:980px){
   .foglio.larga{max-width:720px}
+  .cima{display:block}
+  .cima .banner{margin-top:14px}
+  .datario{
+    border-right:0;
+    border-bottom:1px solid var(--filo);
+    padding:12px 0;
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+    gap:8px;
+    text-align:left;
+  }
+  .datario .numero{font-size:17px;font-weight:400;margin:0;color:var(--grigio)}
+  .datario .mese{font-size:17px}
+  .datario .ora{
+    font-size:17px;
+    margin:0;
+    padding:0 0 0 8px;
+    border-top:0;
+    border-left:1px solid var(--filo);
+    min-height:0;
+    color:var(--grigio);
+  }
+  .datario .luogo{display:none}
   .doppia{display:block}
   .spalla{
     border-right:0;

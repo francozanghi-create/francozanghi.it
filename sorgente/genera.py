@@ -5,7 +5,7 @@ Legge le notizie da sito-sorgente/notizie.json e ricostruisce
 l'intero sito: prima pagina, sezioni, pagine degli articoli e
 pagine fisse. Si lancia con:  python3 genera.py
 """
-import os, html, json, unicodedata, hashlib
+import os, html, json, unicodedata, hashlib, datetime
 
 SORGENTE = "sorgente/notizie.json"
 USCITA   = "."
@@ -223,6 +223,59 @@ def spalla(elenco_notizie, elenco_video, giro=0):
     return "".join(pezzi)
 
 
+GIORNI = ["domenica","luned\u00ec","marted\u00ec","mercoled\u00ec",
+          "gioved\u00ec","venerd\u00ec","sabato"]
+
+
+def datario():
+    """Riquadro della data accanto alla testata. Il programma scrive
+    il giorno della costruzione; nel navigatore lo aggiorna l'orologio."""
+    oggi = datetime.date.today()
+    return f"""    <aside class="datario">
+      <p class="giorno" id="d-giorno">{GIORNI[(oggi.weekday() + 1) % 7]}</p>
+      <p class="numero" id="d-numero">{oggi.day}</p>
+      <p class="mese" id="d-mese">{MESI[oggi.month - 1]} {oggi.year}</p>
+      <p class="ora" id="d-ora">&nbsp;</p>
+      <p class="luogo">Patti, Sicilia</p>
+    </aside>
+"""
+
+
+OROLOGIO = """<script>
+(function () {
+  var giorni = ["domenica","luned\u00ec","marted\u00ec","mercoled\u00ec",
+                "gioved\u00ec","venerd\u00ec","sabato"];
+  var mesi = ["gennaio","febbraio","marzo","aprile","maggio","giugno",
+              "luglio","agosto","settembre","ottobre","novembre","dicembre"];
+  function pezzi() {
+    try {
+      var f = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Rome", year: "numeric", month: "numeric",
+        day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
+      var o = {};
+      f.formatToParts(new Date()).forEach(function (p) { o[p.type] = p.value; });
+      return o;
+    } catch (e) { return null; }
+  }
+  function scrivi() {
+    var o = pezzi();
+    if (!o) return;
+    var a = +o.year, m = +o.month, g = +o.day;
+    var s = new Date(Date.UTC(a, m - 1, g)).getUTCDay();
+    var e = document.getElementById("d-giorno");
+    if (!e) return;
+    e.textContent = giorni[s];
+    document.getElementById("d-numero").textContent = g;
+    document.getElementById("d-mese").textContent = mesi[m - 1] + " " + a;
+    document.getElementById("d-ora").textContent = o.hour + ":" + o.minute;
+  }
+  scrivi();
+  setInterval(scrivi, 20000);
+})();
+</script>
+"""
+
+
 def menu(attiva=""):
     cl = ' class="attiva"' if attiva == "home" else ""
     voci = [f'    <a href="index.html"{cl}>Prima pagina</a>']
@@ -245,6 +298,14 @@ def pagina(titolo, corpo, attiva="", iniziale=False, colonna=""):
                   + colonna + '  </div>\n')
     else:
         blocco = corpo
+    striscione = ('  <a class="banner" href="index.html">'
+                  '<img src="immagini/banner.jpg" '
+                  'alt="Scenari Globali \u2014 un format audiovisivo di Franco Zangh\u00ec" '
+                  'width="1400" height="786"></a>\n')
+    if colonna:
+        cima = '  <div class="cima">\n' + datario() + striscione + '  </div>\n'
+    else:
+        cima = striscione
     nome = ("Franco Zanghì" if iniziale
             else '<a href="index.html">Franco Zanghì</a>')
     occhiello = ('<p class="occhiello">Analisi, cronaca e politica internazionale</p>'
@@ -264,7 +325,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False, colonna=""):
 <body>
 <div class="{foglio}">
 
-  <a class="banner" href="index.html"><img src="immagini/banner.jpg" alt="Scenari Globali — un format audiovisivo di Franco Zanghì" width="1400" height="786"></a>
+{cima}
 
   <header class="{classe}">
     <h1>{nome}</h1>
@@ -290,7 +351,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False, colonna=""):
   </footer>
 
 </div>
-{SCRIPT}{CONTA}</body>
+{SCRIPT}{OROLOGIO if colonna else ''}{CONTA}</body>
 </html>
 """
 
