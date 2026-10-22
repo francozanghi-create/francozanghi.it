@@ -132,7 +132,66 @@ def riquadro_notizia(n, video_per_id):
 """
 
 
-def spalla(elenco_notizie, elenco_video):
+# ------------------------------------------------------------------
+# reclame di Torre Eoliana (attivita' dell'editore)
+# ------------------------------------------------------------------
+NEGOZIO = "https://idroponicadomestica.company.site/"
+
+RECLAME = [
+    {
+        "occhiello": "Offerta lancio",
+        "titolo": "La torre Panarea a prezzo di lancio",
+        "riga": "L'orto verticale che sta su un balcone: si coltiva senza terra, tutto l'anno.",
+        "immagine": "promo-torri.jpg",
+        "dove": "https://idroponicadomestica.company.site/Offerta-lancio-c183793751",
+    },
+    {
+        "occhiello": "Affari con l'usato",
+        "titolo": "Le torri della fiera, garantite",
+        "riga": "Modelli di esposizione, in buone condizioni, a prezzi ridotti finche' ci sono.",
+        "immagine": "promo-usato.jpg",
+        "dove": "https://idroponicadomestica.company.site/AFFARI-CON-LUSATO-FIERA-c167699479",
+    },
+    {
+        "occhiello": "Accessori",
+        "titolo": "Espansioni, moduli e ricambi",
+        "riga": "Livelli in piu', modulo di germinazione, bicchieri, fertilizzante e misuratori.",
+        "immagine": "promo-torri.jpg",
+        "dove": "https://idroponicadomestica.company.site/Accessori-e-elementi-di-espansione-c169873367",
+    },
+]
+
+ALTRI_RECLAME = [
+    ("Il negozio", NEGOZIO),
+    ("Torre Eoliana, il sito", "https://torreeoliana.com/"),
+]
+
+
+def reclame(giro=0):
+    """Riquadro a pagamento dell'editore: dichiarato, separato dalle notizie."""
+    r = RECLAME[giro % len(RECLAME)]
+    fuori = 'target="_blank" rel="sponsored noopener"'
+    altri = "".join(
+        f'      <li><a href="{d}" {fuori}>{html.escape(t)}</a></li>\n'
+        for t, d in ALTRI_RECLAME
+        if d != r["dove"]
+    )
+    return f"""    <div class="reclame">
+      <p class="cappello avviso">Pubblicità</p>
+      <a class="offerta" href="{r['dove']}" {fuori}>
+        <img src="immagini/{r['immagine']}" alt="" loading="lazy" width="480" height="320">
+        <span class="dove">{html.escape(r['occhiello'])}</span>
+        <span class="titolo">{html.escape(r['titolo'])}</span>
+        <span class="riga">{html.escape(r['riga'])}</span>
+      </a>
+      <ul class="altri">
+{altri}      </ul>
+      <p class="nota">Torre Eoliana è un’attività dell’editore di questo sito.</p>
+    </div>
+"""
+
+
+def spalla(elenco_notizie, elenco_video, giro=0):
     """Colonna di sinistra: richiami alle notizie e ai video."""
     t_notizie = "Le pi\u00f9 lette" if PIU_LETTE else "Le ultime notizie"
     t_video   = "I video pi\u00f9 visti" if PIU_LETTE else "Gli ultimi video"
@@ -148,6 +207,7 @@ def spalla(elenco_notizie, elenco_video):
                          f'<span class="dove">{html.escape(n["sezione"])}</span>'
                          f'<span class="titolo">{html.escape(n["titolo"])}</span></a></li>\n')
         pezzi.append('    </ul>\n')
+    pezzi.append(reclame(giro))
     lunghi = [v for v in elenco_video if v.get("tipo") != "short"][:4]
     if lunghi:
         pezzi.append(f'    <h4 class="cappello">{t_video}</h4>\n    <ul class="richiami">\n')
@@ -342,14 +402,14 @@ if notizie:
     corpo += "  </div>\n"
 else:
     corpo = '  <section class="testo"><p>Nessun articolo pubblicato.</p></section>\n'
-COLONNA = spalla(notizie, elenco_video)
+COLONNA = spalla(notizie, elenco_video, 0)
 scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=True,
                             colonna=COLONNA))
 
 # ------------------------------------------------------------------
 # pagine di sezione
 # ------------------------------------------------------------------
-for slug, nome in SEZIONI:
+for _giro, (slug, nome) in enumerate(SEZIONI):
     pezzi = [n for n in notizie if n["sezione"] == nome]
     corpo = f"""  <section class="testo">
     <h2>{nome}</h2>
@@ -366,7 +426,7 @@ for slug, nome in SEZIONI:
         corpo += '    <article class="voce"><p>Nessun articolo in questa sezione.</p></article>\n'
     corpo += "  </div>\n"
     scrivi(f"{slug}.html", pagina(f"{nome} — Franco Zanghì", corpo, attiva=slug,
-                                  colonna=COLONNA))
+                                  colonna=spalla(notizie, elenco_video, _giro + 1)))
 
 # ------------------------------------------------------------------
 # pagina dei video
@@ -484,7 +544,7 @@ dati = """  <section class="testo">
     <p>Se mi scrivi un messaggio di posta elettronica, il tuo indirizzo e il contenuto del messaggio vengono conservati per il tempo necessario a rispondere e a dare seguito alla corrispondenza. Non vengono comunicati ad altri n&eacute; usati per invii di altro genere.</p>
 
     <h3>Misurazione delle visite</h3>
-    <p>Questo sito conta le pagine lette con GoatCounter, un contatore che non usa cookie, non salva l'indirizzo di rete del visitatore e non costruisce profili. Vengono registrati soltanto dati aggregati: la pagina vista, il giorno e l'ora, il sito di provenienza, il tipo di navigatore e di sistema, la lingua, la larghezza dello schermo e il Paese, ricavato dall'indirizzo di rete usato sul momento e non conservato. Il servizio &egrave; gestito da Martin Tournoij, con sede in Irlanda, e i dati sono conservati su server in Finlandia e in Germania. Il sito non ospita pubblicit&agrave; e non utilizza altri strumenti di tracciamento.</p>
+    <p>Questo sito conta le pagine lette con GoatCounter, un contatore che non usa cookie, non salva l'indirizzo di rete del visitatore e non costruisce profili. Vengono registrati soltanto dati aggregati: la pagina vista, il giorno e l'ora, il sito di provenienza, il tipo di navigatore e di sistema, la lingua, la larghezza dello schermo e il Paese, ricavato dall'indirizzo di rete usato sul momento e non conservato. Il servizio &egrave; gestito da Martin Tournoij, con sede in Irlanda, e i dati sono conservati su server in Finlandia e in Germania. Il sito non utilizza altri strumenti di tracciamento.</p>\n    <h3>Spazi pubblicitari</h3>\n    <p>Alcune pagine ospitano un riquadro pubblicitario, dichiarato come tale, che rimanda a Torre Eoliana, un&#8217;attivit&agrave; del titolare di questo sito. &Egrave; un semplice collegamento: non carica immagini n&eacute; codice da altri servizi, non segue il visitatore e non raccoglie dati su di lui. Quello che accade dopo il clic &egrave; regolato dalle condizioni del sito di destinazione.</p>
 
     <h3>Video</h3>
     <p>Nella pagina dei video, e in fondo ad alcuni articoli, i video sono ospitati su YouTube. Finch&eacute; non avvii un video, la pagina non contatta YouTube e non carica nulla da quel servizio: vedi soltanto un riquadro con il titolo, scritto in questa pagina. Quando clicchi per avviare, parte il lettore di YouTube in versione senza cookie di profilazione, e da quel momento YouTube pu&ograve; registrare dati sulla tua visione, secondo le proprie condizioni. Se preferisci, il collegamento accanto a ogni video ti porta a guardarlo direttamente sul suo canale.</p>
@@ -503,6 +563,9 @@ condizioni = """  <section class="testo">
     <p class="sommario">Che cosa si pu&ograve; fare con quello che si legge qui, e di cosa risponde chi scrive.</p>
 
     <p>Questo sito &egrave; pubblicato da Domenico Franco Zangh&igrave;, giornalista, con sede a Patti, in provincia di Messina. Raccoglie gli articoli che firmo come Franco Zangh&igrave;. Non &egrave; un quotidiano, non ha una periodicit&agrave; dichiarata e non riceve contributi pubblici.</p>
+
+    <h3>Pubblicit&agrave;</h3>
+    <p>Alcune pagine ospitano un riquadro pubblicitario, sempre contrassegnato come tale e tenuto separato dagli articoli. Al momento rimanda a Torre Eoliana, un&#8217;attivit&agrave; di cui sono titolare, e questo &egrave; dichiarato dentro il riquadro stesso. La pubblicit&agrave; non influisce sulla scelta degli argomenti n&eacute; su quello che scrivo: nessun inserzionista, me compreso, ha voce sui contenuti.</p>
 
     <h3>I testi</h3>
     <p>Gli articoli sono miei e restano miei. Puoi citarli liberamente, riportando il mio nome e il collegamento alla pagina da cui hai preso la citazione. Non &egrave; consentita la riproduzione integrale di un articolo su un altro sito o in un'altra pubblicazione senza il mio consenso scritto, n&eacute; l'uso dei testi per addestrare sistemi automatici senza accordo.</p>

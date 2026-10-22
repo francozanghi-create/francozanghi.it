@@ -355,3 +355,65 @@ a.segno{
   text-decoration:none;
 }
 a.segno:hover{color:var(--rosso) !important;opacity:1}
+
+/* ---- riquadro pubblicitario ---- */
+.reclame{
+  margin:0 0 34px;
+  padding:16px 0 0;
+  border-top:1px solid var(--filo);
+  border-bottom:1px solid var(--filo);
+  padding-bottom:16px;
+}
+.reclame .avviso{
+  color:var(--grigio);
+  border-bottom:0;
+  padding-bottom:0;
+  margin:0 0 10px;
+  font-size:10.5px;
+  letter-spacing:.2em;
+}
+.reclame .offerta{display:block;text-decoration:none;color:inherit}
+.reclame .offerta img{width:100%;border-radius:2px;margin:0 0 8px}
+.reclame .dove{
+  display:block;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:10.5px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--rosso);
+  margin:0 0 3px;
+}
+.reclame .titolo{display:block;font-size:15.5px;line-height:1.3;font-weight:700}
+.reclame .offerta:hover .titolo{color:var(--rosso)}
+.reclame .riga{
+  display:block;
+  margin:5px 0 0;
+  font-size:14px;
+  line-height:1.4;
+  font-weight:400;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--grigio);
+}
+.reclame .altri{list-style:none;margin:12px 0 0;padding:0}
+.reclame .altri li{margin:0 0 5px}
+.reclame .altri a{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12.5px;
+  color:var(--grigio);
+  text-decoration:none;
+  border-bottom:1px solid var(--filo);
+}
+.reclame .altri a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
+.reclame .nota{
+  margin:14px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11px;
+  line-height:1.4;
+  color:var(--grigio);
+  opacity:.85;
+}
+@media (max-width:980px){
+  .reclame{max-width:420px}
+}
