@@ -329,7 +329,7 @@ def ritorno_su(etichetta, file):
 
 
 def pagina(titolo, corpo, attiva="", iniziale=False, colonna="", ritorno=None):
-    classe = "testata" if iniziale else "testata interna"
+    classe = "testata"
     foglio = "foglio larga" if colonna else "foglio"
     if ritorno:
         corpo = ritorno_su(ritorno[0], ritorno[1]) + corpo
@@ -349,8 +349,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False, colonna="", ritorno=None):
         cima = striscione
     nome = ("Franco Zanghì" if iniziale
             else '<a href="index.html">Franco Zanghì</a>')
-    occhiello = ('<p class="occhiello">Analisi, cronaca e politica internazionale</p>'
-                 if iniziale else "")
+    occhiello = '<p class="occhiello">Analisi, cronaca e politica internazionale</p>'
     return f"""<!doctype html>
 <html lang="it">
 <head>
