@@ -282,11 +282,11 @@ footer a:hover{color:var(--rosso)}
 .foglio.larga > footer{max-width:720px;margin-left:auto;margin-right:auto}
 
 /* la cima: riquadro della data a sinistra, striscione a destra */
-.cima{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:start}
+.cima{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:stretch}
 .cima .banner{grid-column:2;margin-top:14px}
 .datario{
   grid-column:1;
-  padding:22px 24px 0 0;
+  padding:22px 24px 16px 0;
   border-right:1px solid var(--filo);
   text-align:center;
 }
