@@ -249,9 +249,11 @@ def datario():
         <p class="giorno" id="d-giorno">{GIORNI[(oggi.weekday() + 1) % 7]}</p>
         <p class="numero" id="d-numero">{oggi.day}</p>
         <p class="mese" id="d-mese">{MESI[oggi.month - 1]} {oggi.year}</p>
-        <p class="ora" id="d-ora">&nbsp;</p>
       </div>
-      <p class="luogo">Patti, Sicilia</p>
+      <div class="adesso">
+        <p class="ora" id="d-ora">&nbsp;</p>
+        <p class="luogo">Patti, Sicilia</p>
+      </div>
       <div class="canali">
         <p class="cappello">Seguimi</p>
         <ul>
