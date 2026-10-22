@@ -7,6 +7,7 @@
   --almanacco:#14456f;
   --almanacco-testo:#14456f;
   --velo:rgba(20,69,111,.07);
+  --velo-forte:rgba(20,69,111,.14);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -18,6 +19,7 @@
     --almanacco:#16405f;
     --almanacco-testo:#cfe0ef;
     --velo:rgba(127,176,220,.12);
+    --velo-forte:rgba(127,176,220,.22);
   }
 }
 *{box-sizing:border-box}
@@ -68,18 +70,21 @@ nav{
 }
 nav a{
   display:inline-block;
-  margin:4px 12px;
+  margin:4px 3px;
+  padding:8px 14px;
+  border-radius:6px;
+  background:var(--velo);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   font-size:12.5px;
   letter-spacing:.12em;
   text-transform:uppercase;
   text-decoration:none;
   color:var(--inchiostro);
-  border-bottom:1px solid transparent;
-  padding-bottom:2px;
+  transition:background .12s ease, color .12s ease;
 }
-nav a:hover{border-bottom-color:var(--rosso);color:var(--rosso)}
-nav a.attiva{color:var(--rosso);border-bottom-color:var(--rosso)}
+nav a:hover{background:var(--velo-forte);color:var(--rosso)}
+nav a.attiva{background:var(--almanacco);color:#fff}
+nav a.attiva:hover{background:var(--almanacco);color:#fff}
 
 /* ---- righe di servizio ---- */
 .riga{
