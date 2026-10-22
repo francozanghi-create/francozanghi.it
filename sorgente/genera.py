@@ -254,6 +254,7 @@ def datario():
         <p class="ora" id="d-ora">&nbsp;</p>
         <p class="luogo">Patti, Sicilia</p>
       </div>
+      <div class="sigillo"><img src="immagini/segno-180.png" alt="Franco Zanghì" width="64" height="64"></div>
       <div class="canali">
         <p class="cappello">Seguimi</p>
         <ul>

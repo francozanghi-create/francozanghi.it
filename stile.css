@@ -355,6 +355,14 @@ footer a:hover{color:var(--rosso)}
   color:var(--grigio);
 }
 
+/* marchio nella colonna */
+.datario .sigillo{line-height:0;display:flex;justify-content:center}
+.datario .sigillo img{
+  width:64px;
+  height:64px;
+  border-radius:12px;
+}
+
 /* piastrelle dei canali */
 .datario .canali{margin:0;padding:0;border-top:0}
 .datario .canali .cappello{
