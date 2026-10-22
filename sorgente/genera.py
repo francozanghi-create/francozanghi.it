@@ -11,6 +11,14 @@ SORGENTE = "sorgente/notizie.json"
 USCITA   = "."
 POSTA    = "francozanghi@gmail.com"
 
+# pannello delle statistiche e indirizzo del contatore
+STATISTICHE = "https://francozanghi.goatcounter.com"
+CONTATORE   = STATISTICHE + "/count"
+
+# finche' non ci sono abbastanza visite la colonna mostra i piu' recenti.
+# Quando le statistiche bastano si mette True e diventa "Le piu' lette".
+PIU_LETTE = False
+
 SEZIONI = [
     ("geopolitica",       "Geopolitica"),
     ("politica-italiana", "Politica italiana"),
@@ -86,11 +94,15 @@ document.addEventListener("click", function (e) {
 """
 
 
+CONTA = ('<script data-goatcounter="' + CONTATORE +
+         '" async src="//gc.zgo.at/count.js"></script>\n')
+
+
 def scheda_video(v, grande=False):
     """Riquadro di un video: anteprima locale, il riquadro parte solo al clic."""
     t = html.escape(v["titolo"])
     classe = "video grande" if grande else "video"
-    return f"""      <div class="{classe}">
+    return f"""      <div class="{classe}" id="v-{v['id']}">
         <button class="avvia" data-id="{v['id']}" aria-label="Avvia il video">
           <img src="immagini/video/{v['id']}.jpg" alt="" loading="lazy" width="320" height="180">
           <span class="triangolo" aria-hidden="true"></span>
@@ -120,6 +132,37 @@ def riquadro_notizia(n, video_per_id):
 """
 
 
+def spalla(elenco_notizie, elenco_video):
+    """Colonna di sinistra: richiami alle notizie e ai video."""
+    t_notizie = "Le pi\u00f9 lette" if PIU_LETTE else "Le ultime notizie"
+    t_video   = "I video pi\u00f9 visti" if PIU_LETTE else "Gli ultimi video"
+    pezzi = ['  <aside class="spalla">\n']
+    if elenco_notizie:
+        pezzi.append(f'    <h4 class="cappello">{t_notizie}</h4>\n    <ul class="richiami">\n')
+        for n in elenco_notizie[:6]:
+            fig = ""
+            if n.get("immagine"):
+                fig = (f'<img src="immagini/{n["immagine"]}-p.jpg" alt="" '
+                       f'loading="lazy" width="480" height="320">')
+            pezzi.append(f'      <li><a href="{n["file"]}">{fig}'
+                         f'<span class="dove">{html.escape(n["sezione"])}</span>'
+                         f'<span class="titolo">{html.escape(n["titolo"])}</span></a></li>\n')
+        pezzi.append('    </ul>\n')
+    lunghi = [v for v in elenco_video if v.get("tipo") != "short"][:4]
+    if lunghi:
+        pezzi.append(f'    <h4 class="cappello">{t_video}</h4>\n    <ul class="richiami">\n')
+        for v in lunghi:
+            pezzi.append(f'      <li><a href="video.html#v-{v["id"]}">'
+                         f'<img src="immagini/video/{v["id"]}.jpg" alt="" '
+                         f'loading="lazy" width="320" height="180">'
+                         f'<span class="dove">Video</span>'
+                         f'<span class="titolo">{html.escape(v["titolo"])}</span></a></li>\n')
+        pezzi.append('    </ul>\n')
+        pezzi.append('    <p class="tutti"><a href="video.html">Tutti i video</a></p>\n')
+    pezzi.append('  </aside>\n')
+    return "".join(pezzi)
+
+
 def menu(attiva=""):
     cl = ' class="attiva"' if attiva == "home" else ""
     voci = [f'    <a href="index.html"{cl}>Prima pagina</a>']
@@ -133,8 +176,15 @@ def menu(attiva=""):
     return "\n".join(voci)
 
 
-def pagina(titolo, corpo, attiva="", iniziale=False):
+def pagina(titolo, corpo, attiva="", iniziale=False, colonna=""):
     classe = "testata" if iniziale else "testata interna"
+    foglio = "foglio larga" if colonna else "foglio"
+    if colonna:
+        blocco = ('  <div class="doppia">\n'
+                  '  <main class="principale">\n' + corpo + '  </main>\n'
+                  + colonna + '  </div>\n')
+    else:
+        blocco = corpo
     nome = ("Franco Zanghì" if iniziale
             else '<a href="index.html">Franco Zanghì</a>')
     occhiello = ('<p class="occhiello">Analisi, cronaca e politica internazionale</p>'
@@ -146,9 +196,13 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{titolo}</title>
 <link rel="stylesheet" href="stile.css?v={VSTILE}">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="immagini/segno-32.png">
+<link rel="apple-touch-icon" href="immagini/segno-180.png">
+<meta name="theme-color" content="#14456f">
 </head>
 <body>
-<div class="foglio">
+<div class="{foglio}">
 
   <a class="banner" href="index.html"><img src="immagini/banner.jpg" alt="Scenari Globali — un format audiovisivo di Franco Zanghì" width="1400" height="786"></a>
 
@@ -161,7 +215,7 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
 {menu(attiva)}
   </nav>
 
-{corpo}
+{blocco}
 
   <footer>
     <p>
@@ -171,12 +225,12 @@ def pagina(titolo, corpo, attiva="", iniziale=False):
       <a href="condizioni.html">Condizioni d'uso</a>
     </p>
     <p class="gerenza">
-      francozanghi.it — Domenico Franco Zanghì, Patti (Messina) — <a href="mailto:{POSTA}">{POSTA}</a>
+      francozanghi.it — Domenico Franco Zanghì, Patti (Messina) — <a href="mailto:{POSTA}">{POSTA}</a><a class="segno" href="{STATISTICHE}" rel="noopener" title="Statistiche" aria-label="Statistiche">·</a>
     </p>
   </footer>
 
 </div>
-{SCRIPT}</body>
+{SCRIPT}{CONTA}</body>
 </html>
 """
 
@@ -288,7 +342,9 @@ if notizie:
     corpo += "  </div>\n"
 else:
     corpo = '  <section class="testo"><p>Nessun articolo pubblicato.</p></section>\n'
-scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=True))
+COLONNA = spalla(notizie, elenco_video)
+scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=True,
+                            colonna=COLONNA))
 
 # ------------------------------------------------------------------
 # pagine di sezione
@@ -309,7 +365,8 @@ for slug, nome in SEZIONI:
     else:
         corpo += '    <article class="voce"><p>Nessun articolo in questa sezione.</p></article>\n'
     corpo += "  </div>\n"
-    scrivi(f"{slug}.html", pagina(f"{nome} — Franco Zanghì", corpo, attiva=slug))
+    scrivi(f"{slug}.html", pagina(f"{nome} — Franco Zanghì", corpo, attiva=slug,
+                                  colonna=COLONNA))
 
 # ------------------------------------------------------------------
 # pagina dei video
@@ -426,8 +483,8 @@ dati = """  <section class="testo">
     <h3>Dati forniti volontariamente</h3>
     <p>Se mi scrivi un messaggio di posta elettronica, il tuo indirizzo e il contenuto del messaggio vengono conservati per il tempo necessario a rispondere e a dare seguito alla corrispondenza. Non vengono comunicati ad altri n&eacute; usati per invii di altro genere.</p>
 
-    <h3>Strumenti di tracciamento</h3>
-    <p>Questo sito non utilizza strumenti di tracciamento della navigazione n&eacute; sistemi di misurazione del pubblico di terze parti, e non ospita pubblicit&agrave;.</p>
+    <h3>Misurazione delle visite</h3>
+    <p>Questo sito conta le pagine lette con GoatCounter, un contatore che non usa cookie, non salva l'indirizzo di rete del visitatore e non costruisce profili. Vengono registrati soltanto dati aggregati: la pagina vista, il giorno e l'ora, il sito di provenienza, il tipo di navigatore e di sistema, la lingua, la larghezza dello schermo e il Paese, ricavato dall'indirizzo di rete usato sul momento e non conservato. Il servizio &egrave; gestito da Martin Tournoij, con sede in Irlanda, e i dati sono conservati su server in Finlandia e in Germania. Il sito non ospita pubblicit&agrave; e non utilizza altri strumenti di tracciamento.</p>
 
     <h3>Video</h3>
     <p>Nella pagina dei video, e in fondo ad alcuni articoli, i video sono ospitati su YouTube. Finch&eacute; non avvii un video, la pagina non contatta YouTube e non carica nulla da quel servizio: vedi soltanto un riquadro con il titolo, scritto in questa pagina. Quando clicchi per avviare, parte il lettore di YouTube in versione senza cookie di profilazione, e da quel momento YouTube pu&ograve; registrare dati sulla tua visione, secondo le proprie condizioni. Se preferisci, il collegamento accanto a ogni video ti porta a guardarlo direttamente sul suo canale.</p>

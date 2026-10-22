@@ -276,3 +276,82 @@ footer a:hover{color:var(--rosso)}
     border-top:0;
   }
 }
+
+/* ---- colonna di richiamo (spalla) ---- */
+.foglio.larga{max-width:1060px}
+.foglio.larga > .banner,
+.foglio.larga > header.testata,
+.foglio.larga > nav,
+.foglio.larga > footer{max-width:720px;margin-left:auto;margin-right:auto}
+.doppia{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:start}
+.doppia > .principale{grid-column:2;grid-row:1;min-width:0}
+.spalla{
+  grid-column:1;grid-row:1;
+  padding:40px 24px 0 0;
+  border-right:1px solid var(--filo);
+}
+.spalla .cappello{
+  margin:0 0 14px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:11.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--rosso);
+  padding-bottom:8px;
+  border-bottom:1px solid var(--filo);
+}
+.spalla .richiami{list-style:none;margin:0 0 34px;padding:0}
+.spalla .richiami li{padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--filo)}
+.spalla .richiami li:last-child{border-bottom:0;margin-bottom:0}
+.spalla .richiami a{display:block;text-decoration:none;color:inherit}
+.spalla .richiami img{width:100%;border-radius:2px;margin:0 0 8px}
+.spalla .dove{
+  display:block;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:10.5px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--grigio);
+  margin:0 0 3px;
+}
+.spalla .titolo{display:block;font-size:15.5px;line-height:1.3;font-weight:700}
+.spalla .richiami a:hover .titolo{color:var(--rosso)}
+.spalla .tutti{
+  margin:-20px 0 34px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.spalla .tutti a{color:var(--grigio);text-decoration:none;border-bottom:1px solid var(--filo)}
+.spalla .tutti a:hover{color:var(--rosso)}
+
+@media (max-width:980px){
+  .foglio.larga{max-width:720px}
+  .doppia{display:block}
+  .spalla{
+    border-right:0;
+    border-top:1px solid var(--filo);
+    margin-top:36px;
+    padding:30px 0 0;
+  }
+  .spalla .richiami{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+  .spalla .richiami li:last-child{border-bottom:1px solid var(--filo)}
+}
+@media (max-width:560px){
+  .spalla .richiami{grid-template-columns:1fr}
+}
+
+/* ---- richiamo discreto alle statistiche ---- */
+a.segno{
+  display:inline-block;
+  margin-left:10px;
+  padding:0 4px;
+  border-bottom:0 !important;
+  color:var(--filo) !important;
+  opacity:.5;
+  text-decoration:none;
+}
+a.segno:hover{color:var(--rosso) !important;opacity:1}
