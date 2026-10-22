@@ -311,9 +311,28 @@ def menu(attiva=""):
     return "\n".join(voci)
 
 
-def pagina(titolo, corpo, attiva="", iniziale=False, colonna=""):
+def insegna(titolo, sommario=""):
+    """Casella del titolo di pagina: fondo pieno e carattere senza grazie,
+    perche' non si confonda con il titolo di una notizia."""
+    riga = f'\n    <p>{sommario}</p>' if sommario else ""
+    return f"""  <div class="insegna">
+    <h2>{titolo}</h2>{riga}
+  </div>
+"""
+
+
+def ritorno_su(etichetta, file):
+    return f"""  <nav class="ritorno sopra">
+    <a class="indietro" href="{file}">Torna a {etichetta}</a>
+  </nav>
+"""
+
+
+def pagina(titolo, corpo, attiva="", iniziale=False, colonna="", ritorno=None):
     classe = "testata" if iniziale else "testata interna"
     foglio = "foglio larga" if colonna else "foglio"
+    if ritorno:
+        corpo = ritorno_su(ritorno[0], ritorno[1]) + corpo
     if colonna:
         blocco = ('  <div class="doppia">\n'
                   '  <main class="principale">\n' + corpo + '  </main>\n'
@@ -482,7 +501,9 @@ for _giro_art, n in enumerate(notizie):
 """
     scrivi(n["file"], pagina(f"{n['titolo']} — Franco Zanghì", corpo,
                              attiva=SLUG_DI.get(n["sezione"], ""),
-                             colonna=spalla(notizie, elenco_video, _giro_art)))
+                             colonna=spalla(notizie, elenco_video, _giro_art),
+                             ritorno=((n["sezione"], f"{_slug}.html") if _slug
+                                      else ("prima pagina", "index.html"))))
 
 # ------------------------------------------------------------------
 # prima pagina
@@ -503,11 +524,7 @@ scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=Tru
 # ------------------------------------------------------------------
 for _giro, (slug, nome) in enumerate(SEZIONI):
     pezzi = [n for n in notizie if n["sezione"] == nome]
-    corpo = f"""  <section class="testo">
-    <h2>{nome}</h2>
-    <p class="sommario">{DESCRIZIONI[slug]}</p>
-  </section>
-
+    corpo = insegna(nome, DESCRIZIONI[slug]) + """
   <div class="elenco">
 
 """
@@ -518,18 +535,15 @@ for _giro, (slug, nome) in enumerate(SEZIONI):
         corpo += '    <article class="voce"><p>Nessun articolo in questa sezione.</p></article>\n'
     corpo += "  </div>\n"
     scrivi(f"{slug}.html", pagina(f"{nome} — Franco Zanghì", corpo, attiva=slug,
-                                  colonna=spalla(notizie, elenco_video, _giro + 1)))
+                                  colonna=spalla(notizie, elenco_video, _giro + 1),
+                                  ritorno=("prima pagina", "index.html")))
 
 # ------------------------------------------------------------------
 # pagina dei video
 # ------------------------------------------------------------------
 lunghi = [v for v in elenco_video if v.get("tipo") != "short"]
 corti  = [v for v in elenco_video if v.get("tipo") == "short"]
-corpo = """  <section class="testo">
-    <h2>Video</h2>
-    <p class="sommario">Le video notizie e le serie del canale. Il video parte dentro questa pagina solo quando lo avvii tu: finché non clicchi, verso YouTube non parte nulla.</p>
-  </section>
-
+corpo = insegna("Video", "Le video notizie e le serie del canale. Il video parte dentro questa pagina solo quando lo avvii tu: finché non clicchi, verso YouTube non parte nulla.") + """
   <div class="elencovideo">
 
 """
@@ -549,13 +563,13 @@ if corti:
         corpo += scheda_video(v) + "\n"
     corpo += "  </div>\n"
 scrivi("video.html", pagina("Video — Franco Zanghì", corpo, attiva="video",
-                            colonna=spalla(notizie, elenco_video, 0, con_video=False)))
+                            colonna=spalla(notizie, elenco_video, 0, con_video=False),
+                            ritorno=("prima pagina", "index.html")))
 
 # ------------------------------------------------------------------
 # pagine fisse
 # ------------------------------------------------------------------
-chi_sono = """  <section class="testo">
-    <h2>Chi sono</h2>
+chi_sono = insegna("Chi sono") + """  <section class="testo">
 
     <p>Mi chiamo Franco Zanghì. Racconto politica internazionale, cronaca italiana e quello che accade in Sicilia, dove vivo e lavoro.</p>
 
@@ -571,11 +585,10 @@ chi_sono = """  <section class="testo">
   </section>
 """
 scrivi("chi-sono.html", pagina("Chi sono — Franco Zanghì", chi_sono, attiva="chi-sono",
-                               colonna=spalla(notizie, elenco_video, 1)))
+                               colonna=spalla(notizie, elenco_video, 1),
+                               ritorno=("prima pagina", "index.html")))
 
-rettifiche = """  <section class="testo">
-    <h2>Rettifiche</h2>
-    <p class="sommario">Gli errori si correggono. Qui resta traccia di quelli corretti, con la loro data.</p>
+rettifiche = insegna("Rettifiche", "Gli errori si correggono. Qui resta traccia di quelli corretti, con la loro data.") + """  <section class="testo">
 
     <p>Quando un articolo contiene un errore di fatto, lo correggo nel testo e segnalo la correzione in fondo all'articolo stesso, indicando che cosa &egrave; stato cambiato e quando. L'articolo non viene cancellato e la versione corretta resta consultabile.</p>
 
@@ -606,11 +619,10 @@ else:
 
 rettifiche = rettifiche.replace("__CORREZIONI__", _blocco)
 scrivi("rettifiche.html", pagina("Rettifiche — Franco Zanghì", rettifiche,
-                                 colonna=spalla(notizie, elenco_video, 2)))
+                                 colonna=spalla(notizie, elenco_video, 2),
+                                 ritorno=("prima pagina", "index.html")))
 
-contatti = """  <section class="testo">
-    <h2>Contatti</h2>
-    <p class="sommario">Per segnalazioni, documenti, correzioni e richieste.</p>
+contatti = insegna("Contatti", "Per segnalazioni, documenti, correzioni e richieste.") + """  <section class="testo">
 
     <p>Scrivimi a <a href="mailto:%s">%s</a>.</p>
 
@@ -625,11 +637,10 @@ contatti = """  <section class="testo">
   </section>
 """ % (POSTA, POSTA, POSTA, POSTA)
 scrivi("contatti.html", pagina("Contatti — Franco Zanghì", contatti,
-                               colonna=spalla(notizie, elenco_video, 0)))
+                               colonna=spalla(notizie, elenco_video, 0),
+                               ritorno=("prima pagina", "index.html")))
 
-dati = """  <section class="testo">
-    <h2>Dati personali</h2>
-    <p class="sommario">Come vengono trattati i dati di chi visita questo sito.</p>
+dati = insegna("Dati personali", "Come vengono trattati i dati di chi visita questo sito.") + """  <section class="testo">
 
     <p><strong>Titolare del trattamento.</strong> Domenico Franco Zanghì, Patti (Messina), Italia. Posta elettronica: <a href="mailto:%s">%s</a>.</p>
 
@@ -652,12 +663,11 @@ dati = """  <section class="testo">
   </section>
 """ % (POSTA, POSTA)
 scrivi("dati-personali.html", pagina("Dati personali — Franco Zanghì", dati,
-                                     colonna=spalla(notizie, elenco_video, 1)))
+                                     colonna=spalla(notizie, elenco_video, 1),
+                                     ritorno=("prima pagina", "index.html")))
 
 # ---------------- condizioni d'uso ----------------
-condizioni = """  <section class="testo">
-    <h2>Condizioni d'uso</h2>
-    <p class="sommario">Che cosa si pu&ograve; fare con quello che si legge qui, e di cosa risponde chi scrive.</p>
+condizioni = insegna("Condizioni d'uso", "Che cosa si pu&ograve; fare con quello che si legge qui, e di cosa risponde chi scrive.") + """  <section class="testo">
 
     <p>Questo sito &egrave; pubblicato da Domenico Franco Zangh&igrave;, giornalista, con sede a Patti, in provincia di Messina. Raccoglie gli articoli che firmo come Franco Zangh&igrave;. Non &egrave; un quotidiano, non ha una periodicit&agrave; dichiarata e non riceve contributi pubblici.</p>
 
@@ -686,7 +696,8 @@ condizioni = """  <section class="testo">
   </section>
 """
 scrivi("condizioni.html", pagina("Condizioni d'uso — Franco Zanghì", condizioni,
-                                 colonna=spalla(notizie, elenco_video, 2)))
+                                 colonna=spalla(notizie, elenco_video, 2),
+                                 ritorno=("prima pagina", "index.html")))
 
 print(f"Generate {len(notizie)} notizie piu' le pagine fisse. Sito nella cartella: {USCITA}")
 for n in notizie:
