@@ -461,8 +461,16 @@ for _giro_art, n in enumerate(notizie):
                       f'      <strong>Correzione del {data_estesa(n["correzione"]["data"])}.</strong> '
                       f'{html.escape(n["correzione"]["testo"])}\n    </div>\n')
 
+    _slug = SLUG_DI.get(n["sezione"], "")
+    _occhiello = (f'<a class="sezione" href="{_slug}.html">{n["sezione"]}</a>'
+                  if _slug else f'<span class="sezione">{n["sezione"]}</span>')
+    _ritorno = f"""    <nav class="ritorno">
+      <a class="indietro" href="{_slug or 'index'}.html">Torna a {n['sezione'] if _slug else 'prima pagina'}</a>
+      <a href="index.html">Prima pagina</a>
+    </nav>
+"""
     corpo = f"""  <section class="testo">
-    <p class="riga"><span class="sezione">{n['sezione']}</span> &nbsp;·&nbsp; {data_estesa(n['data'])}</p>
+    <p class="riga">{_occhiello} &nbsp;·&nbsp; {data_estesa(n['data'])}</p>
     <h2>{html.escape(n['titolo'])}</h2>
 {immagine(n)}    <p class="sommario">{html.escape(n['sommario'])}</p>
     <p class="firma">{FIRMA}</p>
@@ -470,7 +478,7 @@ for _giro_art, n in enumerate(notizie):
 
 {corpo_testo}
 
-{fonti}{correzione}  </section>
+{fonti}{correzione}{_ritorno}  </section>
 """
     scrivi(n["file"], pagina(f"{n['titolo']} — Franco Zanghì", corpo,
                              attiva=SLUG_DI.get(n["sezione"], ""),
