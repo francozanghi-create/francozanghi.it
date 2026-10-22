@@ -191,7 +191,7 @@ def reclame(giro=0):
 """
 
 
-def spalla(elenco_notizie, elenco_video, giro=0):
+def spalla(elenco_notizie, elenco_video, giro=0, con_video=True):
     """Colonna di sinistra: richiami alle notizie e ai video."""
     t_notizie = "Le pi\u00f9 lette" if PIU_LETTE else "Le ultime notizie"
     t_video   = "I video pi\u00f9 visti" if PIU_LETTE else "Gli ultimi video"
@@ -208,7 +208,7 @@ def spalla(elenco_notizie, elenco_video, giro=0):
                          f'<span class="titolo">{html.escape(n["titolo"])}</span></a></li>\n')
         pezzi.append('    </ul>\n')
     pezzi.append(reclame(giro))
-    lunghi = [v for v in elenco_video if v.get("tipo") != "short"][:4]
+    lunghi = [] if not con_video else [v for v in elenco_video if v.get("tipo") != "short"][:4]
     if lunghi:
         pezzi.append(f'    <h4 class="cappello">{t_video}</h4>\n    <ul class="richiami">\n')
         for v in lunghi:
@@ -539,7 +539,8 @@ if corti:
     for v in corti:
         corpo += scheda_video(v) + "\n"
     corpo += "  </div>\n"
-scrivi("video.html", pagina("Video — Franco Zanghì", corpo, attiva="video"))
+scrivi("video.html", pagina("Video — Franco Zanghì", corpo, attiva="video",
+                            colonna=spalla(notizie, elenco_video, 0, con_video=False)))
 
 # ------------------------------------------------------------------
 # pagine fisse
@@ -560,7 +561,8 @@ chi_sono = """  <section class="testo">
     <p>Sbaglio come tutti. Quando capita, correggo, e la correzione resta visibile con la sua data. Se trovi un errore in quello che ho scritto, segnalamelo: trovi come farlo nella <a href="contatti.html">pagina dei contatti</a>.</p>
   </section>
 """
-scrivi("chi-sono.html", pagina("Chi sono — Franco Zanghì", chi_sono, attiva="chi-sono"))
+scrivi("chi-sono.html", pagina("Chi sono — Franco Zanghì", chi_sono, attiva="chi-sono",
+                               colonna=spalla(notizie, elenco_video, 1)))
 
 rettifiche = """  <section class="testo">
     <h2>Rettifiche</h2>
@@ -594,7 +596,8 @@ else:
     _blocco = "    <p>Nessuna correzione finora.</p>"
 
 rettifiche = rettifiche.replace("__CORREZIONI__", _blocco)
-scrivi("rettifiche.html", pagina("Rettifiche — Franco Zanghì", rettifiche))
+scrivi("rettifiche.html", pagina("Rettifiche — Franco Zanghì", rettifiche,
+                                 colonna=spalla(notizie, elenco_video, 2)))
 
 contatti = """  <section class="testo">
     <h2>Contatti</h2>
@@ -612,7 +615,8 @@ contatti = """  <section class="testo">
     Posta elettronica: <a href="mailto:%s">%s</a></p>
   </section>
 """ % (POSTA, POSTA, POSTA, POSTA)
-scrivi("contatti.html", pagina("Contatti — Franco Zanghì", contatti))
+scrivi("contatti.html", pagina("Contatti — Franco Zanghì", contatti,
+                               colonna=spalla(notizie, elenco_video, 0)))
 
 dati = """  <section class="testo">
     <h2>Dati personali</h2>
@@ -638,7 +642,8 @@ dati = """  <section class="testo">
     <p><em>Questo testo va verificato e aggiornato se in futuro il sito dovesse introdurre moduli di contatto, iscrizioni, misurazione del pubblico o contenuti incorporati da altri servizi.</em></p>
   </section>
 """ % (POSTA, POSTA)
-scrivi("dati-personali.html", pagina("Dati personali — Franco Zanghì", dati))
+scrivi("dati-personali.html", pagina("Dati personali — Franco Zanghì", dati,
+                                     colonna=spalla(notizie, elenco_video, 1)))
 
 # ---------------- condizioni d'uso ----------------
 condizioni = """  <section class="testo">
@@ -671,7 +676,8 @@ condizioni = """  <section class="testo">
     <p>Per segnalazioni, rettifiche e richieste scrivi all'indirizzo che trovi nella <a href="contatti.html">pagina dei contatti</a>. A queste condizioni si applica la legge italiana.</p>
   </section>
 """
-scrivi("condizioni.html", pagina("Condizioni d'uso — Franco Zanghì", condizioni))
+scrivi("condizioni.html", pagina("Condizioni d'uso — Franco Zanghì", condizioni,
+                                 colonna=spalla(notizie, elenco_video, 2)))
 
 print(f"Generate {len(notizie)} notizie piu' le pagine fisse. Sito nella cartella: {USCITA}")
 for n in notizie:

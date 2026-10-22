@@ -11,9 +11,31 @@
 <meta name="theme-color" content="#14456f">
 </head>
 <body>
-<div class="foglio">
+<div class="foglio larga">
 
+  <div class="cima">
+    <aside class="datario">
+      <div class="quando">
+        <p class="giorno" id="d-giorno">giovedì</p>
+        <p class="numero" id="d-numero">22</p>
+        <p class="mese" id="d-mese">ottobre 2026</p>
+      </div>
+      <div class="adesso">
+        <p class="ora" id="d-ora">&nbsp;</p>
+        <p class="luogo">Patti, Sicilia</p>
+      </div>
+      <div class="canali">
+        <p class="cappello">Seguimi</p>
+        <ul>
+        <li><a class="fb" href="https://www.facebook.com/profile.php?id=100092510574016" target="_blank" rel="noopener"><span>Facebook</span></a></li>
+        <li><a class="yt" href="https://www.youtube.com/@FrancoZanghi" target="_blank" rel="noopener"><span>YouTube</span></a></li>
+        <li><a class="tt" href="https://www.tiktok.com/@francozanghi1" target="_blank" rel="noopener"><span>TikTok</span></a></li>
+        <li><a class="ig" href="https://www.instagram.com/zanghi.franco/" target="_blank" rel="noopener"><span>Instagram</span></a></li>
+        </ul>
+      </div>
+    </aside>
   <a class="banner" href="index.html"><img src="immagini/banner.jpg" alt="Scenari Globali — un format audiovisivo di Franco Zanghì" width="1400" height="786"></a>
+  </div>
 
 
   <header class="testata interna">
@@ -32,6 +54,8 @@
     <a href="chi-sono.html">Chi sono</a>
   </nav>
 
+  <div class="doppia">
+  <main class="principale">
   <section class="testo">
     <h2>Video</h2>
     <p class="sommario">Le video notizie e le serie del canale. Il video parte dentro questa pagina solo quando lo avvii tu: finché non clicchi, verso YouTube non parte nulla.</p>
@@ -471,6 +495,33 @@
       </div>
 
   </div>
+  </main>
+  <aside class="spalla">
+    <h4 class="cappello">Le ultime notizie</h4>
+    <ul class="richiami">
+      <li><a href="autotrasportatori-sicilia-spaccati.html"><img src="immagini/autotrasportatori-sicilia-spaccati-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Sicilia</span><span class="titolo">In Sicilia la protesta dei tir si spacca in due</span></a></li>
+      <li><a href="cgil-sigle-studentesche-francia.html"><img src="immagini/cgil-sigle-studentesche-francia-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Politica italiana</span><span class="titolo">I conti della Cgil e le sigle studentesche che indicano la Francia</span></a></li>
+      <li><a href="ris-reperti-distrutti.html"><img src="immagini/ris-reperti-distrutti-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Cronaca</span><span class="titolo">Le provette di Garlasco distrutte nel 2016, il via libera dei giudici nel 2022</span></a></li>
+      <li><a href="ofria-confisca-chiarimento.html"><img src="immagini/ofria-confisca-chiarimento-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Cronaca</span><span class="titolo">La confisca che non era stata annullata: il chiarimento sul caso Bellinvia</span></a></li>
+      <li><a href="patti-playa-sequestro.html"><img src="immagini/patti-playa-sequestro-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Cronaca</span><span class="titolo">Amianto e rifiuti alla foce del Timeto: sequestrata l&#x27;area, tre indagati</span></a></li>
+      <li><a href="davigo-condanna-definitiva.html"><img src="immagini/davigo-condanna-definitiva-p.jpg" alt="" loading="lazy" width="480" height="320"><span class="dove">Cronaca</span><span class="titolo">Davigo condannato in via definitiva per rivelazione del segreto d&#x27;ufficio</span></a></li>
+    </ul>
+    <div class="reclame">
+      <p class="cappello avviso">Pubblicità</p>
+      <a class="offerta" href="https://idroponicadomestica.company.site/Offerta-lancio-c183793751" target="_blank" rel="sponsored noopener">
+        <img src="immagini/promo-torri.jpg" alt="" loading="lazy" width="480" height="320">
+        <span class="dove">Offerta lancio</span>
+        <span class="titolo">La torre Panarea a prezzo di lancio</span>
+        <span class="riga">L&#x27;orto verticale che sta su un balcone: si coltiva senza terra, tutto l&#x27;anno.</span>
+      </a>
+      <ul class="altri">
+      <li><a href="https://idroponicadomestica.company.site/" target="_blank" rel="sponsored noopener">Il negozio</a></li>
+      <li><a href="https://torreeoliana.com/" target="_blank" rel="sponsored noopener">Torre Eoliana, il sito</a></li>
+      </ul>
+      <p class="nota">Torre Eoliana è un’attività dell’editore di questo sito.</p>
+    </div>
+  </aside>
+  </div>
 
 
   <footer>
@@ -501,6 +552,38 @@ document.addEventListener("click", function (e) {
   c.appendChild(f);
   b.parentNode.replaceChild(c, b);
 });
+</script>
+<script>
+(function () {
+  var giorni = ["domenica","lunedì","martedì","mercoledì",
+                "giovedì","venerdì","sabato"];
+  var mesi = ["gennaio","febbraio","marzo","aprile","maggio","giugno",
+              "luglio","agosto","settembre","ottobre","novembre","dicembre"];
+  function pezzi() {
+    try {
+      var f = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Rome", year: "numeric", month: "numeric",
+        day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
+      var o = {};
+      f.formatToParts(new Date()).forEach(function (p) { o[p.type] = p.value; });
+      return o;
+    } catch (e) { return null; }
+  }
+  function scrivi() {
+    var o = pezzi();
+    if (!o) return;
+    var a = +o.year, m = +o.month, g = +o.day;
+    var s = new Date(Date.UTC(a, m - 1, g)).getUTCDay();
+    var e = document.getElementById("d-giorno");
+    if (!e) return;
+    e.textContent = giorni[s];
+    document.getElementById("d-numero").textContent = g;
+    document.getElementById("d-mese").textContent = mesi[m - 1] + " " + a;
+    document.getElementById("d-ora").textContent = o.hour + ":" + o.minute;
+  }
+  scrivi();
+  setInterval(scrivi, 20000);
+})();
 </script>
 <script data-goatcounter="https://francozanghi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
