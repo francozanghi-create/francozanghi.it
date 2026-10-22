@@ -148,14 +148,14 @@ RECLAME = [
     {
         "occhiello": "Affari con l'usato",
         "titolo": "Le torri della fiera, garantite",
-        "riga": "Modelli di esposizione, in buone condizioni, a prezzi ridotti finche' ci sono.",
+        "riga": "Modelli di esposizione, in buone condizioni, a prezzo ridotto fino a esaurimento.",
         "immagine": "promo-usato.jpg",
         "dove": "https://idroponicadomestica.company.site/AFFARI-CON-LUSATO-FIERA-c167699479",
     },
     {
         "occhiello": "Accessori",
         "titolo": "Espansioni, moduli e ricambi",
-        "riga": "Livelli in piu', modulo di germinazione, bicchieri, fertilizzante e misuratori.",
+        "riga": "Livelli in più, modulo di germinazione, bicchieri, fertilizzante e misuratori.",
         "immagine": "promo-torri.jpg",
         "dove": "https://idroponicadomestica.company.site/Accessori-e-elementi-di-espansione-c169873367",
     },
