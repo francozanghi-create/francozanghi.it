@@ -427,7 +427,7 @@ notizie.sort(key=lambda n: n["data"], reverse=True)
 # ------------------------------------------------------------------
 # pagine degli articoli
 # ------------------------------------------------------------------
-for n in notizie:
+for _giro_art, n in enumerate(notizie):
     blocchi = []
     for tipo, testo in n["corpo"]:
         if tipo == "h3":
@@ -473,7 +473,8 @@ for n in notizie:
 {fonti}{correzione}  </section>
 """
     scrivi(n["file"], pagina(f"{n['titolo']} — Franco Zanghì", corpo,
-                             attiva=SLUG_DI.get(n["sezione"], "")))
+                             attiva=SLUG_DI.get(n["sezione"], ""),
+                             colonna=spalla(notizie, elenco_video, _giro_art)))
 
 # ------------------------------------------------------------------
 # prima pagina

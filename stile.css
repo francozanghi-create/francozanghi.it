@@ -277,7 +277,7 @@ footer a:hover{color:var(--rosso)}
   .videonotizia{
     float:right;
     width:300px;
-    margin:6px -220px 18px 26px;
+    margin:6px 0 18px 26px;
     padding-top:0;
     border-top:0;
   }
@@ -286,6 +286,8 @@ footer a:hover{color:var(--rosso)}
 /* ---- colonna di richiamo (spalla) ---- */
 .foglio.larga{max-width:1060px}
 .foglio.larga > footer{max-width:720px;margin-left:auto;margin-right:auto}
+.foglio.larga > header.testata,
+.foglio.larga > nav{margin-left:280px}
 
 /* la cima: riquadro della data a sinistra, striscione a destra */
 .cima{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:stretch}
@@ -433,6 +435,8 @@ footer a:hover{color:var(--rosso)}
 
 @media (max-width:980px){
   .foglio.larga{max-width:720px}
+  .foglio.larga > header.testata,
+  .foglio.larga > nav{margin-left:0}
   .cima{display:block}
   .cima .banner{margin-top:14px}
   .datario{
