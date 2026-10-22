@@ -334,17 +334,32 @@ footer a:hover{color:var(--rosso)}
   text-transform:uppercase;
   color:var(--grigio);
 }
-.datario .canali ul{list-style:none;margin:0;padding:0}
-.datario .canali li{margin:0 0 4px}
-.datario .canali a{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size:12.5px;
-  letter-spacing:.04em;
-  color:var(--inchiostro);
-  text-decoration:none;
-  border-bottom:1px solid var(--filo);
+.datario .canali ul{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
 }
-.datario .canali a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
+.datario .canali li{margin:0}
+.datario .canali a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  aspect-ratio:1/1;
+  border-radius:22%;
+  text-decoration:none;
+  color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.01em;
+  text-align:center;
+  box-shadow:0 1px 3px rgba(17,20,24,.18);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.datario .canali a:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(17,20,24,.26)}
+.datario .canali a.fb{background:#1877f2}
+.datario .canali a.yt{background:#e8262a}
+.datario .canali a.tt{background:#111418}
+.datario .canali a.ig{background:linear-gradient(140deg,#7b3fb0 0%,#d6356a 48%,#f6a23c 100%)}
 .doppia{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 40px;align-items:start}
 .doppia > .principale{grid-column:2;grid-row:1;min-width:0}
 .spalla{
@@ -418,11 +433,14 @@ footer a:hover{color:var(--rosso)}
     color:var(--grigio);
   }
   .datario .luogo{display:none}
-  .datario .canali{margin:8px 0 0;padding:0;border-top:0}
+  .datario .canali{margin:12px 0 0;padding:0;border-top:0}
   .datario .canali .cappello{display:none}
-  .datario .canali ul{display:flex;justify-content:center;flex-wrap:wrap;gap:0 18px}
-  .datario .canali li{margin:0}
-  .datario .canali a{font-size:12px;color:var(--grigio);border-bottom:0}
+  .datario .canali ul{
+    display:flex;justify-content:center;gap:10px;
+    max-width:300px;margin:0 auto;
+  }
+  .datario .canali li{flex:0 0 64px}
+  .datario .canali a{font-size:11px;border-radius:20%}
   .doppia{display:block}
   .spalla{
     border-right:0;

@@ -226,11 +226,12 @@ def spalla(elenco_notizie, elenco_video, giro=0):
 GIORNI = ["domenica","luned\u00ec","marted\u00ec","mercoled\u00ec",
           "gioved\u00ec","venerd\u00ec","sabato"]
 
+# nome, indirizzo, sigla per il colore della piastrella
 CANALI = [
-    ("Facebook",  "https://www.facebook.com/profile.php?id=100092510574016"),
-    ("TikTok",    "https://www.tiktok.com/@francozanghi1"),
-    ("YouTube",   "https://www.youtube.com/@FrancoZanghi"),
-    ("Instagram", "https://www.instagram.com/zanghi.franco/"),
+    ("Facebook",  "https://www.facebook.com/profile.php?id=100092510574016",  "fb"),
+    ("YouTube",   "https://www.youtube.com/@FrancoZanghi",                    "yt"),
+    ("TikTok",    "https://www.tiktok.com/@francozanghi1",                    "tt"),
+    ("Instagram", "https://www.instagram.com/zanghi.franco/",                 "ig"),
 ]
 
 
@@ -239,8 +240,9 @@ def datario():
     il giorno della costruzione; nel navigatore lo aggiorna l'orologio."""
     oggi = datetime.date.today()
     voci = "".join(
-        f'        <li><a href="{d}" target="_blank" rel="noopener">{t}</a></li>\n'
-        for t, d in CANALI
+        f'        <li><a class="{c}" href="{d}" target="_blank" rel="noopener">'
+        f'<span>{t}</span></a></li>\n'
+        for t, d, c in CANALI
     )
     return f"""    <aside class="datario">
       <div class="quando">
