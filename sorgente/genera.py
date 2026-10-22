@@ -226,17 +226,35 @@ def spalla(elenco_notizie, elenco_video, giro=0):
 GIORNI = ["domenica","luned\u00ec","marted\u00ec","mercoled\u00ec",
           "gioved\u00ec","venerd\u00ec","sabato"]
 
+CANALI = [
+    ("Facebook",  "https://www.facebook.com/profile.php?id=100092510574016"),
+    ("TikTok",    "https://www.tiktok.com/@francozanghi1"),
+    ("YouTube",   "https://www.youtube.com/@FrancoZanghi"),
+    ("Instagram", "https://www.instagram.com/zanghi.franco/"),
+]
+
 
 def datario():
     """Riquadro della data accanto alla testata. Il programma scrive
     il giorno della costruzione; nel navigatore lo aggiorna l'orologio."""
     oggi = datetime.date.today()
+    voci = "".join(
+        f'        <li><a href="{d}" target="_blank" rel="noopener">{t}</a></li>\n'
+        for t, d in CANALI
+    )
     return f"""    <aside class="datario">
-      <p class="giorno" id="d-giorno">{GIORNI[(oggi.weekday() + 1) % 7]}</p>
-      <p class="numero" id="d-numero">{oggi.day}</p>
-      <p class="mese" id="d-mese">{MESI[oggi.month - 1]} {oggi.year}</p>
-      <p class="ora" id="d-ora">&nbsp;</p>
+      <div class="quando">
+        <p class="giorno" id="d-giorno">{GIORNI[(oggi.weekday() + 1) % 7]}</p>
+        <p class="numero" id="d-numero">{oggi.day}</p>
+        <p class="mese" id="d-mese">{MESI[oggi.month - 1]} {oggi.year}</p>
+        <p class="ora" id="d-ora">&nbsp;</p>
+      </div>
       <p class="luogo">Patti, Sicilia</p>
+      <div class="canali">
+        <p class="cappello">Seguimi</p>
+        <ul>
+{voci}        </ul>
+      </div>
     </aside>
 """
 
