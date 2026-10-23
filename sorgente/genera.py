@@ -28,6 +28,16 @@ SEZIONI = [
 ]
 SLUG_DI = {nome: slug for slug, nome in SEZIONI}
 
+
+def sezioni_di(n):
+    """Sezioni in cui la notizia compare. La prima e' quella principale,
+    quella che si vede sopra il titolo; le altre servono solo a farla
+    comparire anche negli elenchi di un'altra sezione."""
+    altre = n.get("altre_sezioni") or []
+    if isinstance(altre, str):
+        altre = [altre]
+    return [n["sezione"]] + [s for s in altre if s != n["sezione"]]
+
 DESCRIZIONI = {
     "geopolitica":       "Scenari internazionali, equilibri di potere, guerre e trattative.",
     "politica-italiana": "Il governo, il parlamento, i partiti e quello che si muove sotto.",
@@ -523,7 +533,7 @@ scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=Tru
 # pagine di sezione
 # ------------------------------------------------------------------
 for _giro, (slug, nome) in enumerate(SEZIONI):
-    pezzi = [n for n in notizie if n["sezione"] == nome]
+    pezzi = [n for n in notizie if nome in sezioni_di(n)]
     corpo = insegna(nome, DESCRIZIONI[slug]) + """
   <div class="elenco">
 
@@ -701,4 +711,4 @@ scrivi("condizioni.html", pagina("Condizioni d'uso — Franco Zanghì", condizio
 
 print(f"Generate {len(notizie)} notizie piu' le pagine fisse. Sito nella cartella: {USCITA}")
 for n in notizie:
-    print(" -", n["data"], n["sezione"], "->", n["file"])
+    print(" -", n["data"], " e ".join(sezioni_di(n)), "->", n["file"])
