@@ -1554,7 +1554,7 @@
       ],
       [
         "p",
-        "Il primo motivo sono le firme: a sostegno di Basile si sono presentate 15 liste senza raccogliere una sola sottoscrizione. Il secondo riguarda Basile in persona, perché le sue dimissioni, secondo i ricorrenti, sarebbero arrivate troppo tardi rispetto al momento in cui le elezioni sono state indette."
+        "Il primo motivo sono le firme: a sostegno di Basile si sono presentate 15 liste, e 14 di queste non hanno raccolto una sola sottoscrizione. Il secondo riguarda Basile in persona, perché le sue dimissioni, secondo i ricorrenti, sarebbero arrivate troppo tardi rispetto al momento in cui le elezioni sono state indette."
       ],
       [
         "p",
@@ -1566,7 +1566,7 @@
       ],
       [
         "p",
-        "Come è possibile presentare 15 liste senza nemmeno una firma? Per saperlo bisogna guardare a Barcellona Pozzo di Gotto, dove si era votato nella stessa tornata e dove era arrivato un ricorso quasi identico. Lì il Tar ha già scritto le sue motivazioni, all'inizio di ottobre, e dicono una cosa precisa: la legge elettorale siciliana esonera dalla raccolta delle firme i partiti che all'Ars hanno un gruppo parlamentare, e quel beneficio riguarda il partito, non la singola lista. Dentro la norma non è scritto nessun numero, e un limite che il legislatore non ha scritto, dicono i giudici, non si può aggiungere interpretando."
+        "Come è possibile presentare 14 liste senza nemmeno una firma? Per saperlo bisogna guardare a Barcellona Pozzo di Gotto, dove si era votato nella stessa tornata e dove era arrivato un ricorso quasi identico. Lì il Tar ha già scritto le sue motivazioni, all'inizio di ottobre, e dicono una cosa precisa: la legge elettorale siciliana esonera dalla raccolta delle firme i partiti che all'Ars hanno un gruppo parlamentare, e quel beneficio riguarda il partito, non la singola lista. Dentro la norma non è scritto nessun numero, e un limite che il legislatore non ha scritto, dicono i giudici, non si può aggiungere interpretando."
       ],
       [
         "p",
@@ -1608,7 +1608,11 @@
         ""
       ]
     ],
-    "nota": "Alla data di pubblicazione è stato depositato il solo dispositivo: le motivazioni della decisione di Messina non erano ancora state pubblicate. Nessuno dei soggetti citati risulta indagato e non risulta alcun procedimento penale collegato a questa vicenda."
+    "nota": "Alla data di pubblicazione è stato depositato il solo dispositivo: le motivazioni della decisione di Messina non erano ancora state pubblicate. Nessuno dei soggetti citati risulta indagato e non risulta alcun procedimento penale collegato a questa vicenda.",
+    "correzione": {
+      "data": "2026-10-24",
+      "testo": "L'articolo indicava in 15 le liste presentate a sostegno di Federico Basile senza raccogliere alcuna firma. Le motivazioni del Tar di Catania, depositate il 23 ottobre 2026, chiariscono che le liste presentate erano 15 e che 14 di esse hanno usato l'esenzione dalla raccolta delle sottoscrizioni. Il dato è stato corretto in due punti del testo."
+    }
   },
   {
     "id": "siracusa-giunta-azzerata",
@@ -2051,5 +2055,234 @@
     "altre_sezioni": [
       "Sicilia"
     ]
+  },
+  {
+    "id": "tar-motivazioni-elezioni-messina",
+    "sezione": "Sicilia",
+    "altre_sezioni": [
+      "Politica italiana"
+    ],
+    "data": "2026-10-24",
+    "titolo": "Le motivazioni del Tar: sulle liste la legge siciliana non mette un tetto",
+    "sommario": "Depositate le ragioni per cui i due ricorsi contro le elezioni di Messina sono stati respinti. Sulle firme i giudici scrivono che la norma regionale parla di liste al plurale e non fissa alcun limite. Sulle dimissioni di Basile vale la legge siciliana, non quella dello Stato.",
+    "immagine": "tar-motivazioni-elezioni-messina",
+    "corpo": [
+      [
+        "p",
+        "Il Tar di Catania ha depositato il 23 ottobre le motivazioni delle due decisioni con cui, tre giorni prima, aveva respinto i ricorsi contro le elezioni comunali di Messina. Sono le sentenze 2739 e 2740 del 2026, della quinta sezione, firmate dal collegio presieduto da Agnese Anna Barone, che ne è anche estensora, con il consigliere Giovanni Giuseppe Antonio Dato e il primo referendario Salvatore Ermete Massimo Accolla. Il verdetto si conosceva dal 21 ottobre: Federico Basile resta sindaco. Quello che mancava era il perché."
+      ],
+      [
+        "p",
+        "Dentro quelle motivazioni c'è una frase che vale ben oltre Messina. La legge elettorale siciliana, scrivono i giudici, parla di liste al plurale e un tetto al numero non lo mette. Non c'è nessuna regola aggirata: c'è una regola che non dice quanto."
+      ],
+      [
+        "h3",
+        "Le quattordici liste senza firme"
+      ],
+      [
+        "p",
+        "A sostegno di Basile si sono presentate 15 liste, e 14 hanno usato l'esenzione dalla raccolta delle sottoscrizioni, affiancando al proprio nome il simbolo di Sud chiama Nord. La legge regionale esonera infatti dalla raccolta delle firme i partiti che all'Assemblea regionale siciliana hanno un gruppo."
+      ],
+      [
+        "p",
+        "Il Tar dice due cose. La prima è che la norma usa il plurale e non pone alcun limite numerico né un vincolo di corrispondenza univoca fra partito e lista. La seconda è che ogni lista che incorpora o affianca il simbolo di un partito radicato all'Assemblea regionale ne costituisce un'articolazione organizzativa, e perciò l'esonero si estende all'intera proposta elettorale di quella forza politica. I giudici aggiungono che obbligare un partito a raccogliere le firme per le sole liste civiche collegate ne penalizzerebbe ingiustamente la strategia."
+      ],
+      [
+        "p",
+        "Cadono anche i rilievi minori. La presentazione delle liste da parte di un solo delegato è legittima, e le rettifiche grafiche ai simboli non alteravano l'identità delle liste né i candidati, quindi non richiedevano una nuova firma di accettazione."
+      ],
+      [
+        "h3",
+        "Le dimissioni, e dove finisce la legge dello Stato"
+      ],
+      [
+        "p",
+        "Il secondo ricorso riguardava Basile in persona. Le sue dimissioni erano diventate irrevocabili il 27 febbraio 2026, tre giorni oltre il 24 febbraio fissato dalla legge statale 182 del 1991 per rientrare nella tornata di primavera: per i ricorrenti erano arrivate troppo tardi perché si potesse votare a maggio."
+      ],
+      [
+        "p",
+        "Il Tar ha smontato anche questa. La Regione Siciliana ha potestà legislativa primaria ed esclusiva sul regime degli enti locali e sul procedimento elettorale, e vale quindi l'articolo 11 della legge regionale 35 del 1997, che impone di tornare alle urne al primo turno utile. Il termine statale, scrivono i giudici, non è un principio fondamentale inderogabile e nell'isola non si applica direttamente. Il vuoto normativo lamentato dai ricorsi non esiste, perché le dimissioni del sindaco la legge siciliana le disciplina già."
+      ],
+      [
+        "p",
+        "Le spese di giudizio sono state compensate fra tutte le parti, proprio per la novità delle questioni. La prefettura di Messina, chiamata in causa insieme al Comune e alla Regione, è stata estromessa per difetto di legittimazione passiva. E il risultato resta quello uscito dalle urne del 24 e 25 maggio, con Basile eletto al primo turno con il 58,42%."
+      ],
+      [
+        "h3",
+        "Una norma che i giudici stessi dicono ambigua"
+      ],
+      [
+        "p",
+        "All'inizio di ottobre un'altra sezione dello stesso tribunale aveva dato la stessa identica lettura su Barcellona Pozzo di Gotto. Due città della stessa provincia, due collegi diversi, una sola conclusione. In quella decisione, però, c'è un passaggio che non ha fatto notizia: i giudici avevano ammesso che la disposizione si presta a letture diverse e che dal testo non esce una soluzione univoca."
+      ],
+      [
+        "p",
+        "Se la norma si può leggere in più modi, perché la lettura giusta sarebbe questa? La risposta onesta è che non si sa. A decidere è un collegio di tre giudici, e nella giustizia amministrativa italiana l'opinione di chi non è d'accordo non si pubblica: esce una sentenza sola, e come si è formata resta dentro quella stanza."
+      ],
+      [
+        "p",
+        "Una sentenza che ammette da sé di stare interpretando un testo a più letture è, per chi ha perso, l'appiglio migliore che ci sia. E il secondo grado esiste: in Sicilia non si va al Consiglio di Stato, si va al Consiglio di giustizia amministrativa per la Regione siciliana. Al 24 ottobre nessuno ha annunciato di volerci andare, ma i termini per impugnare sono ancora aperti."
+      ],
+      [
+        "p",
+        "Il bersaglio, qui, non sono i partiti che hanno usato la regola fino in fondo: quello è il mestiere di chi si candida, e nessuno si aspetta il contrario. Il punto è a Palermo. Quella legge ha 34 anni, un limite non lo scrive, e per sapere che cosa significa è servito arrivare davanti a un giudice amministrativo due volte, in due comuni, con quattro ricorsi e un'intera elezione tenuta in sospeso per cinque mesi. Quante altre città dovranno finire davanti a un tribunale, prima che all'Assemblea regionale qualcuno scriva la riga che manca?"
+      ]
+    ],
+    "fonti": [
+      [
+        "StrettoWeb, Danilo Loria, «Elezioni comunali Messina: il Tar spiega perché ha respinto i ricorsi, dalle liste alle dimissioni di Basile», 23 ottobre 2026",
+        "https://www.strettoweb.com/2026/10/elezioni-comunali-messina-il-tar-spiega-perche-ha-respinto-i-ricorsi-dalle-liste-alle-dimissioni-di-basile/2165921/"
+      ],
+      [
+        "Tempostretto, Marco Ipsale, «Elezioni Messina, ecco perché il Tar ha rigettato i ricorsi», 23 ottobre 2026",
+        "https://www.tempostretto.it/news/elezioni-messina-ecco-perche-il-tar-ha-rigettato-i-ricorsi.html"
+      ],
+      [
+        "Lettera Emme, «Perché Federico Basile è rimasto sindaco, secondo il Tar», 24 ottobre 2026",
+        "https://www.letteraemme.it/perche-federico-basile-e-rimasto-sindaco-secondo-il-tar/"
+      ],
+      [
+        "MessinaToday, «Liste senza firme e simboli modificati, il Tar spiega perché le elezioni di Messina sono regolari», 23 ottobre 2026",
+        "https://www.messinatoday.it/cronaca/elezioni-messina-tar-motivazioni-liste-basile-senza-firme.html"
+      ],
+      [
+        "MessinaOra, «Messina, il Tar respinge entrambi i ricorsi: Basile resta sindaco», 21 ottobre 2026",
+        "https://www.messinaora.it/notizia/2026/10/21/messina-tar-respinge-ricorsi-basile-resta-sindaco/174595"
+      ],
+      [
+        "Voce di Popolo, «Firme di Sud chiama Nord, il Tar respinge il ricorso sulle elezioni di Messina. Basile resta sindaco», 21 ottobre 2026",
+        "https://www.vocedipopolo.it/2026/10/21/firme-di-sud-chiama-nord-il-tar-respinge-il-ricorso-sulle-elezioni-di-messina-basile-resta-sindaco/"
+      ],
+      [
+        "MessinaOra, «Messina, secondo round al Tar: in discussione i ricorsi contro l'elezione di Basile», 20 ottobre 2026",
+        "https://www.messinaora.it/notizia/2026/10/20/messina-secondo-round-al-tar-discussione-ricorsi-lelezione-basile/174593"
+      ]
+    ],
+    "nota": "Il testo integrale delle sentenze 2739 e 2740 del 2026 non è stato letto: tutti i passaggi riportati provengono dalle testate che hanno dato conto delle motivazioni. Al 24 ottobre 2026 nessuna fonte riporta un annuncio di appello al Consiglio di giustizia amministrativa: i termini per impugnare sono aperti e la vicenda non è definitiva."
+  },
+  {
+    "id": "terremoto-eolie-vulcani-sommersi",
+    "sezione": "Cronaca",
+    "altre_sezioni": [
+      "Sicilia",
+      "Attualità"
+    ],
+    "data": "2026-10-24",
+    "titolo": "Perché il terremoto delle Eolie non viene dai vulcani sommersi",
+    "sommario": "Sotto il mare davanti ad Alicudi ci sono vulcani attivi, e la sequenza sismica in corso non li riguarda. Una faglia e un vulcano fanno tremare la terra in due modi diversi, e sugli strumenti lasciano due firme che i sismologi riconoscono a colpo d'occhio.",
+    "immagine": "terremoto-eolie-vulcani-sommersi",
+    "corpo": [
+      [
+        "p",
+        "La sequenza sismica nel Tirreno meridionale va avanti dalla notte del 20 ottobre e ha superato le 100 scosse. La più forte è arrivata alle 12.19 di venerdì 23 ottobre: magnitudo 5.5, epicentro in mare a una ventina di chilometri a nord-ovest di Alicudi, ipocentro a 9 chilometri di profondità. Nel pomeriggio, alle 15.55, un'altra scossa forte, registrata come magnitudo locale 4.6 e poi rivalutata a magnitudo momento 5.0. Nella notte fra il 23 e il 24 se ne sono contate una trentina, fra magnitudo 2 e 3.4."
+      ],
+      [
+        "p",
+        "Ad Alicudi e a Filicudi la gente è uscita dalle case ed è rimasta in strada: dai costoni dietro i centri abitati si sono staccate porzioni di roccia. Le prime ricognizioni della protezione civile non hanno trovato feriti né danni agli edifici. Dopo la scossa delle 12.19 è scattata l'allerta maremoto arancione, cancellata poco più di un'ora dopo, quando i mareografi hanno escluso variazioni del livello del mare. A Palermo il sindaco ha chiuso scuole e sedi universitarie fino alle 8 di domenica 25 ottobre; l'Anas ha ispezionato ponti, viadotti e gallerie fra Palermo e Messina senza trovare criticità."
+      ],
+      [
+        "h3",
+        "La domanda che gira sulle isole"
+      ],
+      [
+        "p",
+        "Alle Eolie la domanda che circola davvero è un'altra, e non è sciocca: c'entrano qualcosa i vulcani sottomarini? Perché sotto quel mare ce ne sono. A una ventina di chilometri da Alicudi ci sono Eolo ed Enarete, più in là Sisifo, il più antico edificio dell'arco eoliano; a nord-est c'è il Marsili, che l'Istituto nazionale di geofisica e vulcanologia classifica come vulcano attivo. Le sette isole sono solo la parte emersa di un arco che continua sott'acqua per decine di chilometri, e gli studi hanno accertato acque e gas caldissimi dentro la roccia di Eolo e di Enarete."
+      ],
+      [
+        "p",
+        "Non sono rilievi spenti, e la domanda è legittima. La risposta è che un vulcano e una faglia fanno tremare la terra in due modi diversi, e servono due immagini per capirlo."
+      ],
+      [
+        "h3",
+        "Il masso che si spacca"
+      ],
+      [
+        "p",
+        "La prima è un masso enorme che milioni di anni fa si è spaccato in due. Quella spaccatura è la faglia. Da allora le due metà sono due blocchi appoggiati l'uno all'altro lungo una superficie irregolare, piena di sporgenze che si incastrano. La forza che ha prodotto la rottura non si è mai fermata, perché è il movimento delle placche, e quella linea resta il punto più debole: la spinta scarica sempre lì. È il motivo per cui i terremoti si ripetono negli stessi posti."
+      ],
+      [
+        "p",
+        "I blocchi però non scivolano lisci. L'attrito li tiene fermi, la roccia si carica come una molla per anni, finché una sporgenza non regge più e si sbriciola: quello scatto è il terremoto, e dura pochi secondi. Siccome le facce sono irregolari, il primo strappo non risolve niente, e restano incastri minori in tensione che cedono nelle ore successive. Sono le repliche che continuano davanti ad Alicudi."
+      ],
+      [
+        "p",
+        "È quello che dicono gli istituti. Fabio Florindo, presidente dell'Ingv, parla di tensioni accumulate nella crosta dal movimento della placca africana contro quella euroasiatica, ed esclude il Marsili: per la distanza, e perché quel vulcano si è formato dove la crosta si apre, mentre qui due porzioni di crosta si spingono l'una contro l'altra. Mimmo Palano, dell'Università di Palermo, indica una faglia lunga una trentina di chilometri lungo cui i blocchi scorrono di lato, nella fascia fra Ustica e le Eolie che assorbe quella spinta."
+      ],
+      [
+        "h3",
+        "La bottiglia e il tappo"
+      ],
+      [
+        "p",
+        "La seconda immagine è una bottiglia. Il magma che risale porta con sé gas disciolti, come l'anidride carbonica in una bottiglia chiusa: quando la pressione cala, i gas diventano bolle. Tutta la differenza fra un vulcano che sbuffa e uno che distrugge una città sta in una domanda: quelle bolle riescono a uscire, o trovano la strada chiusa? Un magma fluido le lascia passare; uno denso le trattiene, la pressione sale e la roccia raffreddata nel condotto fa da tappo. Più il tappo è stretto, più forte è il botto."
+      ],
+      [
+        "p",
+        "L'Etna sta all'estremo tranquillo, magma fluido e condotto aperto: quel pennacchio bianco sulla cima è il vulcano che respira. Il Vesuvio del 79 dopo Cristo è l'estremo opposto: magma denso, condotto chiuso da secoli, una pressione accumulata tanto a lungo che quando il tappo ha ceduto è esploso tutto insieme. Ed è per quel condotto ostruito che oggi è considerato più pericoloso dell'Etna, pur essendo fermo dal 1944."
+      ],
+      [
+        "p",
+        "Quando gli esperti dicono che quello davanti ad Alicudi non è un terremoto vulcanico, dicono una cosa precisa, non una formula di rito. Un terremoto vulcanico ha la firma delle bolle: scosse piccolissime, tantissime, nei primi chilometri sotto il cratere, con il terreno che si gonfia e i gas che cambiano. Quello del 23 ottobre ha la firma del masso che si spacca: un unico strappo a 9 chilometri di profondità, seguito dalle repliche."
+      ],
+      [
+        "h3",
+        "L'isola che durò pochi mesi"
+      ],
+      [
+        "p",
+        "I terremoti non si prevedono. Si sa che quella zona è fra le più pericolose d'Italia, ma sapere che una zona è pericolosa non è una previsione. Anche per i vulcani gli strumenti descrivono scenari possibili, non date."
+      ],
+      [
+        "p",
+        "Resta la domanda di tutti: dal mare può spuntare un'isola nuova? In teoria sì, ma il Marsili ha ancora 500 metri d'acqua sopra la cima e per i suoi 3.000 metri ci ha messo circa un milione di anni. Un'isola nata dal mare, però, c'è stata davvero."
+      ],
+      [
+        "p",
+        "Nel luglio del 1831, nel Canale di Sicilia fra Sciacca e Pantelleria, un'eruzione sottomarina ne fece emergere una. Durò pochi mesi, e mise tre potenze l'una contro l'altra: gli inglesi ci piantarono la bandiera e la chiamarono Graham, i francesi Giulia, Ferdinando II di Borbone mandò una nave, la chiamò Ferdinandea e scrisse a Londra e a Parigi che quella terra era sua. Mentre le cancellerie si scambiavano memorie, il mare erodeva la roccia friabile di cui era fatta: a dicembre non c'era già più."
+      ],
+      [
+        "p",
+        "Qui davanti alle Eolie è un altro mare. Non c'è magma che sale: ci sono due blocchi di roccia che si sono mossi, come fanno da sempre. E il motore non si è acceso adesso: è lo stesso che in centinaia di migliaia di anni ha costruito le isole su cui vive la gente scesa in strada il 23 ottobre."
+      ]
+    ],
+    "fonti": [
+      [
+        "Istituto nazionale di geofisica e vulcanologia, dati della sequenza sismica del Tirreno meridionale, 20-24 ottobre 2026",
+        ""
+      ],
+      [
+        "Il Mattino, intervista a Fabio Florindo, presidente dell'Ingv, 23 ottobre 2026",
+        ""
+      ],
+      [
+        "PalermoToday e Balarm, interviste a Mimmo Palano, Università di Palermo, 23 e 24 ottobre 2026",
+        ""
+      ],
+      [
+        "BlogSicilia, Manlio Viola, «Terremoto nel Tirreno, lo sciame sismico prosegue per tutta la notte: oltre 100 scosse in totale», 24 ottobre 2026",
+        "https://www.blogsicilia.it/palermo/terremoto-tirreno-sciame-sismico-prosegue-notte-oltre-100-scosse-totale-scuole-chiuse-controlli-ponti-strade-edifici-pubblici/1319157/"
+      ],
+      [
+        "Tp24, «Trema la Sicilia: a Palermo scuole e università chiuse fino a domenica», 24 ottobre 2026, per l'ordinanza del Comune, le verifiche dell'Anas e la revoca dell'allerta maremoto",
+        "https://www.tp24.it/2026/10/24/cronaca/trema-la-sicilia-a-palermo-scuole-e-universita-chiuse-fino-a-domenica-lo-sciame-sismico-continua/241196"
+      ],
+      [
+        "Agi, «Terremoto oggi in Sicilia, sciame nella notte: i dati dell'Ingv», 24 ottobre 2026",
+        "https://www.agi.it/cronaca/news/2026-10-24/terremoto-sicilia-sciame-sismico-39686908/"
+      ],
+      [
+        "Protezione civile regionale siciliana, avvisi sismici e prima ricognizione dei danni, 23 e 24 ottobre 2026",
+        ""
+      ],
+      [
+        "Consiglio nazionale delle ricerche con le Università di Messina e Palermo, studi sull'assetto tettonico fra Eolie e Ustica",
+        ""
+      ],
+      [
+        "Lupton e altri, «Active hydrothermal discharge on the submarine Aeolian Arc», 2011, per l'attività idrotermale su Marsili, Enarete ed Eolo",
+        ""
+      ]
+    ],
+    "nota": "La sequenza sismica è in corso alla data di pubblicazione: numero delle scosse, magnitudo e provvedimenti dei Comuni possono cambiare. Lo stato di attività di Eolo, Sisifo ed Enarete è attribuito agli studi sull'arco eoliano del 2007; in questi giorni il geologo marino Salvatore Passaro, del Consiglio nazionale delle ricerche, ha dichiarato che su quegli edifici non si hanno informazioni aggiornate. La faglia all'origine della sequenza non è stata ancora individuata in via definitiva."
   }
 ]
