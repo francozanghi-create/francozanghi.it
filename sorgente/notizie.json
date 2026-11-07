@@ -5,6 +5,7 @@
     "data": "2026-10-10",
     "titolo": "A Marsala la polemica sul clima è arrivata prima dei dati",
     "sommario": "Due trombe marine hanno colpito Marsala e Petrosino il 9 ottobre. Nessun morto, una scuola elementare distrutta con 273 bambini dentro. Sull'attribuzione al riscaldamento globale le fonti scientifiche dicono qualcosa di più preciso di quanto si è letto in quelle ore.",
+    "immagine": "marsala-polemica-clima",
     "corpo": [
       [
         "p",
@@ -81,8 +82,7 @@
         "https://www.tp24.it/2016/07/06/ieri-e-oggi/marsala-e-la-tromba-d-aria-da-500-morti-ecco-come-nasce-una-bufala/101558"
       ]
     ],
-    "nota": "Le classificazioni di intensità e il bilancio dei feriti erano ancora provvisori alla data di pubblicazione.",
-    "immagine": "marsala-polemica-clima"
+    "nota": "Le classificazioni di intensità e il bilancio dei feriti erano ancora provvisori alla data di pubblicazione."
   },
   {
     "id": "giudice-milano-carte-ministero",
@@ -90,6 +90,7 @@
     "data": "2026-10-11",
     "titolo": "Le carte di una giudice finite sui giornali",
     "sommario": "Una consigliera della Corte d'Appello di Milano scopre dalla stampa di essere finita in un'ipotesi di reato. Le sue comunicazioni riservate con il ministero, che riguardano la morte della madre, escono su un quotidiano nazionale.",
+    "immagine": "giudice-milano-carte-ministero",
     "corpo": [
       [
         "p",
@@ -166,8 +167,7 @@
         "https://www.ilriformista.it/ferrari-io-caregiver-di-mia-mamma-ho-diritto-al-trasferimento-non-sono-iscritta-a-correnti-o-anm-dovevo-rivolgermi-a-palamara-533731/"
       ]
     ],
-    "nota": "Alla data di pubblicazione non risulta alcun atto ufficiale che confermi l'esistenza di un procedimento penale, né chi lo avrebbe sollecitato.",
-    "immagine": "giudice-milano-carte-ministero"
+    "nota": "Alla data di pubblicazione non risulta alcun atto ufficiale che confermi l'esistenza di un procedimento penale, né chi lo avrebbe sollecitato."
   },
   {
     "id": "di-maio-campo-largo-ucraina",
@@ -175,6 +175,7 @@
     "data": "2026-10-12",
     "titolo": "Di Maio avverte il campo largo: sull'Ucraina cadono i governi",
     "sommario": "Alla festa del Foglio, a Firenze, l'ex capo politico del Movimento 5 Stelle mette la coalizione davanti al primo voto europeo sugli aiuti militari a Kiev. Dal Movimento, finora, nessuna replica.",
+    "immagine": "di-maio-campo-largo-ucraina",
     "corpo": [
       [
         "p",
@@ -238,8 +239,7 @@
         "il Fatto Quotidiano, resoconto della festa del Foglio, 12 ottobre 2026",
         "https://www.ilfattoquotidiano.it/2026/10/12/di-maio-festa-del-foglio-renzi-m5s-meloni-news/8535211/"
       ]
-    ],
-    "immagine": "di-maio-campo-largo-ucraina"
+    ]
   },
   {
     "id": "bellinvia-ofria-confisca",
@@ -247,6 +247,7 @@
     "data": "2026-10-12",
     "titolo": "L'impresa confiscata agli Ofria e quello che dicono le motivazioni",
     "sommario": "Depositate le motivazioni della sentenza di primo grado sulla Bellinvia, autodemolizioni di Barcellona Pozzo di Gotto sotto confisca dal 2011. Per la giudice l'azienda sarebbe rimasta condizionata dalla famiglia anche dopo i provvedimenti dello Stato.",
+    "immagine": "bellinvia-ofria-confisca",
     "corpo": [
       [
         "p",
@@ -323,8 +324,7 @@
         "https://messina.gds.it/articoli/cronaca/2025/01/14/mafia-gli-arrestati-a-barcellona-pozzo-di-gotto-e-milazzo-i-nomi-757f6e4f-61c0-4f56-bc0c-3604fab37e4f/"
       ]
     ],
-    "nota": "Il contenuto delle motivazioni è riportato finora da una sola testata, le pene indicate dalle fonti non coincidono per alcuni imputati e la rivalutazione della confisca disposta dalla Cassazione non ha, alla data di pubblicazione, un esito pubblicamente noto.",
-    "immagine": "bellinvia-ofria-confisca"
+    "nota": "Il contenuto delle motivazioni è riportato finora da una sola testata, le pene indicate dalle fonti non coincidono per alcuni imputati e la rivalutazione della confisca disposta dalla Cassazione non ha, alla data di pubblicazione, un esito pubblicamente noto."
   },
   {
     "id": "primarie-campo-largo-conta",
@@ -332,6 +332,7 @@
     "data": "2026-10-12",
     "titolo": "Nel campo largo non si litiga sulla leadership, si litiga sul metodo",
     "sommario": "Conte chiede le primarie da settimane, Schlein sostiene che guida chi ha un voto in più. Dietro la contesa sul metodo ci sono i numeri delle due basi, e ciascuna vuole la regola che fa vincere il proprio leader.",
+    "immagine": "primarie-campo-largo-conta",
     "corpo": [
       [
         "p",
@@ -420,8 +421,7 @@
         "https://sondaggibidimedia.com/sondaggio-demopolis-primarie-campo-largo-settembre-2026/"
       ]
     ],
-    "nota": "Le rilevazioni citate sono di settembre e dei primi di ottobre 2026; i sondaggi sul confronto diretto fra Conte e Schlein si contraddicono fra loro e qui non sono riportati. Il programma della coalizione è ancora in discussione e la data delle elezioni politiche non è fissata: l'ipotesi del voto in primavera è una previsione dello stesso Conte.",
-    "immagine": "primarie-campo-largo-conta"
+    "nota": "Le rilevazioni citate sono di settembre e dei primi di ottobre 2026; i sondaggi sul confronto diretto fra Conte e Schlein si contraddicono fra loro e qui non sono riportati. Il programma della coalizione è ancora in discussione e la data delle elezioni politiche non è fissata: l'ipotesi del voto in primavera è una previsione dello stesso Conte."
   },
   {
     "id": "scarpinato-natoli-antimafia",
@@ -429,6 +429,8 @@
     "data": "2026-10-13",
     "titolo": "La polemica su Scarpinato e Natoli è tutta dentro l'antimafia",
     "sommario": "Un decreto di archiviazione definisce depistante l'attività del senatore Roberto Scarpinato, che non è indagato. Sullo sfondo ci sono le parole private di Gioacchino Natoli sulla famiglia Borsellino, agli atti da mesi.",
+    "immagine": "scarpinato-natoli-antimafia",
+    "video": "rhTOWYHFKYo",
     "corpo": [
       [
         "p",
@@ -517,9 +519,7 @@
         "https://www.palermotoday.it/cronaca/mafia-appalti-archiviazione-pignatone-natoli-decreto-gip.html"
       ]
     ],
-    "nota": "La vicenda è aperta: la pratica a tutela del giudice è stata chiesta al Consiglio superiore della magistratura ma non è ancora conclusa, e le indagini sulle stragi del 1992 restano in corso.",
-    "immagine": "scarpinato-natoli-antimafia",
-    "video": "rhTOWYHFKYo"
+    "nota": "La vicenda è aperta: la pratica a tutela del giudice è stata chiesta al Consiglio superiore della magistratura ma non è ancora conclusa, e le indagini sulle stragi del 1992 restano in corso."
   },
   {
     "id": "pignatone-24-immobili",
@@ -527,6 +527,8 @@
     "data": "2026-10-14",
     "titolo": "Le 24 case della famiglia Pignatone e l'archiviazione che chiude tutto",
     "sommario": "Un decreto di 644 pagine del gip di Caltanissetta muove rilievi pesantissimi a Giuseppe Pignatone e nello stesso momento archivia: il reato ipotizzato era prescritto prima ancora che l'indagine cominciasse.",
+    "immagine": "pignatone-24-immobili",
+    "video": "6zMixtEHMZY",
     "corpo": [
       [
         "p",
@@ -615,9 +617,7 @@
         "https://www.ilgiornale.it/news/cronaca-giudiziaria/mafia-e-appalti-il-gip-di-caltanissetta-archivia-e-punta-su-scarpinato-da-lui-attivita-depistante-e-dubbia-attendibilita/"
       ]
     ],
-    "nota": "Il numero degli immobili è quello indicato dal decreto; il procuratore di Caltanissetta, in commissione antimafia, ne ha contati 26 partendo dal 1978 e includendo box, cantine e negozi. Alla data di pubblicazione non risulta una replica pubblica di Giuseppe Pignatone successiva al deposito del decreto. Le indagini sulle stragi del 1992 restano aperte.",
-    "immagine": "pignatone-24-immobili",
-    "video": "6zMixtEHMZY"
+    "nota": "Il numero degli immobili è quello indicato dal decreto; il procuratore di Caltanissetta, in commissione antimafia, ne ha contati 26 partendo dal 1978 e includendo box, cantine e negozi. Alla data di pubblicazione non risulta una replica pubblica di Giuseppe Pignatone successiva al deposito del decreto. Le indagini sulle stragi del 1992 restano aperte."
   },
   {
     "id": "colosimo-ufficio-borsellino",
@@ -625,6 +625,8 @@
     "data": "2026-10-14",
     "titolo": "L'ufficio di Borsellino restò senza sigilli per più di sei ore",
     "sommario": "La presidente della commissione antimafia dice di aver trovato segretate carte che non si aspettava, e fa un esempio solo: la stanza del giudice, chiusa alle 23:25 del 19 luglio 1992.",
+    "immagine": "colosimo-ufficio-borsellino",
+    "video": "d37tNfz-BzY",
     "corpo": [
       [
         "p",
@@ -705,9 +707,7 @@
         "https://www.palermotoday.it/cronaca/mafia-appalti-archiviazione-pignatone-natoli-decreto-gip.html"
       ]
     ],
-    "nota": "L'orario dell'esplosione oscilla fra le 16:58 e le 17 circa a seconda degli atti. L'affermazione di avere desecretato proprio quelle carte è di Chiara Colosimo e non risulta documentata da un atto della commissione. Il filone sull'agenda rossa è ancora aperto e altre desecretazioni sono state annunciate.",
-    "immagine": "colosimo-ufficio-borsellino",
-    "video": "d37tNfz-BzY"
+    "nota": "L'orario dell'esplosione oscilla fra le 16:58 e le 17 circa a seconda degli atti. L'affermazione di avere desecretato proprio quelle carte è di Chiara Colosimo e non risulta documentata da un atto della commissione. Il filone sull'agenda rossa è ancora aperto e altre desecretazioni sono state annunciate."
   },
   {
     "id": "davigo-condanna-definitiva",
@@ -715,6 +715,8 @@
     "data": "2026-10-15",
     "titolo": "Davigo condannato in via definitiva per rivelazione del segreto d'ufficio",
     "sommario": "La Cassazione ha respinto l'ultimo ricorso dell'ex pubblico ministero di Mani pulite. In mezzo ci sono i verbali segreti di Piero Amara, una loggia di cui non è stata trovata prova e il magistrato che quei verbali li consegnò.",
+    "immagine": "davigo-condanna-definitiva",
+    "video": "iW8SYUFBsyU",
     "corpo": [
       [
         "p",
@@ -811,9 +813,7 @@
         "https://www.lanazione.it/umbria/cronaca/loggia-ungheria-thicaqrv"
       ]
     ],
-    "nota": "Il numero delle persone con cui Davigo parlò di quei verbali, una dozzina, è quello riportato dalle ricostruzioni delle agenzie e non risulta da un atto. Alla data di pubblicazione le motivazioni della decisione della Cassazione del 7 ottobre 2026 non risultano ancora depositate.",
-    "immagine": "davigo-condanna-definitiva",
-    "video": "iW8SYUFBsyU"
+    "nota": "Il numero delle persone con cui Davigo parlò di quei verbali, una dozzina, è quello riportato dalle ricostruzioni delle agenzie e non risulta da un atto. Alla data di pubblicazione le motivazioni della decisione della Cassazione del 7 ottobre 2026 non risultano ancora depositate."
   },
   {
     "id": "ris-reperti-distrutti",
@@ -821,6 +821,8 @@
     "data": "2026-10-16",
     "titolo": "Le provette di Garlasco distrutte nel 2016, il via libera dei giudici nel 2022",
     "sommario": "Il comandante generale dei carabinieri promette che chi ha sbagliato pagherà, il reparto scientifico risponde che non ha sbagliato nessuno. In mezzo ci sono il dna estratto dalle tracce del delitto e un impegno scritto nel 2007 e poi disatteso.",
+    "immagine": "ris-reperti-distrutti",
+    "video": "cpC19lquoL0",
     "corpo": [
       [
         "p",
@@ -942,8 +944,6 @@
       ]
     ],
     "nota": "La vicenda è in evoluzione alla data di pubblicazione: la richiesta di rinvio a giudizio per Andrea Sempio è attesa fra ottobre e novembre 2026 e il 16 ottobre la difesa di Alberto Stasi ha annunciato ulteriori elementi. Non è accertato quali campioni siano stati effettivamente distrutti nel 2016: sul mese le ricostruzioni giornalistiche e la relazione del reparto non coincidono, e in questo articolo è indicato il solo anno. Il contenuto dell'ordinanza del giudice per le indagini preliminari di Milano è riportato da una sola fonte, che lo riprende dal quotidiano Il Dubbio.",
-    "immagine": "ris-reperti-distrutti",
-    "video": "cpC19lquoL0",
     "correzione": {
       "data": "2026-10-19",
       "testo": "L'articolo indicava Luciano Garofano come consulente in carica della difesa di Andrea Sempio. Garofano aveva rinunciato a quell'incarico il 1° ottobre 2025, dichiarando che la difesa non condivideva i suoi suggerimenti tecnico-scientifici. Il passaggio è stato corretto."
@@ -955,6 +955,7 @@
     "data": "2026-10-16",
     "titolo": "La confisca che non era stata annullata: il chiarimento sul caso Bellinvia",
     "sommario": "Due giorni dopo il racconto della ditta confiscata agli Ofrìa a Barcellona Pozzo di Gotto, una sentenza della Cassazione rimasta fuori dalle cronache rimette in fila le date e corregge un passaggio inesatto di quella ricostruzione.",
+    "immagine": "ofria-confisca-chiarimento",
     "corpo": [
       [
         "p",
@@ -1051,8 +1052,7 @@
         ""
       ]
     ],
-    "nota": "Le quindici condanne del processo di Barcellona Pozzo di Gotto sono di primo grado e non sono definitive. Alla data di pubblicazione non risulta l'esito della richiesta di revisione presentata da Salvatore Ofrìa né un esito successivo al giudizio di Caltanissetta del luglio 2025 sul caso Saguto.",
-    "immagine": "ofria-confisca-chiarimento"
+    "nota": "Le quindici condanne del processo di Barcellona Pozzo di Gotto sono di primo grado e non sono definitive. Alla data di pubblicazione non risulta l'esito della richiesta di revisione presentata da Salvatore Ofrìa né un esito successivo al giudizio di Caltanissetta del luglio 2025 sul caso Saguto."
   },
   {
     "id": "patti-playa-sequestro",
@@ -1060,6 +1060,7 @@
     "data": "2026-10-16",
     "titolo": "Amianto e rifiuti alla foce del Timeto: sequestrata l'area, tre indagati",
     "sommario": "Circa 3.000 metri quadri sotto sequestro in contrada Playa, con manufatti industriali collassati in mare. Fra i tre indagati c'è il sindaco di Patti, Gianluca Bonsignore, che dieci giorni fa aveva già ricevuto un avviso di garanzia in un'altra vicenda.",
+    "immagine": "patti-playa-sequestro",
     "corpo": [
       [
         "p",
@@ -1152,8 +1153,7 @@
         "https://www.glpress.it/elezioni-amministrative-post-covid-in-provincia-di-messina-comuni-divisi-tra-il-2026-e-il-2027-capo-dorlando-e-patti/"
       ]
     ],
-    "nota": "L'inchiesta è aperta alla data di pubblicazione e il numero degli indagati può cambiare. Nessuna fonte indica quale reato sia contestato al sindaco: l'articolo riporta che è indagato e quali sono i due reati su cui si indaga, senza attribuirne uno a lui. La data esatta dell'esecuzione del sequestro non è precisata dalle fonti. Il dato dei 1.200 metri cubi di materiali è riportato da una sola fonte. Dei lavori di potenziamento del depuratore, avviati alla fine del 2022, non risulta una fonte recente sullo stato di avanzamento. Al momento non risultano dichiarazioni dei tre indagati.",
-    "immagine": "patti-playa-sequestro"
+    "nota": "L'inchiesta è aperta alla data di pubblicazione e il numero degli indagati può cambiare. Nessuna fonte indica quale reato sia contestato al sindaco: l'articolo riporta che è indagato e quali sono i due reati su cui si indaga, senza attribuirne uno a lui. La data esatta dell'esecuzione del sequestro non è precisata dalle fonti. Il dato dei 1.200 metri cubi di materiali è riportato da una sola fonte. Dei lavori di potenziamento del depuratore, avviati alla fine del 2022, non risulta una fonte recente sullo stato di avanzamento. Al momento non risultano dichiarazioni dei tre indagati."
   },
   {
     "id": "cgil-sigle-studentesche-francia",
@@ -1161,6 +1161,8 @@
     "data": "2026-10-20",
     "titolo": "I conti della Cgil e le sigle studentesche che indicano la Francia",
     "sommario": "I bilanci del sindacato registrano 847.613 euro versati fra il 2019 e il 2024 all'Unione degli Universitari e alla Rete degli Studenti Medi. Pochi giorni prima dei cortei italiani, i dirigenti di quelle sigle indicavano come modello un paese dove bruciavano i licei.",
+    "immagine": "cgil-sigle-studentesche-francia",
+    "video": "sliehhtZKoI",
     "corpo": [
       [
         "p",
@@ -1293,9 +1295,7 @@
         "https://www.statoquotidiano.it/20/10/2026/scontri-a-milano-45-arresti-indagini-ancora-aperte/1358621/"
       ]
     ],
-    "nota": "La somma di 847.613 euro è la ricostruzione di La Verità sui bilanci della Cgil dal 2019 al 2024 e non è stata letta direttamente sui bilanci. Mancano i dati del 2025 e quelli precedenti al 2019; l'ipotesi che il totale storico superi il milione di euro è una stima della stessa testata e qui non viene usata come dato. Il bilancio francese dei danni è una stima del governo diffusa il 9 ottobre 2026 e può essere aggiornata. La replica qui riportata è quella del segretario generale della Cgil di Salerno, ripresa dalla stampa locale il 20 ottobre 2026, e non una nota della confederazione nazionale. I numeri dei fermi e degli arresti di Milano sono aggiornati al 20 ottobre 2026 e possono cambiare: le indagini sono aperte.",
-    "immagine": "cgil-sigle-studentesche-francia",
-    "video": "sliehhtZKoI"
+    "nota": "La somma di 847.613 euro è la ricostruzione di La Verità sui bilanci della Cgil dal 2019 al 2024 e non è stata letta direttamente sui bilanci. Mancano i dati del 2025 e quelli precedenti al 2019; l'ipotesi che il totale storico superi il milione di euro è una stima della stessa testata e qui non viene usata come dato. Il bilancio francese dei danni è una stima del governo diffusa il 9 ottobre 2026 e può essere aggiornata. La replica qui riportata è quella del segretario generale della Cgil di Salerno, ripresa dalla stampa locale il 20 ottobre 2026, e non una nota della confederazione nazionale. I numeri dei fermi e degli arresti di Milano sono aggiornati al 20 ottobre 2026 e possono cambiare: le indagini sono aperte."
   },
   {
     "id": "autotrasportatori-sicilia-spaccati",
@@ -1303,6 +1303,8 @@
     "data": "2026-10-21",
     "titolo": "In Sicilia la protesta dei tir si spacca in due",
     "sommario": "Il Comitato trasportatori siciliani ha revocato il fermo dopo il tavolo con Salvini, l'Aias lo prosegue e tiene il blocco al casello di San Gregorio. Fra le due sigle volano accuse che nessun atto ha accertato.",
+    "immagine": "autotrasportatori-sicilia-spaccati",
+    "video": null,
     "corpo": [
       [
         "p",
@@ -1403,9 +1405,7 @@
         "https://www.agi.it/cronaca/news/2026-10-21/sciopero-tir-dove-blocchi-39639025/"
       ]
     ],
-    "nota": "Al momento della pubblicazione il presidio dell'Aias al casello di San Gregorio risulta ancora attivo e il secondo tavolo con il ministero è fissato per il 27 ottobre. Sulle accuse di minacce e gomme tagliate non risulta alcun procedimento.",
-    "immagine": "autotrasportatori-sicilia-spaccati",
-    "video": null
+    "nota": "Al momento della pubblicazione il presidio dell'Aias al casello di San Gregorio risulta ancora attivo e il secondo tavolo con il ministero è fissato per il 27 ottobre. Sulle accuse di minacce e gomme tagliate non risulta alcun procedimento."
   },
   {
     "id": "decreto-cortei-militari",
@@ -1413,6 +1413,8 @@
     "data": "2026-10-21",
     "titolo": "Decreto sui cortei: da 4 a 12 anni a chi organizza il gruppo in rete",
     "sommario": "Il Consiglio dei ministri ha approvato d'urgenza un testo che tocca il codice penale, il processo minorile e il portafoglio dei genitori. La norma di cui si è discusso di più non c'è, e la pena più alta non ha fatto nessun titolo.",
+    "immagine": "decreto-cortei-militari",
+    "video": "LRuYUcY0Qtk",
     "corpo": [
       [
         "p",
@@ -1479,8 +1481,6 @@
         "Resta il fatto da cui si è partiti. Il freno non è arrivato da una regola scritta, ma da un'interlocuzione riservata fra due palazzi, di cui non conosciamo una riga. Un freno che non sta scritto da nessuna parte vale finché vale la persona che lo tiene in mano. Se cambia l'inquilino di uno dei due palazzi, resta solo la telefonata."
       ]
     ],
-    "immagine": "decreto-cortei-militari",
-    "video": "LRuYUcY0Qtk",
     "fonti": [
       [
         "Presidenza del Consiglio dei ministri, «Comunicato stampa del Consiglio dei Ministri n. 193», 20 ottobre 2026",
@@ -1535,6 +1535,7 @@
     "data": "2026-10-21",
     "titolo": "Il Tar respinge i ricorsi, Basile resta sindaco di Messina",
     "sommario": "Due ricorsi chiedevano di annullare tutto: il voto, il sindaco, il consiglio comunale. Il Tar di Catania li ha respinti, ma le motivazioni non ci sono ancora, e la spiegazione che oggi tutti ripetono è scritta per un altro comune.",
+    "immagine": "basile-tar-ricorsi",
     "corpo": [
       [
         "p",
@@ -1593,7 +1594,6 @@
         "Resta un fatto. Il verdetto di Messina c'è, ma le sue ragioni ancora no, e la spiegazione che oggi tutti ripetono è quella scritta per Barcellona. Sulle firme il precedente regge. Sulle dimissioni di Basile, che a Barcellona non c'entravano niente, nessuno ha ancora letto una riga. Quella riga, quando arriverà, sarà l'unica cosa che potrà dire se la partita era davvero chiusa da subito, o se lo è diventata soltanto adesso."
       ]
     ],
-    "immagine": "basile-tar-ricorsi",
     "fonti": [
       [
         "La Sicilia, edizione di Messina, «Basile resta in sella: il Tar ha respinto i ricorsi», 21 ottobre 2026",
@@ -1620,6 +1620,7 @@
     "data": "2026-10-22",
     "titolo": "Siracusa senza giunta, e dell'azzeramento non risulta l'atto",
     "sommario": "Gli assessori del Comune hanno firmato le dimissioni uno dopo l'altro, mentre la Procura europea indaga sugli appalti e il sindaco è fra gli indagati. Lui resta al suo posto, e intanto una città da quasi 120 mila abitanti è senza giunta.",
+    "immagine": "siracusa-giunta-azzerata",
     "corpo": [
       [
         "p",
@@ -1678,7 +1679,6 @@
         "Resta una domanda, e non è una domanda di sospetto: è che le carte e le parole non dicono la stessa cosa. Un azzeramento è stato annunciato in pubblico; l'atto che lo renderebbe un azzeramento, a oggi, non c'è. Siracusa ha ripreso il controllo della propria amministrazione, o ha soltanto sentito dire che stava accadendo?"
       ]
     ],
-    "immagine": "siracusa-giunta-azzerata",
     "fonti": [
       [
         "La Sicilia, edizione di Siracusa, «Il sindaco Italia non arretra: non mi dimetto per un'iscrizione nel registro degli indagati», 22 ottobre 2026",
@@ -1717,6 +1717,7 @@
     "data": "2026-10-22",
     "titolo": "Saccheggi a Milano: 271 persone in questura, 220 sono minorenni",
     "sommario": "Due giorni di devastazioni nel centro di Milano dopo un corteo autorizzato contro il carovita. I bersagli però non sono stati scelti a caso, e la ricerca sulle folle spiega perché: dentro un gruppo le regole non spariscono, cambiano.",
+    "immagine": "milano-saccheggi-minorenni",
     "corpo": [
       [
         "p",
@@ -1775,7 +1776,6 @@
         "Resta un ultimo dato, presentato in questi giorni come rassicurante: dietro i disordini non ci sarebbe stata alcuna regia. Il ministro dell'Interno lo ha detto esplicitamente; il vicepremier Antonio Tajani, citando il ministro della Difesa Guido Crosetto, ha invece detto di non escludere una regia esterna. Nel frattempo quelle chat c'erano, a quei ragazzini qualcuno aveva spiegato chi sarebbe stato incriminato e chi no, e dopo i due giorni di devastazioni è nato un movimento che li rivendica e annuncia mobilitazioni permanenti. Se una regia non c'era, qualcosa che le somigliava molto sì."
       ]
     ],
-    "immagine": "milano-saccheggi-minorenni",
     "fonti": [
       [
         "Il Post, «Cosa è successo a Milano in due giorni di saccheggi e disordini», 19 ottobre 2026",
@@ -1835,6 +1835,9 @@
   {
     "id": "petrolio-golfo-sopra-livelli-preguerra",
     "sezione": "Geopolitica",
+    "altre_sezioni": [
+      "Attualità"
+    ],
     "data": "2026-10-23",
     "titolo": "Dal Golfo esce più petrolio di prima della guerra, e il prezzo sale",
     "sommario": "Le esportazioni della regione hanno superato i 24 milioni di barili al giorno, più di quanti ne uscissero prima del conflitto con l'Iran. Eppure il Brent è ai massimi da cinque mesi: il petrolio non manca, manca il modo di portarlo via a un prezzo normale.",
@@ -1947,14 +1950,14 @@
         ""
       ]
     ],
-    "nota": "Il dato Kpler sull'ultima settimana è preliminare e le fonti lo riportano come «oltre 24 milioni di barili», senza cifra esatta. Le percentuali del premio assicurativo di guerra, 10% oggi contro 3% prima, sono del Wall Street Journal: un'analisi di settore colloca il premio precedente alla crisi molto più in basso, intorno allo 0,25% del valore dello scafo. La vicenda è in evoluzione: alla pubblicazione gli attacchi contro l'Arabia Saudita erano in corso e la precettazione degli autotrasportatori era stata segnalata ma non disposta.",
-    "altre_sezioni": [
-      "Attualità"
-    ]
+    "nota": "Il dato Kpler sull'ultima settimana è preliminare e le fonti lo riportano come «oltre 24 milioni di barili», senza cifra esatta. Le percentuali del premio assicurativo di guerra, 10% oggi contro 3% prima, sono del Wall Street Journal: un'analisi di settore colloca il premio precedente alla crisi molto più in basso, intorno allo 0,25% del valore dello scafo. La vicenda è in evoluzione: alla pubblicazione gli attacchi contro l'Arabia Saudita erano in corso e la precettazione degli autotrasportatori era stata segnalata ma non disposta."
   },
   {
     "id": "sciame-sismico-eolie",
     "sezione": "Cronaca",
+    "altre_sezioni": [
+      "Sicilia"
+    ],
     "data": "2026-10-23",
     "titolo": "Scossa di magnitudo 5.5 al largo delle Eolie, allerta maremoto poi revocata",
     "sommario": "Il terremoto delle 12.19, a 9 chilometri di profondità a nord-ovest di Alicudi, è stato avvertito da Palermo a Catania: scuole svuotate, gente in strada, nessun danno a persone. È l'episodio più forte di una sequenza cominciata martedì sera.",
@@ -2051,10 +2054,7 @@
         ""
       ]
     ],
-    "nota": "La sequenza è in corso alla data di pubblicazione. Il valore di magnitudo 5.5 è quello rivisto dall'Ingv alle 13.11 del 23 ottobre 2026 e può essere ancora aggiornato; le verifiche sugli edifici pubblici e sulle infrastrutture sono in corso e il bilancio senza danni a persone è provvisorio.",
-    "altre_sezioni": [
-      "Sicilia"
-    ]
+    "nota": "La sequenza è in corso alla data di pubblicazione. Il valore di magnitudo 5.5 è quello rivisto dall'Ingv alle 13.11 del 23 ottobre 2026 e può essere ancora aggiornato; le verifiche sugli edifici pubblici e sulle infrastrutture sono in corso e il bilancio senza danni a persone è provvisorio."
   },
   {
     "id": "tar-motivazioni-elezioni-messina",
@@ -2171,6 +2171,7 @@
     "titolo": "Perché il terremoto delle Eolie non viene dai vulcani sommersi",
     "sommario": "Sotto il mare davanti ad Alicudi ci sono vulcani attivi, e la sequenza sismica in corso non li riguarda. Una faglia e un vulcano fanno tremare la terra in due modi diversi, e sugli strumenti lasciano due firme che i sismologi riconoscono a colpo d'occhio.",
     "immagine": "terremoto-eolie-vulcani-sommersi",
+    "video": "iM5wZNX14_s",
     "corpo": [
       [
         "p",
@@ -2283,8 +2284,7 @@
         ""
       ]
     ],
-    "nota": "La sequenza sismica è in corso alla data di pubblicazione: numero delle scosse, magnitudo e provvedimenti dei Comuni possono cambiare. Lo stato di attività di Eolo, Sisifo ed Enarete è attribuito agli studi sull'arco eoliano del 2007; in questi giorni il geologo marino Salvatore Passaro, del Consiglio nazionale delle ricerche, ha dichiarato che su quegli edifici non si hanno informazioni aggiornate. La faglia all'origine della sequenza non è stata ancora individuata in via definitiva.",
-    "video": "iM5wZNX14_s"
+    "nota": "La sequenza sismica è in corso alla data di pubblicazione: numero delle scosse, magnitudo e provvedimenti dei Comuni possono cambiare. Lo stato di attività di Eolo, Sisifo ed Enarete è attribuito agli studi sull'arco eoliano del 2007; in questi giorni il geologo marino Salvatore Passaro, del Consiglio nazionale delle ricerche, ha dichiarato che su quegli edifici non si hanno informazioni aggiornate. La faglia all'origine della sequenza non è stata ancora individuata in via definitiva."
   },
   {
     "id": "movimento-17-ottobre-cittadinanza",
@@ -2728,6 +2728,8 @@
     "data": "2026-10-27",
     "titolo": "Le tessere di Futuro Nazionale e la regola che cambia da Sassari a Civitanova",
     "sommario": "Lo stesso indirizzo per centinaia di iscritti: a Sassari il partito di Vannacci lo ha contestato, a Civitanova Marche lo chiama procedura. Poi la Puglia e la Calabria. Un partito che non sa dire quanti iscritti ha, e le garanzie che restano.",
+    "immagine": "futuro-nazionale-tessere-indirizzo-unico",
+    "video": "uRfQ3le6K6Q",
     "corpo": [
       [
         "p",
@@ -2794,7 +2796,6 @@
         "Saranno il Garante della privacy, se il ricorso annunciato arriverà, e forse una procura a dire come è nata quella lista. La domanda politica, però, non ha bisogno di un giudice: se un partito non sa dire quanti sono i suoi iscritti, come pensa di convincere gli italiani che sa governare?"
       ]
     ],
-    "immagine": "futuro-nazionale-tessere-indirizzo-unico",
     "fonti": [
       [
         "Libero, «Una slavina senza precedenti: in 500 mollano Vannacci, con chi passano», 23 settembre 2026 (da L'Unione Sarda)",
@@ -2829,8 +2830,7 @@
         "https://www.affaritaliani.it/politica/futuro-nazionale-vannacci-perde-pezzi-in-calabria-a-lamezia-600-iscritti-restituiscono-la-tessera.html"
       ]
     ],
-    "nota": "I numeri di Civitanova variano fra le testate: 226 su 270 per Cronache Maceratesi, oltre 300 per il Resto del Carlino. Il dato di Sassari, 488 tessere su circa 500, viene solo dal partito. Il ricorso al Garante e l'esposto erano annunciati e non risultavano depositati alla data di pubblicazione. Nessuno risulta indagato.",
-    "video": "uRfQ3le6K6Q"
+    "nota": "I numeri di Civitanova variano fra le testate: 226 su 270 per Cronache Maceratesi, oltre 300 per il Resto del Carlino. Il dato di Sassari, 488 tessere su circa 500, viene solo dal partito. Il ricorso al Garante e l'esposto erano annunciati e non risultavano depositati alla data di pubblicazione. Nessuno risulta indagato."
   },
   {
     "id": "albanese-vetrine-rotte-milano",
@@ -2838,6 +2838,8 @@
     "data": "2026-10-27",
     "titolo": "Albanese, le vetrine rotte di Milano e la formula «nega e defletti»",
     "sommario": "Francesca Albanese accusa chi racconta le proteste di negare e deviare l'attenzione. Ma nel suo post mancano i saccheggi e i danni, e una risposta del Riformista la cita con una parola che non ha scritto.",
+    "immagine": "albanese-vetrine-rotte-milano",
+    "video": "jo5WLe9-mcU",
     "corpo": [
       [
         "p",
@@ -2900,7 +2902,6 @@
         "Chi difende Albanese dice che lei i saccheggi non li ha mai giustificati e che parlava del racconto dei giornali, non dei fatti. Ed è vero: nel suo post la parola violenza non c'è. Ma è proprio questo il punto. Nega e defletti."
       ]
     ],
-    "immagine": "albanese-vetrine-rotte-milano",
     "fonti": [
       [
         "Ansa, «Albanese, proteste cariche di dolore ma si parla di vetrine rotte», 21 ottobre 2026",
@@ -2927,8 +2928,7 @@
         "https://it.euronews.com/2026/10/18/secondo-giorno-di-scontri-a-milano-vetrine-distrutte-e-negozi-saccheggiati"
       ]
     ],
-    "nota": "La ricondivisione dell'appello del centro sociale Lambretta è riportata dalla sola Alanews. Il bilancio degli arresti era provvisorio.",
-    "video": "jo5WLe9-mcU"
+    "nota": "La ricondivisione dell'appello del centro sociale Lambretta è riportata dalla sola Alanews. Il bilancio degli arresti era provvisorio."
   },
   {
     "id": "israele-elezioni-senza-maggioranza",
@@ -2936,6 +2936,8 @@
     "data": "2026-10-28",
     "titolo": "Israele senza maggioranza: Netanyahu primo partito, nessuno arriva a 61 seggi",
     "sommario": "Il Likud è il primo partito e Netanyahu rivendica una maggioranza fra gli elettori ebrei, ma nessuno dei due blocchi ha i numeri per governare. Eisenkot li avrebbe solo con i partiti arabi, al loro risultato più alto di sempre.",
+    "immagine": "israele-elezioni-senza-maggioranza",
+    "video": "6qW7lnXMAOs",
     "corpo": [
       [
         "p",
@@ -2990,7 +2992,6 @@
         "Il passaggio da guardare sono le buste doppie: circa 650.000 voti, quelli dei soldati, dei ricoverati, dei detenuti e dei diplomatici all'estero, che si contano fra la notte di mercoledì e la sera di giovedì e possono spostare qualche seggio. Anche dopo quel conteggio i numeri restano quasi definitivi, perché le verifiche finali della commissione sono previste la settimana successiva; poi vengono le consultazioni del presidente Isaac Herzog. Se l'incarico va a Eisenkot, la via è quella indicata da Plesner: un governo di minoranza con l'appoggio esterno dei partiti arabi. Il sito israeliano Ynet indica però anche lo scenario opposto, in cui nessuno cede, Netanyahu resta in carica per gli affari correnti e Israele torna a votare."
       ]
     ],
-    "immagine": "israele-elezioni-senza-maggioranza",
     "fonti": [
       [
         "Times of Israel, diretta del 28 ottobre 2026, risultati parziali della commissione elettorale centrale e discorso di Netanyahu",
@@ -3037,8 +3038,7 @@
         "https://www.ynetnews.com/article/hjnatbkaml"
       ]
     ],
-    "nota": "I seggi sono quelli di tutte le urne scrutinate nel pomeriggio del 28 ottobre, cioè l'86% del totale. Mancano circa 650.000 voti in doppia busta, contati fra la notte di mercoledì 28 e la sera di giovedì 29 ottobre, che possono spostare qualche seggio; le verifiche finali della commissione sono previste la settimana successiva. La notizia del Wall Street Journal è a fonte unica e la Casa Bianca non la commenta.",
-    "video": "6qW7lnXMAOs"
+    "nota": "I seggi sono quelli di tutte le urne scrutinate nel pomeriggio del 28 ottobre, cioè l'86% del totale. Mancano circa 650.000 voti in doppia busta, contati fra la notte di mercoledì 28 e la sera di giovedì 29 ottobre, che possono spostare qualche seggio; le verifiche finali della commissione sono previste la settimana successiva. La notizia del Wall Street Journal è a fonte unica e la Casa Bianca non la commenta."
   },
   {
     "id": "siher-difesa-in-tv-molinari",
@@ -3234,14 +3234,14 @@
   {
     "id": "brasile-bolsonaro-giudice-sorteggio",
     "sezione": "Geopolitica",
+    "altre_sezioni": [
+      "Attualità"
+    ],
     "data": "2026-10-28",
     "titolo": "Brasile, il giudice, il banchiere e la famiglia Bolsonaro",
     "sommario": "Lo stesso giudice della Corte suprema ha processato il padre, fatto arrestare un figlio e tolto il passaporto all'altro, appena sconfitto da Lula. E un banchiere sotto inchiesta, secondo il New York Times, scriveva proprio a lui.",
     "immagine": "brasile-bolsonaro-giudice-sorteggio",
     "video": "TWLahl1gueo",
-    "altre_sezioni": [
-      "Attualità"
-    ],
     "corpo": [
       [
         "p",
@@ -3432,6 +3432,7 @@
     "titolo": "La gip di Milano non convalida il fermo di Youssef Siher: torna libero",
     "sommario": "Per la giudice Tiziana Landoni nei post dell'amministratore del Movimento 17 ottobre non si prospettano azioni violente, e mancano il pericolo di fuga e quello di ripetere il reato. L'indagine resta aperta.",
     "immagine": "milano-siher-fermo-non-convalidato",
+    "video": "2a_JO7MfE0k",
     "corpo": [
       [
         "p",
@@ -3504,19 +3505,19 @@
         ""
       ]
     ],
-    "nota": "Alla data di pubblicazione le motivazioni della giudice erano note dai resoconti di stampa; la lettura sulle fattispecie non configurabili è del solo Corriere della Sera, e il dato sugli iscritti ai canali è della stessa testata. Non risulta impugnata la decisione.",
-    "video": "2a_JO7MfE0k"
+    "nota": "Alla data di pubblicazione le motivazioni della giudice erano note dai resoconti di stampa; la lettura sulle fattispecie non configurabili è del solo Corriere della Sera, e il dato sugli iscritti ai canali è della stessa testata. Non risulta impugnata la decisione."
   },
   {
     "id": "tribunale-milano-contro-meloni",
     "sezione": "Politica italiana",
+    "altre_sezioni": [
+      "Cronaca"
+    ],
     "data": "2026-10-29",
     "titolo": "Il tribunale di Milano risponde a Meloni: dichiarazioni irricevibili",
     "sommario": "Dopo la scarcerazione di Youssef Siher la presidente del Consiglio ha parlato di decisione vergognosa. I vertici del tribunale hanno replicato per iscritto, senza mai nominarla, e il tono è salito da entrambe le parti.",
     "immagine": "tribunale-milano-contro-meloni",
-    "altre_sezioni": [
-      "Cronaca"
-    ],
+    "video": "5kTeNVTp_f4",
     "corpo": [
       [
         "p",
@@ -3593,8 +3594,7 @@
         "https://www.giustiziainsieme.it/it/diritti-umani/3617-appello-dei-giuristi-per-gaza"
       ]
     ],
-    "nota": "Alla data di pubblicazione non risulta che la procura di Milano abbia impugnato la decisione sulla scarcerazione di Youssef Siher.",
-    "video": "5kTeNVTp_f4"
+    "nota": "Alla data di pubblicazione non risulta che la procura di Milano abbia impugnato la decisione sulla scarcerazione di Youssef Siher."
   },
   {
     "id": "giordania-raid-siria-karak",
@@ -3603,6 +3603,7 @@
     "titolo": "La Giordania bombarda il sud della Siria dopo la strage nella chiesa",
     "sommario": "La mattina Amman dice che i tre arrestati per l'attacco alla chiesa di Karak non appartengono a nessun gruppo. La sera i caccia giordani colpiscono in Siria i gruppi a cui, secondo l'esercito, quei tre sarebbero legati.",
     "immagine": "giordania-raid-siria-karak",
+    "video": "yxGzxfRVSQQ",
     "corpo": [
       [
         "p",
@@ -3683,19 +3684,19 @@
         ""
       ]
     ],
-    "nota": "Il numero dei civili uccisi in Siria varia fra le fonti, da cinque a otto: nel testo è il dato delle autorità siriane. I 20 miliziani uccisi sono una dichiarazione del governo giordano, non verificata in modo indipendente.",
-    "video": "yxGzxfRVSQQ"
+    "nota": "Il numero dei civili uccisi in Siria varia fra le fonti, da cinque a otto: nel testo è il dato delle autorità siriane. I 20 miliziani uccisi sono una dichiarazione del governo giordano, non verificata in modo indipendente."
   },
   {
     "id": "onu-embargo-cuba-italia-astenuta",
     "sezione": "Geopolitica",
+    "altre_sezioni": [
+      "Politica italiana"
+    ],
     "data": "2026-10-29",
     "titolo": "Embargo a Cuba, all'Onu l'Italia si astiene per la prima volta",
     "sommario": "La risoluzione che chiede agli Stati Uniti di togliere l'embargo passa da trentaquattro anni, ma i voti a favore sono crollati. Fra i paesi che non hanno votato con l'Avana c'è anche l'Italia, con la Germania e altri alleati.",
     "immagine": "onu-embargo-cuba-italia-astenuta",
-    "altre_sezioni": [
-      "Politica italiana"
-    ],
+    "video": "JLXYIc1Xi3s",
     "corpo": [
       [
         "p",
@@ -3784,8 +3785,7 @@
         "https://www.aljazeera.com/news/2026/3/20/cuba-categorically-rejects-prospect-of-removing-diaz-canel-in-us-talks"
       ]
     ],
-    "nota": "I numeri del voto sono quelli riportati dalle agenzie e dalle Nazioni Unite il 28 e il 29 ottobre; alcune ricostruzioni della stessa giornata indicavano 130 voti a favore. Le minacce di dazi, visti e aiuti sospesi sono accuse del governo cubano, presentate senza prove.",
-    "video": "JLXYIc1Xi3s"
+    "nota": "I numeri del voto sono quelli riportati dalle agenzie e dalle Nazioni Unite il 28 e il 29 ottobre; alcune ricostruzioni della stessa giornata indicavano 130 voti a favore. Le minacce di dazi, visti e aiuti sospesi sono accuse del governo cubano, presentate senza prove."
   },
   {
     "id": "finlandia-norvegia-telefonata-putin",
@@ -3887,13 +3887,13 @@
   {
     "id": "asp-palermo-falsi-invalidi",
     "sezione": "Cronaca",
+    "altre_sezioni": [
+      "Sicilia"
+    ],
     "data": "2026-10-27",
     "titolo": "Certificati comprati all'Asp di Palermo: due condanne già definitive",
     "sommario": "Un milione e duecentomila euro in contanti trovati in casa, pensioni di invalidità costruite su certificati firmati senza visita e presidi ortopedici pagati anche in pesce e vino. Il processo a un imprenditore comincia a dicembre.",
     "immagine": "asp-palermo-falsi-invalidi",
-    "altre_sezioni": [
-      "Sicilia"
-    ],
     "corpo": [
       [
         "p",
@@ -3975,13 +3975,13 @@
   {
     "id": "musumeci-spostare-aeroporto-catania",
     "sezione": "Sicilia",
+    "altre_sezioni": [
+      "Politica italiana"
+    ],
     "data": "2026-10-28",
     "titolo": "Musumeci torna a dire che l'aeroporto di Catania va spostato",
     "sommario": "Il ministro per la Protezione civile vorrebbe Fontanarossa lontano dalla cenere dell'Etna. Ma la pista la stanno allungando dov'è, con un progetto da oltre trecento milioni approvato dalla giunta regionale che guidava lui.",
     "immagine": "musumeci-spostare-aeroporto-catania",
-    "altre_sezioni": [
-      "Politica italiana"
-    ],
     "corpo": [
       [
         "p",
@@ -4066,14 +4066,15 @@
   },
   {
     "id": "hydra-vestiti-pentito-sicilia",
-    "sezione": "Cronaca",
+    "sezione": "Mafia e antimafia",
+    "altre_sezioni": [
+      "Cronaca",
+      "Sicilia"
+    ],
     "data": "2026-10-28",
     "titolo": "Processo Hydra, si pente Vestiti: le ricadute sui boss siciliani",
     "sommario": "Nell'aula bunker di Milano l'uomo che per i pm teneva insieme Cosa nostra, 'ndrangheta e camorra ha cambiato avvocato e ha deciso di collaborare. È il sesto pentito del processo.",
     "immagine": "hydra-vestiti-pentito-sicilia",
-    "altre_sezioni": [
-      "Sicilia"
-    ],
     "corpo": [
       [
         "p",
@@ -4159,13 +4160,13 @@
   {
     "id": "truffe-parrocchie-conventi-noto",
     "sezione": "Cronaca",
+    "altre_sezioni": [
+      "Sicilia"
+    ],
     "data": "2026-10-29",
     "titolo": "Truffe a parrocchie e conventi in tutta Italia, la pista porta a Noto",
     "sommario": "Una finta impiegata comunale chiedeva ai parroci di restituire un contributo versato per sbaglio, su una carta ricaricabile. Dei dieci indagati dalla procura di Torino, otto vengono dal Siracusano.",
     "immagine": "truffe-parrocchie-conventi-noto",
-    "altre_sezioni": [
-      "Sicilia"
-    ],
     "corpo": [
       [
         "p",
@@ -4247,6 +4248,7 @@
     "titolo": "Il serial killer che confessò gli omicidi di altri otto condannati",
     "sommario": "Ben Mohamed Ezzedine Sebai si accusò di 14 omicidi, e per quattro di quelli in carcere c'erano già altre persone. Lo Stato gli ha creduto per i delitti rimasti senza nome e non per quelli già chiusi.",
     "immagine": "sebai-otto-condannati-revisione",
+    "video": "qAysN21i8ng",
     "corpo": [
       [
         "p",
@@ -4343,8 +4345,7 @@
         ""
       ]
     ],
-    "nota": "Alla data di pubblicazione non è stato possibile verificare se Giuseppe Tinelli sia ancora detenuto: il dato viene da una sola fonte. Non è stato trovato l'esito del procedimento di revisione di Vincenzo Faiuolo. La richiesta di revisione per Alberto Stasi è annunciata dalla difesa e non ancora depositata.",
-    "video": "qAysN21i8ng"
+    "nota": "Alla data di pubblicazione non è stato possibile verificare se Giuseppe Tinelli sia ancora detenuto: il dato viene da una sola fonte. Non è stato trovato l'esito del procedimento di revisione di Vincenzo Faiuolo. La richiesta di revisione per Alberto Stasi è annunciata dalla difesa e non ancora depositata."
   },
   {
     "id": "elicottero-bosnia-eufor-gorice",
@@ -4523,6 +4524,7 @@
     "titolo": "Satelliti russi sopra i bersagli degli attacchi in Arabia Saudita",
     "sommario": "Una società di intelligence di Ginevra ha esaminato 40 attacchi di Houthi e milizie irachene e ha trovato satelliti spia russi sopra gli obiettivi nelle ore prima e dopo. Fra i bersagli, un Eurofighter italiano.",
     "immagine": "satelliti-russi-attacchi-arabia-saudita",
+    "video": "G7x1SbmpSqw",
     "corpo": [
       [
         "p",
@@ -4591,8 +4593,7 @@
         ""
       ]
     ],
-    "nota": "L'analisi è di una società privata guidata da un ex consulente del governo saudita, e non ha intercettato trasmissioni di dati: documenta soltanto i passaggi dei satelliti. Alla data di pubblicazione non risultano reazioni russe.",
-    "video": "G7x1SbmpSqw"
+    "nota": "L'analisi è di una società privata guidata da un ex consulente del governo saudita, e non ha intercettato trasmissioni di dati: documenta soltanto i passaggi dei satelliti. Alla data di pubblicazione non risultano reazioni russe."
   },
   {
     "id": "israele-voto-arabo-sospetto-qatar",
@@ -4898,6 +4899,7 @@
     "titolo": "Meloni chiude a Vannacci: «Voglio governare senza ricatti»",
     "sommario": "La frase è in un libro di Bruno Vespa anticipato dall'Ansa. Il leader di Futuro nazionale risponde che a 30 o 40 giorni dal voto la presidente del Consiglio prenderà le sue decisioni: un'attesa che somiglia a un avvertimento.",
     "immagine": "meloni-vannacci-senza-ricatti",
+    "video": "1MxHfvHEKLU",
     "corpo": [
       [
         "p",
@@ -4974,8 +4976,7 @@
         ""
       ]
     ],
-    "nota": "Il libro non è ancora in libreria: le frasi circolano nell'anticipazione d'agenzia. Lo scambio è proseguito dopo la stesura, con Meloni che ha attribuito a Vannacci l'obiettivo di far perdere il centrodestra e il generale che ha replicato con un'altra domanda.",
-    "video": "1MxHfvHEKLU"
+    "nota": "Il libro non è ancora in libreria: le frasi circolano nell'anticipazione d'agenzia. Lo scambio è proseguito dopo la stesura, con Meloni che ha attribuito a Vannacci l'obiettivo di far perdere il centrodestra e il generale che ha replicato con un'altra domanda."
   },
   {
     "id": "campo-largo-primarie-febbraio",
@@ -4984,6 +4985,7 @@
     "titolo": "Il campo largo fissa il calendario: programma a novembre, primarie a febbraio",
     "sommario": "Una riunione a distanza fra Schlein, Conte, Bonelli e Fratoianni chiude con una nota firmata insieme. La data c'è, le regole no: non si sa chi vota, come si vota e chi si candida.",
     "immagine": "campo-largo-primarie-febbraio",
+    "video": "I2zMTj8FcBg",
     "corpo": [
       [
         "p",
@@ -5060,8 +5062,7 @@
         ""
       ]
     ],
-    "nota": "Le regole delle primarie non sono state decise. La partecipazione delle forze di centro ai tavoli è riportata da Il Foglio e non compare nella nota dei quattro leader.",
-    "video": "I2zMTj8FcBg"
+    "nota": "Le regole delle primarie non sono state decise. La partecipazione delle forze di centro ai tavoli è riportata da Il Foglio e non compare nella nota dei quattro leader."
   },
   {
     "id": "ras-tanura-raffineria-saudita-colpita",
@@ -5073,6 +5074,7 @@
     "titolo": "Colpito l'impianto dei carburanti nella più grande raffineria saudita",
     "sommario": "Le immagini dei satelliti su Ras Tanura mostrano che il missile degli Houthi non ha preso un serbatoio: ha centrato l'unità che ricava gasolio, benzina e carburante per aerei. La torcia dell'impianto si è spenta.",
     "immagine": "ras-tanura-raffineria-saudita-colpita",
+    "video": "4nByPTTCbmw",
     "corpo": [
       [
         "p",
@@ -5141,8 +5143,7 @@
         "https://www.energyupdate.com.pk/satellite-images-show-damage-to-major-saudi-refinery-after-houthi-strike/"
       ]
     ],
-    "nota": "Danni e fermo dell'impianto non sono confermati dall'Aramco né dal governo saudita, e l'identificazione dell'unità di cracking è l'interpretazione degli analisti sulle immagini satellitari. Il prezzo del Brent è quello di fine ottobre.",
-    "video": "4nByPTTCbmw"
+    "nota": "Danni e fermo dell'impianto non sono confermati dall'Aramco né dal governo saudita, e l'identificazione dell'unità di cracking è l'interpretazione degli analisti sulle immagini satellitari. Il prezzo del Brent è quello di fine ottobre."
   },
   {
     "id": "eufor-bosnia-onu-brcko",
@@ -5151,6 +5152,7 @@
     "titolo": "L'Onu rinnova Eufor in Bosnia il giorno dopo i quattro morti di Brcko",
     "sommario": "Quindici voti su quindici, Russia compresa, per tenere i soldati europei in Bosnia un altro anno. Lo scontro vero, al Consiglio di sicurezza, è sull'ufficio dell'Alto rappresentante, che da mesi non ha una guida piena.",
     "immagine": "eufor-bosnia-onu-brcko",
+    "video": "VdMHjHFzHxc",
     "corpo": [
       [
         "p",
@@ -5243,8 +5245,7 @@
         ""
       ]
     ],
-    "nota": "Le cause dello schianto del Chinook sono in accertamento. Il minuto di silenzio in apertura di seduta è riportato da una sola fonte: nel testo si dice soltanto che il Consiglio ha ricordato i quattro italiani.",
-    "video": "VdMHjHFzHxc"
+    "nota": "Le cause dello schianto del Chinook sono in accertamento. Il minuto di silenzio in apertura di seduta è riportato da una sola fonte: nel testo si dice soltanto che il Consiglio ha ricordato i quattro italiani."
   },
   {
     "id": "halloween-sequestri-ragusa-vittoria",
@@ -5773,6 +5774,7 @@
     "titolo": "Strage di Castel d'Azzano: indagati i tre ufficiali che guidavano l'operazione",
     "sommario": "I comandanti dell'Arma chiamati a testimoniare al processo ai fratelli Ramponi sono ora indagati per omicidio colposo plurimo. Per gli stessi tre è aperto anche un procedimento disciplinare, rinviato al 15 gennaio.",
     "immagine": "castel-dazzano-ufficiali-indagati",
+    "video": "FqWhw3jJKL0",
     "corpo": [
       [
         "p",
@@ -5857,8 +5859,7 @@
         "https://www.ilrestodelcarlino.it/veneto/cronaca/strage-carabinier-castel-dazzano-indagati-3-comandanti-bkv78l3p"
       ]
     ],
-    "nota": "Le fonti non specificano il tipo di atto notificato ai tre ufficiali. Il numero dei feriti varia fra le testate, dai 25 ai 27: nel testo si è scelto «più di venti». La convocazione dei tre ufficiali come testimoni il 18 novembre è riportata dal solo sito Open; il dettaglio sulla mancata interruzione dell'operazione è de L'Arena, ripreso da altre testate. Alcune testate titolano «concorso in omicidio», ma l'ipotesi di reato riportata dalla maggior parte delle fonti è omicidio colposo plurimo.",
-    "video": "FqWhw3jJKL0"
+    "nota": "Le fonti non specificano il tipo di atto notificato ai tre ufficiali. Il numero dei feriti varia fra le testate, dai 25 ai 27: nel testo si è scelto «più di venti». La convocazione dei tre ufficiali come testimoni il 18 novembre è riportata dal solo sito Open; il dettaglio sulla mancata interruzione dell'operazione è de L'Arena, ripreso da altre testate. Alcune testate titolano «concorso in omicidio», ma l'ipotesi di reato riportata dalla maggior parte delle fonti è omicidio colposo plurimo."
   },
   {
     "id": "manovra-camera-pensioni-fondo",
@@ -5870,6 +5871,7 @@
     "titolo": "La manovra arriva alla Camera: sulle pensioni ci sono i soldi, non le regole",
     "sommario": "157 articoli e circa 26 miliardi di euro. Il taglio dell'Irpef vale al massimo 500 euro l'anno, il fondo per le uscite anticipate è di 850 milioni, ma chi potrà usarlo e a che età lo dovrà decidere il Parlamento.",
     "immagine": "manovra-camera-pensioni-fondo",
+    "video": "xsJjk4DJw6E",
     "corpo": [
       [
         "p",
@@ -5966,8 +5968,7 @@
         "https://www.tgcom24.mediaset.it/politica/consiglio-dei-ministri-manovra-2027_118254074-202602k.shtml"
       ]
     ],
-    "nota": "Le cifre sono quelle del disegno di legge presentato alle Camere e possono cambiare durante l'esame parlamentare, che comincia con le audizioni del 9 novembre. Non sono state usate, perché non verificate su fonti accessibili, le indiscrezioni su un taglio dell'Irpef limitato a un anno, su una stretta alla rivalutazione delle pensioni e su una exit tax.",
-    "video": "xsJjk4DJw6E"
+    "nota": "Le cifre sono quelle del disegno di legge presentato alle Camere e possono cambiare durante l'esame parlamentare, che comincia con le audizioni del 9 novembre. Non sono state usate, perché non verificate su fonti accessibili, le indiscrezioni su un taglio dell'Irpef limitato a un anno, su una stretta alla rivalutazione delle pensioni e su una exit tax."
   },
   {
     "id": "matone-atreju-correnti-magistratura",
@@ -5979,6 +5980,7 @@
     "titolo": "Lo scontro fra governo e magistratura visto dal palco di Atreju",
     "sommario": "La parola «vergognosa» di Giorgia Meloni non nasce dal nulla. Dieci mesi fa, in campagna referendaria, una ex magistrata oggi deputata della Lega raccontava dal palco che cosa leggeva nelle liste di posta delle correnti progressiste.",
     "immagine": "matone-atreju-correnti-magistratura",
+    "video": "PuwsCKou5Ms",
     "corpo": [
       [
         "p",
@@ -6079,8 +6081,7 @@
         ""
       ]
     ],
-    "nota": "L'accusa di Matone sulle liste di posta di Area e Magistratura democratica è una sua affermazione, non verificata; una replica delle due correnti a quelle parole non risulta. Le parole più dure pronunciate dal palco sono riportate nel video dell'intervento e sono attribuite a lei, che nello stesso intervento si scusa per la volgarità. Il presidente citato in apertura del video non è identificabile con certezza e per questo non è nominato.",
-    "video": "PuwsCKou5Ms"
+    "nota": "L'accusa di Matone sulle liste di posta di Area e Magistratura democratica è una sua affermazione, non verificata; una replica delle due correnti a quelle parole non risulta. Le parole più dure pronunciate dal palco sono riportate nel video dell'intervento e sono attribuite a lei, che nello stesso intervento si scusa per la volgarità. Il presidente citato in apertura del video non è identificabile con certezza e per questo non è nominato."
   },
   {
     "id": "montebelluna-tomba-profanata",
@@ -6089,6 +6090,7 @@
     "titolo": "Montebelluna, profanata la tomba di un patriarca rom: bara estratta dal loculo",
     "sommario": "La lastra in frantumi, il cemento sbriciolato, una bara da 200 chili tirata fuori a metà e un angolo forzato con il piede di porco. I carabinieri seguono due piste: il furto di un corredo funebre o uno sfregio.",
     "immagine": "montebelluna-tomba-profanata",
+    "video": "deQQH7x7gL0",
     "corpo": [
       [
         "p",
@@ -6177,8 +6179,7 @@
         "https://www.tribunatreviso.it/cronaca/obitorio-e-funerali-blindati-per-il-capo-rom-morto-di-covid-a-montebelluna-l247zzpl"
       ]
     ],
-    "nota": "Sulla data della morte le fonti non coincidono: l'articolo del gennaio 2021 indica il 31 dicembre 2020, le cronache di questi giorni parlano genericamente del gennaio 2021. Nel testo si è scelto «quasi cinque anni fa». Le due piste sono ipotesi investigative e non risultano indagati.",
-    "video": "deQQH7x7gL0"
+    "nota": "Sulla data della morte le fonti non coincidono: l'articolo del gennaio 2021 indica il 31 dicembre 2020, le cronache di questi giorni parlano genericamente del gennaio 2021. Nel testo si è scelto «quasi cinque anni fa». Le due piste sono ipotesi investigative e non risultano indagati."
   },
   {
     "id": "polonia-tribunale-costituzionale-sospeso",
@@ -6888,14 +6889,16 @@
   },
   {
     "id": "canicatti-xydi-appello-sette-condanne",
-    "sezione": "Cronaca",
+    "sezione": "Mafia e antimafia",
     "altre_sezioni": [
+      "Cronaca",
       "Sicilia"
     ],
     "data": "2026-11-02",
     "titolo": "Canicattì, processo Xydi: confermate in appello sette condanne",
     "sommario": "La Corte d'appello di Palermo conferma le pene del primo grado, fino a 29 anni. Dodici anni e un mese all'ex ispettore di polizia Filippo Pitruzzella, accusato di aver passato notizie riservate: lui sostiene di aver finto per arrivare a Messina Denaro. La sentenza non è definitiva.",
     "immagine": "canicatti-xydi-appello-sette-condanne",
+    "canale": "Gli Eroi dell'Abisso",
     "corpo": [
       [
         "p",
@@ -6980,7 +6983,6 @@
         "https://agrigento.lasicilia.it/news/cronaca/3086089/processo-xidy-confermate-le-condanne-oltre-un-secolo-di-carcere-per-i-vertici-di-cosa-nostra-e-stidda.html"
       ]
     ],
-    "canale": "Gli Eroi dell'Abisso",
     "nota": "La sentenza d'appello non è definitiva: per i sette imputati del rito ordinario può essere impugnata in Cassazione."
   },
   {
@@ -6993,6 +6995,7 @@
     "titolo": "Due milioni di giocattoli e addobbi non sicuri sequestrati nel Palermitano",
     "sommario": "La Guardia di finanza ha sequestrato circa 2 milioni di articoli fra giocattoli, addobbi, decorazioni e accessori in due negozi di Carini e Borgetto e sul banco di un ambulante a Palermo. Tre titolari denunciati.",
     "immagine": "palermo-sequestro-giocattoli-non-sicuri",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -7061,8 +7064,7 @@
         "https://www.partinicolive.it/2026/10/31/carini-borgetto-blitz-sequestro-halloween-guardia-finanza-decorazioni/"
       ]
     ],
-    "nota": "Le quattro testate riprendono il comunicato della Guardia di finanza. Alcune indicano Partinico al posto di Carini fra i comuni dei due negozi; qui si seguono le fonti che citano Carini e Borgetto. Il valore della merce sequestrata non è stato reso noto.",
-    "canale": "Patti Chiari News"
+    "nota": "Le quattro testate riprendono il comunicato della Guardia di finanza. Alcune indicano Partinico al posto di Carini fra i comuni dei due negozi; qui si seguono le fonti che citano Carini e Borgetto. Il valore della merce sequestrata non è stato reso noto."
   },
   {
     "id": "gangi-barreca-imprenditore-ucciso",
@@ -7074,6 +7076,7 @@
     "titolo": "Imprenditore agricolo ucciso a fucilate nelle campagne di Gangi",
     "sommario": "Alessandro Barreca, 53 anni, è stato trovato morto accanto al suo fuoristrada in contrada Rolica, con due colpi di fucile al torace. I carabinieri lavorano su tre ipotesi e hanno sentito per ore familiari e amici. Nessun fermo.",
     "immagine": "gangi-barreca-imprenditore-ucciso",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -7146,8 +7149,7 @@
         "https://www.palermotoday.it/cronaca/omicidio-alessandro-barreca-imprenditore-gangi-indagini.html"
       ]
     ],
-    "nota": "Notizia in evoluzione: i dati sono aggiornati alla sera del 2 novembre 2026. L’età della vittima è indicata da alcune testate in 54 anni; qui si segue l’indicazione prevalente di 53. Nessuna persona risulta indagata o fermata.",
-    "canale": "Patti Chiari News"
+    "nota": "Notizia in evoluzione: i dati sono aggiornati alla sera del 2 novembre 2026. L’età della vittima è indicata da alcune testate in 54 anni; qui si segue l’indicazione prevalente di 53. Nessuna persona risulta indagata o fermata."
   },
   {
     "id": "niscemi-scarichi-azienda-sequestrata",
@@ -7159,6 +7161,7 @@
     "titolo": "Niscemi, scarichi in un’area a rischio: sequestrata un’azienda agricola",
     "sommario": "La polizia ha trovato due invasi artificiali senza autorizzazione in un terreno classificato a elevata pericolosità idrogeologica. La procura di Gela ha disposto il sequestro, l’amministratore è stato denunciato.",
     "immagine": "niscemi-scarichi-azienda-sequestrata",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -7223,8 +7226,7 @@
         "https://gazzettadelsud.it/articoli/cronaca/2026/10/31/niscemi-acque-reflue-sversate-in-area-a-rischio-idrogeologico-sequestrata-azienda-agricola-e-denunciato-lamministratore-560c53e0-2aa5-47df-b08a-b3b9313047dd/"
       ]
     ],
-    "nota": "Le analisi dell’Arpa sui campioni prelevati nei due invasi erano ancora in corso alla data di pubblicazione.",
-    "canale": "Patti Chiari News"
+    "nota": "Le analisi dell’Arpa sui campioni prelevati nei due invasi erano ancora in corso alla data di pubblicazione."
   },
   {
     "id": "catania-sigaretta-aereo-multa",
@@ -7236,6 +7238,7 @@
     "titolo": "Fuma nel bagno dell’aereo sul volo Praga-Catania: multa da 2.064 euro",
     "sommario": "Il fumo della sigaretta accesa in toilette ha fatto scattare il sistema di rilevamento di bordo. All’atterraggio a Fontanarossa la polizia di frontiera ha fatto scendere il passeggero e lo ha sanzionato.",
     "immagine": "catania-sigaretta-aereo-multa",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -7300,8 +7303,7 @@
         "https://ilsicilia.it/fuma-nel-bagno-di-un-aereo-in-volo-da-praga-a-catania-scatta-allarme/"
       ]
     ],
-    "nota": "Le fonti non indicano la data esatta del volo né l’articolo del codice della navigazione applicato.",
-    "canale": "Patti Chiari News"
+    "nota": "Le fonti non indicano la data esatta del volo né l’articolo del codice della navigazione applicato."
   },
   {
     "id": "meloni-quirinale-non-nei-piani",
@@ -7310,6 +7312,8 @@
     "titolo": "Meloni: «Il Quirinale non è nei miei piani»",
     "sommario": "Nel nuovo libro di Bruno Vespa la presidente del Consiglio esclude la corsa al Colle e chiede altri cinque anni a Palazzo Chigi. Ma difende l’idea che un conservatore possa salirvi, e parla di «razzismo culturale».",
     "immagine": "meloni-quirinale-non-nei-piani",
+    "video": "2BE0-IvDjzg",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7377,9 +7381,7 @@
         "Adnkronos, 1 novembre 2026",
         "https://www.adnkronos.com/politica/meloni-quirinale-libro-vespa_3LyTv9quACDCd2ZlwG8aHv"
       ]
-    ],
-    "canale": "Franco Zanghì",
-    "video": "2BE0-IvDjzg"
+    ]
   },
   {
     "id": "stipendi-magistrati-manovra-criteri",
@@ -7391,6 +7393,8 @@
     "titolo": "La manovra cambia il calcolo degli aumenti per i magistrati",
     "sommario": "Dal 2027 l’adeguamento automatico seguirà una media pesata sul numero dei dipendenti pubblici di ogni categoria, e senza gli arretrati dei contratti rinnovati in ritardo. L’Anm: le retribuzioni sono una garanzia di indipendenza.",
     "immagine": "stipendi-magistrati-manovra-criteri",
+    "video": "rsqokC9q8EM",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7463,9 +7467,7 @@
         "https://www.open.online/2026/11/01/manovra-stretta-stipendi-magistrati-aumenti-criteri-istat/"
       ]
     ],
-    "nota": "Il testo della legge di bilancio è in discussione in Parlamento e l’articolo 67 può essere modificato. Le stime di risparmio circolate sulle agenzie, fra 970 e 979 milioni di euro, non sono state riportate perchè le fonti non chiariscono a cosa si riferiscano.",
-    "canale": "Franco Zanghì",
-    "video": "rsqokC9q8EM"
+    "nota": "Il testo della legge di bilancio è in discussione in Parlamento e l’articolo 67 può essere modificato. Le stime di risparmio circolate sulle agenzie, fra 970 e 979 milioni di euro, non sono state riportate perchè le fonti non chiariscono a cosa si riferiscano."
   },
   {
     "id": "cortei-sessanta-perquisizioni",
@@ -7477,6 +7479,8 @@
     "titolo": "Sessanta perquisizioni in 23 città per chi incitava alla violenza nei cortei",
     "sommario": "Secondo l’accusa usavano profili social e chat per spingere altri alla violenza nelle piazze. Sequestrati undici telefoni, cinque repliche di pistole e un frangivetro. L’antiterrorismo verifica l’ipotesi di una regia.",
     "immagine": "cortei-sessanta-perquisizioni",
+    "video": "FnIO1oJ9UzA",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7549,9 +7553,7 @@
         "https://www.open.online/2026/11/01/piantedosi-manifestazioni-critiche-toghe-caso-siher/"
       ]
     ],
-    "nota": "Le persone perquisite non risultano nominate dalle fonti. L’ipotesi di una regia coordinata è una verifica in corso dell’antiterrorismo, non un fatto accertato.",
-    "canale": "Franco Zanghì",
-    "video": "FnIO1oJ9UzA"
+    "nota": "Le persone perquisite non risultano nominate dalle fonti. L’ipotesi di una regia coordinata è una verifica in corso dell’antiterrorismo, non un fatto accertato."
   },
   {
     "id": "manovra-folgore-milano-carabinieri-ausiliari",
@@ -7564,6 +7566,7 @@
     "sommario": "La legge di bilancio proroga di tre mesi i paracadutisti in strada a Milano, con 6,1 milioni. Ma la misura che pesa davvero è un'altra: 600 carabinieri ausiliari nel 2027 e mille all'anno dal 2028.",
     "immagine": "manovra-folgore-milano-carabinieri-ausiliari",
     "video": "qutMitE6qI4",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7652,8 +7655,7 @@
         "https://www.ilpost.it/2026/10/31/legge-bilancio-2027-proroga-500-soldati-milano/"
       ]
     ],
-    "nota": "Le cifre sono quelle del disegno di legge di bilancio presentato alle Camere: possono cambiare con gli emendamenti nel passaggio parlamentare. Il ruolo istituzionale attuale di Pierfrancesco Majorino non è stato verificato e viene indicato solo il partito.",
-    "canale": "Franco Zanghì"
+    "nota": "Le cifre sono quelle del disegno di legge di bilancio presentato alle Camere: possono cambiare con gli emendamenti nel passaggio parlamentare. Il ruolo istituzionale attuale di Pierfrancesco Majorino non è stato verificato e viene indicato solo il partito."
   },
   {
     "id": "pacchi-extra-ue-tassa-italiana-cancellata",
@@ -7666,6 +7668,7 @@
     "sommario": "Il contributo non era mai partito, e adesso non partirà più: lo Stato rinuncia a 91,3 milioni l'anno. Ma dal 1° novembre vale in tutta l'Unione un contributo europeo dello stesso importo.",
     "immagine": "pacchi-extra-ue-tassa-italiana-cancellata",
     "video": "5VlZKwwpOIE",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7742,8 +7745,7 @@
         "https://www.ilfattoquotidiano.it/2026/11/02/tassa-pacchi-extra-ue-abolita-manovra-notizie/8557636/"
       ]
     ],
-    "nota": "La norma è nel disegno di legge di bilancio in discussione in Parlamento e può essere modificata. I dettagli del contributo europeo sono riportati dalla sola Adnkronos e vengono attribuiti a quella fonte.",
-    "canale": "Franco Zanghì"
+    "nota": "La norma è nel disegno di legge di bilancio in discussione in Parlamento e può essere modificata. I dettagli del contributo europeo sono riportati dalla sola Adnkronos e vengono attribuiti a quella fonte."
   },
   {
     "id": "pasolini-nuova-indagine-testimone",
@@ -7752,6 +7754,7 @@
     "titolo": "Omicidio Pasolini, la Procura di Roma riapre il caso dopo 51 anni",
     "sommario": "Il nuovo fascicolo nasce da un esposto che chiede di ascoltare un testimone mai sentito e di rileggere insieme tutti gli elementi raccolti, comprese le immagini dei telegiornali dell'epoca.",
     "immagine": "pasolini-nuova-indagine-testimone",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7824,8 +7827,7 @@
         "https://www.tgcom24.mediaset.it/cronaca/omicidio-pier-paolo-pasolini-procura-roma-riapre-indagini_118477515-202602k.shtml"
       ]
     ],
-    "nota": "L'identità del nuovo testimone non è resa pubblica e il contenuto delle sue dichiarazioni non è noto. L'apertura di un fascicolo non equivale a una nuova ricostruzione dei fatti.",
-    "canale": "Franco Zanghì"
+    "nota": "L'identità del nuovo testimone non è resa pubblica e il contenuto delle sue dichiarazioni non è noto. L'apertura di un fascicolo non equivale a una nuova ricostruzione dei fatti."
   },
   {
     "id": "famiglia-nel-bosco-catherine-docente-roma",
@@ -7837,6 +7839,7 @@
     "titolo": "Famiglia nel bosco, Catherine Birmingham insegnerà a Roma a 60 euro l'ora",
     "sommario": "La madre della famiglia di Palmoli ha firmato un incarico di collaborazione con un istituto di pedagogia. I tre figli vivono ancora in una casa famiglia, e il cantiere della casa nuova è fermo.",
     "immagine": "famiglia-nel-bosco-catherine-docente-roma",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -7905,8 +7908,7 @@
         "https://www.quotidiano.net/cronaca/mamma-catherine-della-famiglia-del-bosco-insegnera-passi-per-riportare-i-figli-a-casa-w2550av8"
       ]
     ],
-    "nota": "La retta della casa famiglia e lo stato del cantiere sono dati riportati dalle testate citate, non da atti consultati direttamente. Il procedimento davanti al Tribunale per i minorenni è in corso.",
-    "canale": "Franco Zanghì"
+    "nota": "La retta della casa famiglia e lo stato del cantiere sono dati riportati dalle testate citate, non da atti consultati direttamente. Il procedimento davanti al Tribunale per i minorenni è in corso."
   },
   {
     "id": "hacker-frigoriferi-supermercati-italia",
@@ -7918,6 +7920,7 @@
     "titolo": "Frigoriferi dei supermercati portati a 50 gradi: colpita anche l'Italia",
     "sommario": "Temperature alzate da remoto nei banchi frigo di alcuni punti vendita in Sicilia, poi segnalazioni in Toscana ed Emilia. Nessun riscatto chiesto: due gruppi filorussi hanno rivendicato gli attacchi.",
     "immagine": "hacker-frigoriferi-supermercati-italia",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -8022,8 +8025,7 @@
         "https://www.ilfattoquotidiano.it/2026/11/02/attacchi-hacker-supermercati-europa-refrigerazione-notizie/8557799/"
       ]
     ],
-    "nota": "Vicenda in evoluzione: i dati sono aggiornati alla sera del 4 novembre 2026. Il numero dei punti vendita colpiti varia secondo le fonti (almeno quattro secondo il gestore, sei secondo l'Adnkronos, una ventina secondo Federdistribuzione). La rivendicazione dei due gruppi filorussi non risulta verificata dalle autorità.",
-    "canale": "Franco Zanghì"
+    "nota": "Vicenda in evoluzione: i dati sono aggiornati alla sera del 4 novembre 2026. Il numero dei punti vendita colpiti varia secondo le fonti (almeno quattro secondo il gestore, sei secondo l'Adnkronos, una ventina secondo Federdistribuzione). La rivendicazione dei due gruppi filorussi non risulta verificata dalle autorità."
   },
   {
     "id": "milano-lettera-minacce-de-simone",
@@ -8032,6 +8034,7 @@
     "titolo": "Lettera di minacce al poliziotto ferito negli scontri di Milano",
     "sommario": "Ad Angelo De Simone, colpito in fronte da un sampietrino il 17 ottobre, è arrivata una lettera anonima che gli augura il coma. Indaga la polizia, l'autore per ora non ha un nome.",
     "immagine": "milano-lettera-minacce-de-simone",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -8112,8 +8115,7 @@
         "https://www.today.it/cronaca/minacce-insulti-angelo-de-simone-polizia-scontri-milano.html"
       ]
     ],
-    "nota": "L'autore della lettera non è identificato e le indagini sono in corso. Il contenuto del testo è riportato come lo citano le testate indicate.",
-    "canale": "Franco Zanghì"
+    "nota": "L'autore della lettera non è identificato e le indagini sono in corso. Il contenuto del testo è riportato come lo citano le testate indicate."
   },
   {
     "id": "phica-rinasce-telegram",
@@ -8125,6 +8127,7 @@
     "titolo": "Il sito sessista Phica rinasce su Telegram, oltre 12 mila iscritti",
     "sommario": "Chiuso l'anno scorso dopo l'intervento del Garante della privacy e un fascicolo della Procura di Roma, è tornato come gruppo di messaggistica: foto intime di donne pubblicate a loro insaputa.",
     "immagine": "phica-rinasce-telegram",
+    "canale": "Franco Zanghì",
     "corpo": [
       [
         "p",
@@ -8201,8 +8204,7 @@
         "https://gazzettadelsud.it/articoli/cronaca/2026/11/02/phica-la-rinascita-la-chat-telegram-con-le-foto-rubate-alle-donne-oltre-11mila-iscritti-in-pochi-giorni-9bf711fa-c583-4549-902c-9de7d342c58d/"
       ]
     ],
-    "nota": "Il numero degli iscritti è in movimento e cambia a seconda del giorno e della fonte: dato aggiornato al 3 novembre 2026. Non risulta, al momento, un provvedimento di chiusura del gruppo.",
-    "canale": "Franco Zanghì"
+    "nota": "Il numero degli iscritti è in movimento e cambia a seconda del giorno e della fonte: dato aggiornato al 3 novembre 2026. Non risulta, al momento, un provvedimento di chiusura del gruppo."
   },
   {
     "id": "palermo-anello-politeama-porto",
@@ -8214,6 +8216,7 @@
     "titolo": "Palermo, l'anello ferroviario arriva al Politeama: aprono due fermate",
     "sommario": "Palermo Porto e Palermo Politeama entrano in servizio dopo lavori iniziati nel 2017. Dalla stessa data, però, di notte i treni fra Centrale e l'aeroporto di Punta Raisi sono sostituiti da bus.",
     "immagine": "palermo-anello-politeama-porto",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -8290,8 +8293,7 @@
         "https://palermo.gds.it/articoli/cronaca/2026/11/02/sinaugurano-le-due-nuove-fermate-della-metro-di-palermo-politeama-e-porto-ecco-orari-e-frequenza-514695b9-7481-49d0-9e0d-f536ab3a5328/"
       ]
     ],
-    "nota": "Le frequenze e gli orari sono quelli annunciati all'avvio del servizio. Sulle date di fine dei lavori notturni al nodo di Palermo i documenti delle ferrovie non coincidono: il riferimento utile resta l'avviso aggiornato di Rfi e Trenitalia.",
-    "canale": "Patti Chiari News"
+    "nota": "Le frequenze e gli orari sono quelli annunciati all'avvio del servizio. Sulle date di fine dei lavori notturni al nodo di Palermo i documenti delle ferrovie non coincidono: il riferimento utile resta l'avviso aggiornato di Rfi e Trenitalia."
   },
   {
     "id": "palermo-daspo-dieci-anni-curva-nord",
@@ -8303,6 +8305,7 @@
     "titolo": "Steward aggredito al Barbera, Daspo di 10 anni al capo della Curva Nord",
     "sommario": "È la durata massima prevista dalla legge. Il provvedimento del questore riguarda uno storico capo ultrà, che aveva già avuto tre Daspo, e suo figlio, colpito da un divieto di un anno.",
     "immagine": "palermo-daspo-dieci-anni-curva-nord",
+    "canale": "Patti Chiari News",
     "corpo": [
       [
         "p",
@@ -8363,8 +8366,7 @@
         null
       ]
     ],
-    "nota": "I nomi delle persone colpite dai provvedimenti, pubblicati da alcune testate, non vengono riportati: si tratta di misure di prevenzione e di denunce, non di condanne.",
-    "canale": "Patti Chiari News"
+    "nota": "I nomi delle persone colpite dai provvedimenti, pubblicati da alcune testate, non vengono riportati: si tratta di misure di prevenzione e di denunce, non di condanne."
   },
   {
     "id": "meloni-midterm-silenzio",
@@ -9629,11 +9631,15 @@
   },
   {
     "id": "corigliano-rossano-stasi-revocati-domiciliari",
-    "sezione": "Cronaca",
+    "sezione": "Mafia e antimafia",
+    "altre_sezioni": [
+      "Cronaca"
+    ],
     "data": "2026-11-06",
     "titolo": "Corigliano-Rossano, revocati i domiciliari al sindaco Flavio Stasi",
     "sommario": "La gip di Catanzaro revoca la misura disposta il 28 ottobre nell'inchiesta antimafia sulla Sibaritide. Il sindaco, accusato di scambio elettorale politico-mafioso, resta indagato. Le motivazioni non sono ancora pubbliche.",
     "immagine": "corigliano-rossano-stasi-revocati-domiciliari",
+    "canale": "Gli Eroi dell'Abisso",
     "corpo": [
       [
         "p",
@@ -9645,7 +9651,7 @@
       ],
       [
         "p",
-        "Corigliano-Rossano è una città di quasi ottantamila abitanti sulla costa ionica della Calabria, nella piana di Sibari. Il 28 ottobre i carabinieri del Ros hanno eseguito un'ordinanza chiesta dalla Direzione distrettuale antimafia di Catanzaro contro le cosche della Sibaritide: 41 misure cautelari. Fra gli arrestati c'era anche il sindaco, ai domiciliari, con l'accusa di scambio elettorale politico-mafioso per le comunali del 2024, quelle che lo hanno rieletto."
+        "Corigliano-Rossano è una città di quasi ottantamila abitanti sulla costa ionica della Calabria, nella piana di Sibari. Il 28 ottobre i carabinieri del Ros hanno eseguito un'ordinanza chiesta dalla Direzione distrettuale antimafia di Catanzaro contro le cosche della Sibaritide: 41 misure cautelari. Fra gli arrestati c'era anche il sindaco, ai domiciliari, con l'accusa di scambio elettorale politico-mafioso per le comunali del 2024, quelle che lo hanno rieletto. Sul nome dell'operazione le fonti non coincidono: le testate calabresi la chiamano «Ginestra», mentre l'Ansa, nel pezzo del 6 novembre sulle motivazioni, la chiama «Glicine» e la riferisce alle cosche di Cassano allo Ionio e di Corigliano-Rossano. Qui riportiamo tutti e due i nomi, ciascuno attribuito a chi lo usa."
       ],
       [
         "p",
@@ -9718,6 +9724,195 @@
         "https://cosenzachannel.it/cronaca/inchiesta-dda-catanzaro-ginestra-curia-revoca-arresti-domiciliari-qe2w9of5"
       ]
     ],
-    "nota": "Situazione giudiziaria aggiornata alla sera del 6 novembre 2026. La revoca di una misura cautelare non chiude l'inchiesta e non è un giudizio di merito: la procura antimafia può impugnarla."
+    "nota": "Situazione giudiziaria aggiornata al 7 novembre 2026. La revoca di una misura cautelare non chiude l'inchiesta e non è un giudizio di merito: la procura antimafia può impugnarla. Il nome dell'operazione è riportato come «Ginestra» dalle testate calabresi e come «Glicine» dall'Ansa."
+  },
+  {
+    "id": "medico-prato-vademecum-cpr",
+    "sezione": "Cronaca",
+    "altre_sezioni": [
+      "Politica italiana"
+    ],
+    "data": "2026-10-27",
+    "titolo": "Il vademecum «no Cpr» di Prato, e il medico che ci mette la voce",
+    "sommario": "Due fogli scritti a mano con gli «escamotage» per certificare l'inidoneità al trattenimento. Un medico che lavorava alla Dogaia dice di averli scritti lui, e che l'idoneità non la darebbe «a nessuno per questioni politiche».",
+    "immagine": "medico-prato-vademecum-cpr",
+    "corpo": [
+      [
+        "p",
+        "Nel carcere della Dogaia, a Prato, sono circolati due fogli scritti a mano che spiegano come certificare l'inidoneità di un detenuto straniero a entrare in un Centro di permanenza per il rimpatrio. Il 27 ottobre, in televisione, un medico che lavorava in quel carcere ha detto di averli scritti lui. E ha aggiunto una frase che è il cuore della questione: l'idoneità, ha detto, «non la darei a nessuno per questioni politiche». La domanda che ne esce è secca: un certificato medico può dipendere da un'idea?"
+      ],
+      [
+        "h3",
+        "Che cosa c'è nei due fogli"
+      ],
+      [
+        "p",
+        "Il primo foglio è intitolato «No Cpr» e contiene un avvertimento e un elenco. L'avvertimento riguarda il rischio penale per chi segue quelle indicazioni: il falso ideologico, l'articolo 481 del codice penale, con il richiamo all'articolo 32 del codice di deontologia medica. L'elenco è quello dei cosiddetti escamotage: fare leva sulla sofferenza o sulla fragilità psicologica della persona, oppure sulla positività al test Quantiferon per la tubercolosi, anche quando manca ancora la radiografia al torace. Compare anche un giudizio: i Cpr sono «patogeni»."
+      ],
+      [
+        "p",
+        "Il secondo foglio riguarda il testo unico sull'immigrazione, le notifiche, il trattenimento, la direttiva europea sui rimpatri del 2008 e la direttiva Lamorgese del 2022, quella che fino a pochi giorni fa rendeva vincolante il parere del medico. In fondo c'è una sezione su che cosa fare in caso di perquisizione: chiamare subito un avvocato, o in alternativa chiedere la presenza di una persona di fiducia."
+      ],
+      [
+        "h3",
+        "Quello che il medico dice, e il punto che non torna"
+      ],
+      [
+        "p",
+        "Il medico, il cui nome non è stato reso pubblico, sostiene di non aver scritto nulla di illegale: dice di aver messo su carta quello che aveva imparato dalla rete «No Cpr Mai più lager», di cui si dichiara esponente, perché in carcere non si può portare il telefono. Sulla data è andato in difficoltà. Ha detto prima di aver scritto quegli appunti più di un anno fa; poi, messo davanti al fatto che i fogli citano l'inchiesta di Ravenna, esplosa a febbraio, li ha collocati nel momento in cui aveva dovuto firmare per la prima volta un certificato per mandare qualcuno in un Cpr. Può essere. Ma finché non c'è una risposta documentata, la data resta una domanda aperta."
+      ],
+      [
+        "p",
+        "Va detto anche che non si tratta di un'esclusiva: il vademecum era già stato raccontato a inizio ottobre, prima da La Verità e poi da altre testate, e il Corriere Romagna ne aveva pubblicato gli stralci. La novità del 27 ottobre non sono i fogli: è che qualcuno ci mette la faccia, o almeno la voce. Sulle firme in calce le fonti non coincidono fra loro, e per questo non le riportiamo."
+      ],
+      [
+        "h3",
+        "L'inchiesta di Ravenna, che è un'altra cosa"
+      ],
+      [
+        "p",
+        "Sullo sfondo c'è il procedimento della procura di Ravenna sui medici «no Cpr»: otto medici indagati per falso ideologico, e l'infettivologo Nicola Cocco, che gli inquirenti indicano come promotore della rete, indagato anche per associazione a delinquere. Cocco sostiene che la campagna non chiedeva a nessuno di falsificare niente. Per tutti vale la presunzione d'innocenza fino alla sentenza definitiva. Tre dottoresse dell'ospedale di Ravenna erano state interdette dalla professione per dieci mesi; la Cassazione ha poi annullato quella sospensione, rinviando al tribunale del riesame di Bologna. Non ha assolto nessuno: ha annullato una misura cautelare, e l'inchiesta va avanti."
+      ],
+      [
+        "p",
+        "Sui fogli di Prato, invece, non risulta che sia stato iscritto un fascicolo: le testate scrivono che il materiale sarebbe stato acquisito dalla procura, ma una conferma ufficiale non c'è. Il medico non risulta indagato. E nessuno ha dimostrato che dietro quei fogli ci sia un coordinamento con Ravenna."
+      ],
+      [
+        "h3",
+        "Dove è andata a finire"
+      ],
+      [
+        "p",
+        "La politica si è mossa prima della magistratura. Fratelli d'Italia ha annunciato interrogazioni in Regione Toscana e al ministero, e ha rilanciato la richiesta di un Cpr in Toscana. Il 3 novembre il ministro dell'Interno Matteo Piantedosi ha riscritto la direttiva del 2022: la visita del medico dell'Asl resta, ma serve a dire di quali cure la persona ha bisogno, e il parere negativo non impedisce più il trattenimento."
+      ],
+      [
+        "h3",
+        "Il punto"
+      ],
+      [
+        "p",
+        "Il centrodestra ha ragione su una cosa: un Cpr funziona solo se dietro l'idoneità c'è un controllo serio, e se il certificato diventa un'arma politica quel controllo salta. Ma il governo deve stare attento alla direzione opposta: se al medico si chiede di fare da filtro per la sicurezza, si sporca la sua funzione, che è curare. E l'area politica che difende queste campagne una cosa deve dirla con chiarezza: sui Cpr si può discutere quanto si vuole, ma non si può chiedere a un medico di decidere in base a un'idea."
+      ],
+      [
+        "p",
+        "Resta una contraddizione che nessuno ha sciolto. Cocco sostiene che l'idoneità viene concessa quasi sempre. Il medico di Prato dice che lui non la darebbe a nessuno. Due versioni che faticano a stare insieme, e una sola delle due può essere vera."
+      ]
+    ],
+    "fonti": [
+      [
+        "La Verità, Fabio Amendolara e Filippo Curnis, sul vademecum trovato alla Dogaia, 10 ottobre 2026",
+        "https://www.laverita.info/inchieste/prato-medici-cpr-immigrati"
+      ],
+      [
+        "La Verità, Filippo Curnis, «Il medico no Cpr rompe il silenzio: il vademecum? L'ho scritto io», 27 ottobre 2026",
+        "https://www.laverita.info/inchieste/medico-no-cpr-vademecum-prato"
+      ],
+      [
+        "il Giornale, Giovanni Fiorentino, «Nel carcere di Prato trovato un vademecum per evitare il trasferimento dei detenuti stranieri nei Cpr», 8 ottobre 2026",
+        "https://www.ilgiornale.it/news/cronaca-giudiziaria/nel-carcere-di-prato-trovato-un-vademecum-per-evitare-il-trasferimento-dei-detenuti-stranieri-nei-cpr/"
+      ],
+      [
+        "Libero Quotidiano, sul servizio di Filorosso dedicato al vademecum, 28 ottobre 2026",
+        "https://www.liberoquotidiano.it/news/terra-promessa/49475653/filorosso-scandalo-carcere-prato-manuale-istruzione-come-aggirare-cpr/"
+      ],
+      [
+        "Corriere Romagna, «In un foglio gli escamotage dei medici no Cpr»",
+        "https://www.corriereromagna.it/ravenna/ravenna-in-un-foglio-gli-escamotage-dei-medici-no-cpr-ecco-i-rischi-e-cosa-fare-se-perquisiti-BY2265012"
+      ]
+    ],
+    "nota": "Articolo scritto il 27 ottobre 2026 e pubblicato il 7 novembre, con il ricontrollo in rete previsto dal protocollo: i fatti sono quelli di ottobre, e l'unica novità successiva è la direttiva del Viminale del 3 novembre, richiamata nel testo. Sui fogli di Prato non risulta un fascicolo iscritto, e il medico non risulta indagato. Le fonti non coincidono su chi abbia materialmente firmato il vademecum: per questo le firme non sono riportate."
+  },
+  {
+    "id": "siher-candidato-sinistra",
+    "sezione": "Politica italiana",
+    "data": "2026-10-30",
+    "titolo": "«Candidate Siher», dice Lucano. Fratoianni risponde di no",
+    "sommario": "L'ipotesi l'aveva lanciata la destra come sospetto. Poi è diventata una proposta vera, fatta da un eurodeputato di Alleanza Verdi e Sinistra. E il segretario di Sinistra Italiana l'ha respinta in diretta radiofonica.",
+    "immagine": "siher-candidato-sinistra",
+    "corpo": [
+      [
+        "p",
+        "Dieci giorni fa il nome di Youssef Siher non lo conosceva nessuno. Il 30 ottobre un eurodeputato di Alleanza Verdi e Sinistra, Mimmo Lucano, ha detto in un'intervista al Foglio che gli piacerebbe vederlo candidato: «Sarebbe bello se Avs candidasse Youssef Siher. Sarebbe un simbolo. Mi piacerebbe averlo come collega». Poche ore dopo il segretario di Sinistra Italiana, Nicola Fratoianni, ha risposto di no."
+      ],
+      [
+        "h3",
+        "Chi è Siher, e perché se ne parla"
+      ],
+      [
+        "p",
+        "Siher, 30 anni, ricercatore e attivista per la causa palestinese, è italiano di seconda generazione, cresciuto nel Bresciano in una famiglia di origine marocchina. Era stato fermato alla fine di ottobre come presunto amministratore del canale Telegram e della pagina Instagram del Movimento 17 ottobre, nato dopo i saccheggi del 17 e 18 ottobre nel centro di Milano. La procura di Milano gli contestava l'istigazione a delinquere aggravata dalla finalità di terrorismo e la violenza organizzata nelle manifestazioni pubbliche. La giudice per le indagini preliminari non ha convalidato il fermo e lo ha rimesso in libertà senza misure. L'indagine resta aperta, e per lui vale la presunzione d'innocenza fino alla sentenza definitiva."
+      ],
+      [
+        "h3",
+        "Prima il sospetto, poi la proposta"
+      ],
+      [
+        "p",
+        "La prima a parlare di candidatura era stata la destra, e non come augurio. La senatrice di Forza Italia Licia Ronzulli, vicepresidente del Senato, aveva ironizzato sulla solidarietà arrivata a Siher da sinistra e aveva buttato lì che forse la sinistra radicale aveva trovato il suo nuovo paladino da mettere in lista. Nei giorni precedenti il consigliere del Partito democratico Alessandro Corti lo aveva definito un prigioniero politico e l'europarlamentare Ilaria Salis lo aveva chiamato il capro espiatorio ideale."
+      ],
+      [
+        "p",
+        "Poi il sospetto è diventato una proposta vera, e l'ha fatta un eletto. Lucano, ex sindaco di Riace, ha detto al Foglio che Siher «lo stanno criminalizzando per usarlo come capro espiatorio per i disordini», lo ha descritto come «un bravo ragazzo, uno studioso, un politologo» e ha aggiunto che in Parlamento «farebbe sfigurare tanti colleghi di centrodestra»."
+      ],
+      [
+        "h3",
+        "Il no di Fratoianni"
+      ],
+      [
+        "p",
+        "La risposta è arrivata da Nicola Fratoianni, ospite di «Un Giorno da Pecora» su Rai Radio 1: «Non sono d'accordo. Dal punto di vista politico le cose che dice sono molto lontane da quello che penso io». Fratoianni ha tenuto però a precisare che le accuse mosse a Siher erano inconsistenti: una cosa è difendere una persona da un'accusa, un'altra è metterla in lista."
+      ],
+      [
+        "p",
+        "Angelo Bonelli, l'altro leader di Alleanza Verdi e Sinistra, su Siher non si è espresso: aveva però smentito categoricamente le voci su altre due candidature eccellenti, quelle di Francesca Albanese e di Sigfrido Ranucci. E Siher stesso, di politica, non ha detto una parola."
+      ],
+      [
+        "h3",
+        "Perché la tentazione esiste"
+      ],
+      [
+        "p",
+        "La tentazione, per un partito piccolo che deve superare la soglia di sbarramento, è facile da capire. Serve un nome che la gente conosce, una storia da raccontare e una platea che ti difende prima ancora che tu apra bocca. Siher, in dieci giorni, ha messo insieme tutte e tre le cose, e una pagina arrivata a decine di migliaia di seguaci. Il precedente c'è: Alleanza Verdi e Sinistra ha portato in Parlamento Aboubakar Soumahoro nel 2022 e a Bruxelles Ilaria Salis nel 2024, eletta mentre era agli arresti in Ungheria. Alle europee il metodo ha funzionato."
+      ],
+      [
+        "h3",
+        "Il punto"
+      ],
+      [
+        "p",
+        "C'è però un ostacolo che viene da dentro, e non è piccolo. Il Movimento 17 ottobre, sulla propria pagina, ha scritto di rifiutare ogni rappresentanza politica tradizionale: non ci rappresenta nessuno, ci rappresentiamo da soli. Chi diceva di non volersi far rappresentare da nessuno accetterebbe di rappresentare qualcuno? E un partito che punta all'alleanza con il Partito democratico se la sentirebbe di metterlo in lista?"
+      ],
+      [
+        "p",
+        "Per ora la risposta è no, e l'ha data il segretario. Ma la distanza fra il no di Fratoianni e l'entusiasmo di Lucano dice qualcosa su quel partito, e le liste si chiudono fra qualche mese."
+      ]
+    ],
+    "fonti": [
+      [
+        "il Giornale, Massimo Balsamo, «Avs dovrebbe candidare Youssef Siher: l'ultima trovata di Mimmo Lucano», 30 ottobre 2026",
+        "https://www.ilgiornale.it/news/interni/avs-dovrebbe-candidare-youssef-siher-lultima-trovata-di-mimmo-lucano/"
+      ],
+      [
+        "Libero Quotidiano, sulla risposta di Nicola Fratoianni a «Un Giorno da Pecora», 30 ottobre 2026",
+        "https://www.liberoquotidiano.it/news/politica/49495804/fratoianni-siher-candidato-risposta-siluro-cosa-accadra/"
+      ],
+      [
+        "The Social Post, Domenico Camodeca, sulla proposta di Mimmo Lucano, 30 ottobre 2026",
+        "https://www.thesocialpost.it/2026/10/30/candidatelo-siher-la-notizia-bomba-con-chi-entra-in-politica/"
+      ],
+      [
+        "Agenzia giornalistica Opinione, dichiarazione di Licia Ronzulli, 28 ottobre 2026",
+        "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-cortei-ronzulli-fi-sinistra-radicale-solidarizza-con-siher-pronta-sua-candidatura/"
+      ],
+      [
+        "MilanoToday, sulla posizione del consigliere Alessandro Corti, 26 ottobre 2026",
+        "https://www.milanotoday.it/politica/fermo-youssef-siher-dichiarazioni-alessandro-corti-pd.html"
+      ],
+      [
+        "Pagella Politica, «Non è ancora chiaro quando si voterà alle prossime elezioni politiche»",
+        "https://pagellapolitica.it/articoli/data-incerta-elezioni-politiche-2027"
+      ]
+    ],
+    "nota": "Articolo scritto il 29 ottobre 2026 e riscritto il 7 novembre dopo il ricontrollo in rete: nel frattempo l'ipotesi di candidatura è passata dal sospetto di un'esponente di Forza Italia a una proposta esplicita di Mimmo Lucano, respinta da Nicola Fratoianni. Nessuna candidatura è stata annunciata, Alleanza Verdi e Sinistra non si è espressa come partito e Youssef Siher non ha mai parlato della questione. La data delle prossime elezioni politiche non è fissata: la scadenza naturale della legislatura è il 13 ottobre 2027."
   }
 ]

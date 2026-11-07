@@ -25,7 +25,17 @@ SEZIONI = [
     ("cronaca",           "Cronaca"),
     ("attualita",         "Attualità"),
     ("sicilia",           "Sicilia"),
+    ("mafia-antimafia",   "Mafia e antimafia"),
 ]
+
+# La sesta sezione porta sotto il titolo il marchio della pagina che la alimenta
+# (protocollo sito 12.0.1, dal 6 novembre 2026).
+MARCHIO_SEZIONE = {"mafia-antimafia": "Gli Eroi dell'Abisso"}
+
+# Pagine Facebook dei canali, per la riga in fondo all'articolo.
+PAGINA_CANALE = {
+    "Gli Eroi dell'Abisso": "https://www.facebook.com/profile.php?id=61589521568216",
+}
 SLUG_DI = {nome: slug for slug, nome in SEZIONI}
 
 
@@ -44,6 +54,7 @@ DESCRIZIONI = {
     "cronaca":           "Fatti, processi, inchieste giudiziarie.",
     "attualita":         "Quello che succede adesso e merita di essere spiegato.",
     "sicilia":           "L'isola raccontata da dentro, oltre la cronaca di giornata.",
+    "mafia-antimafia":   "Cosa nostra, 'ndrangheta, camorra: processi, inchieste e le storie di chi ha detto no.",
 }
 
 def versione_stile():
@@ -322,12 +333,17 @@ def menu(attiva=""):
     return "\n".join(voci)
 
 
-def insegna(titolo, sommario=""):
+def insegna(titolo, sommario="", marchio=""):
     """Casella del titolo di pagina: fondo pieno e carattere senza grazie,
-    perche' non si confonda con il titolo di una notizia."""
+    perche' non si confonda con il titolo di una notizia. Il marchio, quando
+    c'e', sta subito sotto il titolo: e' il nome della pagina che alimenta
+    la sezione (protocollo sito 12.0.1)."""
+    riga_m = (f'\n    <p class="marchio" style="margin:2px 0 0;font-size:15px;'
+              f'letter-spacing:.14em;text-transform:uppercase;opacity:.75">{marchio}</p>'
+              if marchio else "")
     riga = f'\n    <p>{sommario}</p>' if sommario else ""
     return f"""  <div class="insegna">
-    <h2>{titolo}</h2>{riga}
+    <h2>{titolo}</h2>{riga_m}{riga}
   </div>
 """
 
@@ -490,6 +506,14 @@ for _giro_art, n in enumerate(notizie):
                       f'      <strong>Correzione del {data_estesa(n["correzione"]["data"])}.</strong> '
                       f'{html.escape(n["correzione"]["testo"])}\n    </div>\n')
 
+    dalla_pagina = ""
+    _ind = PAGINA_CANALE.get(n.get("canale", ""))
+    if _ind:
+        dalla_pagina = (
+            '    <p class="dalla-pagina" style="margin:18px 0 0;font-size:15px;color:var(--grigio)">'
+            f'Questo articolo nasce dalla pagina <a href="{_ind}" rel="noopener">'
+            f'{html.escape(n["canale"])}</a>, dove la stessa storia \u00e8 raccontata in video.</p>\n')
+
     _slug = SLUG_DI.get(n["sezione"], "")
     _occhiello = (f'<a class="sezione" href="{_slug}.html">{n["sezione"]}</a>'
                   if _slug else f'<span class="sezione">{n["sezione"]}</span>')
@@ -507,7 +531,7 @@ for _giro_art, n in enumerate(notizie):
 
 {corpo_testo}
 
-{fonti}{correzione}{_ritorno}  </section>
+{fonti}{correzione}{dalla_pagina}{_ritorno}  </section>
 """
     scrivi(n["file"], pagina(f"{n['titolo']} — Franco Zanghì", corpo,
                              attiva=SLUG_DI.get(n["sezione"], ""),
@@ -534,7 +558,7 @@ scrivi("index.html", pagina("Franco Zanghì", corpo, attiva="home", iniziale=Tru
 # ------------------------------------------------------------------
 for _giro, (slug, nome) in enumerate(SEZIONI):
     pezzi = [n for n in notizie if nome in sezioni_di(n)]
-    corpo = insegna(nome, DESCRIZIONI[slug]) + """
+    corpo = insegna(nome, DESCRIZIONI[slug], MARCHIO_SEZIONE.get(slug, "")) + """
   <div class="elenco">
 
 """
