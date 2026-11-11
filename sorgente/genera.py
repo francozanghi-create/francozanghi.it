@@ -26,6 +26,7 @@ SEZIONI = [
     ("attualita",         "Attualità"),
     ("sicilia",           "Sicilia"),
     ("mafia-antimafia",   "Mafia e antimafia"),
+    ("economia",          "Economia"),
 ]
 
 # La sesta sezione porta sotto il titolo il marchio della pagina che la alimenta
@@ -55,6 +56,7 @@ DESCRIZIONI = {
     "attualita":         "Quello che succede adesso e merita di essere spiegato.",
     "sicilia":           "L'isola raccontata da dentro, oltre la cronaca di giornata.",
     "mafia-antimafia":   "Cosa nostra, 'ndrangheta, camorra: processi, inchieste e le storie di chi ha detto no.",
+    "economia":          "I conti, i mercati, i prezzi, il lavoro: quello che finisce nelle tasche di tutti.",
 }
 
 def versione_stile():
@@ -474,7 +476,20 @@ notizie.sort(key=lambda n: n["data"], reverse=True)
 # ------------------------------------------------------------------
 for _giro_art, n in enumerate(notizie):
     blocchi = []
-    for tipo, testo in n["corpo"]:
+    for blocco in n["corpo"]:
+        # Blocco immagine dentro il corpo (protocollo sito 12.1.1.1):
+        # {"tipo": "immagine", "file": "...", "didascalia": "..."}
+        if isinstance(blocco, dict):
+            if blocco.get("tipo") != "immagine":
+                continue
+            _did = blocco.get("didascalia") or DIDASCALIA
+            blocchi.append('    <figure class="figura dentro">\n'
+                           f'      <img src="immagini/{blocco["file"]}.jpg" alt="" '
+                           'width="1200" height="800" loading="lazy">\n'
+                           f'      <figcaption>{html.escape(_did)}</figcaption>\n'
+                           '    </figure>')
+            continue
+        tipo, testo = blocco
         if tipo == "h3":
             blocchi.append(f"    <h3>{html.escape(testo)}</h3>")
         else:
